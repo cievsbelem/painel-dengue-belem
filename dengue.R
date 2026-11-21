@@ -370,8 +370,8 @@ ui <- page_fillable(
     # Metatags Open Graph (OG) para Compartilhamento em WhatsApp, Telegram e Redes Sociais
     tags$meta(property = "og:title", content = "Painel Epidemiológico da Dengue — Belém / SESMA / CIEVS"),
     tags$meta(property = "og:description", content = "Sistema Oficial de Vigilância Epidemiológica da Dengue em Belém. Monitoramento de 2026, canal endêmico e análise por bairros."),
-    tags$meta(property = "og:image", content = "https://cievsbelem.shinyapps.io/painel-dengue-belem/card_compartilhamento.png"),
-    tags$meta(property = "og:image:secure_url", content = "https://cievsbelem.shinyapps.io/painel-dengue-belem/card_compartilhamento.png"),
+    tags$meta(property = "og:image", content = "https://raw.githubusercontent.com/cievsbelem/painel-dengue-belem/main/www/card_compartilhamento.png"),
+    tags$meta(property = "og:image:secure_url", content = "https://raw.githubusercontent.com/cievsbelem/painel-dengue-belem/main/www/card_compartilhamento.png"),
     tags$meta(property = "og:image:type", content = "image/png"),
     tags$meta(property = "og:image:width", content = "1200"),
     tags$meta(property = "og:image:height", content = "630"),
@@ -383,7 +383,7 @@ ui <- page_fillable(
     tags$meta(name = "twitter:card", content = "summary_large_image"),
     tags$meta(name = "twitter:title", content = "Painel Epidemiológico da Dengue — Belém / SESMA / CIEVS"),
     tags$meta(name = "twitter:description", content = "Sistema Oficial de Vigilância Epidemiológica da Dengue em Belém."),
-    tags$meta(name = "twitter:image", content = "https://cievsbelem.shinyapps.io/painel-dengue-belem/card_compartilhamento.png"),
+    tags$meta(name = "twitter:image", content = "https://raw.githubusercontent.com/cievsbelem/painel-dengue-belem/main/www/card_compartilhamento.png"),
     
     useShinyjs(),
     tags$link(rel = "stylesheet", href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"),
