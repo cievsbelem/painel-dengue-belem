@@ -1,0 +1,74 @@
+# ==============================================================================
+# .gitignore - PAINEL EPIDEMIOLÓGICO DA DENGUE (BELÉM / SESMA / CIEVS)
+# ==============================================================================
+# SEGURANÇA DA INFORMAÇÃO & CONFORMIDADE LGPD (Lei Federal nº 13.709/2018)
+#
+# É TERMINANTEMENTE PROIBIDO VERSIONAR OU TORNAR PÚBLICO QUALQUER BANCO DE
+# DADOS DE NOTIFICAÇÃO COMPULSÓRIA DO SINAN OU MICRODADOS INDIVIDUAIS DE SAÚDE.
+# ==============================================================================
+
+# 1. Microdados Reais do SINAN (Arquivos DBF e DBC - Fichas Individuais)
+*.dbf
+*.DBF
+*.dbc
+*.DBC
+DENGON*
+data/*.dbf
+data/*.DBF
+data/*.dbc
+data/*.DBC
+
+# 2. Base Consolidada Real de Notificações com Microdados
+dados_historico_dengue.rds
+data/dados_historico_dengue.rds
+*.rds.bak
+*_backup.rds
+
+# Exceções permitidas (Geometrias públicas, catálogo público CNES e dados sintéticos):
+!dados_historico_dengue_exemplo.rds
+!mapa_bairros_belem.rds
+!mapa_distritos_belem.rds
+!mapa_ilhas_belem.rds
+!estabelecimentos_pa.rds
+!notificacoes_estabelecimentos.rds
+
+# 3. Planilhas e Relatórios com Extrações ou Casos
+*.xlsx
+*.xls
+*.csv
+*.tsv
+*.parquet
+
+# 4. Apresentações e Relatórios Exportados
+*.pptx
+*.pdf
+!docs/*.pdf
+
+# 5. R & RStudio Environment
+.Rhistory
+.RData
+.Ruserdata
+.Renviron
+.Rprofile.local
+.Rproj.user/
+*.Rproj.user
+
+# 6. Logs, Temporários e Cache
+*.log
+*.tmp
+scratch/
+test_*.R
+
+# 7. Credenciais e Configurações de Ambiente
+.env
+.env.*
+*.key
+*.pem
+credentials.*
+
+# 8. Sistema Operacional
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+[Nn]otebooks/.ipynb_checkpoints/
