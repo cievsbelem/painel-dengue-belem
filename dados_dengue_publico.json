@@ -3,7 +3,7 @@
     "municipio": "Belém - PA",
     "secretaria": "Secretaria Municipal de Saúde (SESMA)",
     "setor": "Centro de Informações Estratégicas em Vigilância em Saúde (CIEVS)",
-    "data_atualizacao": "21/11/2026 15:20",
+    "data_atualizacao": "21/11/2026 15:40",
     "ano_vigente": 2026,
     "max_semana_vigente": 44,
     "total_notificacoes": 31349,
@@ -21,6 +21,7 @@
       "provaveis": 3376,
       "obitos": 7,
       "incidencia": 204.8,
+      "incidencia_prov": 259,
       "letalidade": 0.26
     },
     "2025": {
@@ -32,6 +33,7 @@
       "provaveis": 1240,
       "obitos": 4,
       "incidencia": 83.8,
+      "incidencia_prov": 95.1,
       "letalidade": 0.37
     },
     "2024": {
@@ -43,6 +45,7 @@
       "provaveis": 3668,
       "obitos": 4,
       "incidencia": 257.1,
+      "incidencia_prov": 281.4,
       "letalidade": 0.12
     },
     "2023": {
@@ -54,6 +57,7 @@
       "provaveis": 574,
       "obitos": 0,
       "incidencia": 35.1,
+      "incidencia_prov": 44,
       "letalidade": 0
     },
     "2022": {
@@ -65,6 +69,7 @@
       "provaveis": 314,
       "obitos": 1,
       "incidencia": 20.1,
+      "incidencia_prov": 24.1,
       "letalidade": 0.38
     },
     "2021": {
@@ -76,6 +81,7 @@
       "provaveis": 658,
       "obitos": 1,
       "incidencia": 48.4,
+      "incidencia_prov": 50.5,
       "letalidade": 0.16
     },
     "2020": {
@@ -87,6 +93,7 @@
       "provaveis": 254,
       "obitos": 0,
       "incidencia": 15.6,
+      "incidencia_prov": 19.5,
       "letalidade": 0
     },
     "2019": {
@@ -98,6 +105,7 @@
       "provaveis": 237,
       "obitos": 0,
       "incidencia": 9.9,
+      "incidencia_prov": 18.2,
       "letalidade": 0
     },
     "2018": {
@@ -109,6 +117,7 @@
       "provaveis": 313,
       "obitos": 1,
       "incidencia": 8.4,
+      "incidencia_prov": 24,
       "letalidade": 0.92
     },
     "2017": {
@@ -120,6 +129,7 @@
       "provaveis": 232,
       "obitos": 0,
       "incidencia": 7.4,
+      "incidencia_prov": 17.8,
       "letalidade": 0
     },
     "2016": {
@@ -131,6 +141,7 @@
       "provaveis": 781,
       "obitos": 0,
       "incidencia": 45.3,
+      "incidencia_prov": 59.9,
       "letalidade": 0
     },
     "2015": {
@@ -142,6 +153,7 @@
       "provaveis": 1607,
       "obitos": 2,
       "incidencia": 108,
+      "incidencia_prov": 123.3,
       "letalidade": 0.14
     },
     "2014": {
@@ -153,6 +165,7 @@
       "provaveis": 4,
       "obitos": 0,
       "incidencia": 0.3,
+      "incidencia_prov": 0.3,
       "letalidade": 0
     },
     "TODOS": {
@@ -164,6 +177,7 @@
       "provaveis": 13258,
       "obitos": 20,
       "incidencia": 844.1,
+      "incidencia_prov": 1017.2,
       "letalidade": 0.18
     }
   },
@@ -9429,6 +9443,476 @@
         "Masculino": 16
       }
     ],
+    "2023": [
+      {
+        "faixa": "0-9",
+        "Feminino": 51,
+        "Masculino": 55
+      },
+      {
+        "faixa": "10-19",
+        "Feminino": 85,
+        "Masculino": 111
+      },
+      {
+        "faixa": "20-29",
+        "Feminino": 140,
+        "Masculino": 102
+      },
+      {
+        "faixa": "30-39",
+        "Feminino": 113,
+        "Masculino": 63
+      },
+      {
+        "faixa": "40-49",
+        "Feminino": 130,
+        "Masculino": 72
+      },
+      {
+        "faixa": "50-59",
+        "Feminino": 89,
+        "Masculino": 44
+      },
+      {
+        "faixa": "60-69",
+        "Feminino": 55,
+        "Masculino": 21
+      },
+      {
+        "faixa": "70-79",
+        "Feminino": 13,
+        "Masculino": 7
+      },
+      {
+        "faixa": "80+",
+        "Feminino": 12,
+        "Masculino": 1
+      }
+    ],
+    "2022": [
+      {
+        "faixa": "0-9",
+        "Feminino": 44,
+        "Masculino": 35
+      },
+      {
+        "faixa": "10-19",
+        "Feminino": 44,
+        "Masculino": 92
+      },
+      {
+        "faixa": "20-29",
+        "Feminino": 67,
+        "Masculino": 73
+      },
+      {
+        "faixa": "30-39",
+        "Feminino": 87,
+        "Masculino": 72
+      },
+      {
+        "faixa": "40-49",
+        "Feminino": 84,
+        "Masculino": 59
+      },
+      {
+        "faixa": "50-59",
+        "Feminino": 67,
+        "Masculino": 37
+      },
+      {
+        "faixa": "60-69",
+        "Feminino": 32,
+        "Masculino": 20
+      },
+      {
+        "faixa": "70-79",
+        "Feminino": 11,
+        "Masculino": 12
+      },
+      {
+        "faixa": "80+",
+        "Feminino": 7,
+        "Masculino": 3
+      }
+    ],
+    "2021": [
+      {
+        "faixa": "0-9",
+        "Feminino": 99,
+        "Masculino": 94
+      },
+      {
+        "faixa": "10-19",
+        "Feminino": 124,
+        "Masculino": 149
+      },
+      {
+        "faixa": "20-29",
+        "Feminino": 116,
+        "Masculino": 104
+      },
+      {
+        "faixa": "30-39",
+        "Feminino": 120,
+        "Masculino": 72
+      },
+      {
+        "faixa": "40-49",
+        "Feminino": 98,
+        "Masculino": 54
+      },
+      {
+        "faixa": "50-59",
+        "Feminino": 107,
+        "Masculino": 36
+      },
+      {
+        "faixa": "60-69",
+        "Feminino": 51,
+        "Masculino": 35
+      },
+      {
+        "faixa": "70-79",
+        "Feminino": 19,
+        "Masculino": 15
+      },
+      {
+        "faixa": "80+",
+        "Feminino": 5,
+        "Masculino": 1
+      }
+    ],
+    "2020": [
+      {
+        "faixa": "0-9",
+        "Feminino": 26,
+        "Masculino": 26
+      },
+      {
+        "faixa": "10-19",
+        "Feminino": 58,
+        "Masculino": 41
+      },
+      {
+        "faixa": "20-29",
+        "Feminino": 75,
+        "Masculino": 65
+      },
+      {
+        "faixa": "30-39",
+        "Feminino": 69,
+        "Masculino": 57
+      },
+      {
+        "faixa": "40-49",
+        "Feminino": 61,
+        "Masculino": 27
+      },
+      {
+        "faixa": "50-59",
+        "Feminino": 44,
+        "Masculino": 27
+      },
+      {
+        "faixa": "60-69",
+        "Feminino": 19,
+        "Masculino": 12
+      },
+      {
+        "faixa": "70-79",
+        "Feminino": 7,
+        "Masculino": 6
+      },
+      {
+        "faixa": "80+",
+        "Feminino": 1,
+        "Masculino": 1
+      }
+    ],
+    "2019": [
+      {
+        "faixa": "0-9",
+        "Feminino": 24,
+        "Masculino": 34
+      },
+      {
+        "faixa": "10-19",
+        "Feminino": 67,
+        "Masculino": 51
+      },
+      {
+        "faixa": "20-29",
+        "Feminino": 98,
+        "Masculino": 69
+      },
+      {
+        "faixa": "30-39",
+        "Feminino": 79,
+        "Masculino": 50
+      },
+      {
+        "faixa": "40-49",
+        "Feminino": 60,
+        "Masculino": 46
+      },
+      {
+        "faixa": "50-59",
+        "Feminino": 65,
+        "Masculino": 26
+      },
+      {
+        "faixa": "60-69",
+        "Feminino": 26,
+        "Masculino": 15
+      },
+      {
+        "faixa": "70-79",
+        "Feminino": 11,
+        "Masculino": 7
+      },
+      {
+        "faixa": "80+",
+        "Feminino": 8,
+        "Masculino": 2
+      }
+    ],
+    "2018": [
+      {
+        "faixa": "0-9",
+        "Feminino": 55,
+        "Masculino": 73
+      },
+      {
+        "faixa": "10-19",
+        "Feminino": 122,
+        "Masculino": 125
+      },
+      {
+        "faixa": "20-29",
+        "Feminino": 228,
+        "Masculino": 128
+      },
+      {
+        "faixa": "30-39",
+        "Feminino": 301,
+        "Masculino": 146
+      },
+      {
+        "faixa": "40-49",
+        "Feminino": 257,
+        "Masculino": 125
+      },
+      {
+        "faixa": "50-59",
+        "Feminino": 204,
+        "Masculino": 102
+      },
+      {
+        "faixa": "60-69",
+        "Feminino": 134,
+        "Masculino": 70
+      },
+      {
+        "faixa": "70-79",
+        "Feminino": 55,
+        "Masculino": 34
+      },
+      {
+        "faixa": "80+",
+        "Feminino": 16,
+        "Masculino": 6
+      }
+    ],
+    "2017": [
+      {
+        "faixa": "0-9",
+        "Feminino": 60,
+        "Masculino": 68
+      },
+      {
+        "faixa": "10-19",
+        "Feminino": 120,
+        "Masculino": 106
+      },
+      {
+        "faixa": "20-29",
+        "Feminino": 159,
+        "Masculino": 91
+      },
+      {
+        "faixa": "30-39",
+        "Feminino": 160,
+        "Masculino": 104
+      },
+      {
+        "faixa": "40-49",
+        "Feminino": 172,
+        "Masculino": 88
+      },
+      {
+        "faixa": "50-59",
+        "Feminino": 145,
+        "Masculino": 76
+      },
+      {
+        "faixa": "60-69",
+        "Feminino": 82,
+        "Masculino": 49
+      },
+      {
+        "faixa": "70-79",
+        "Feminino": 40,
+        "Masculino": 28
+      },
+      {
+        "faixa": "80+",
+        "Feminino": 13,
+        "Masculino": 7
+      }
+    ],
+    "2016": [
+      {
+        "faixa": "0-9",
+        "Feminino": 78,
+        "Masculino": 75
+      },
+      {
+        "faixa": "10-19",
+        "Feminino": 164,
+        "Masculino": 141
+      },
+      {
+        "faixa": "20-29",
+        "Feminino": 330,
+        "Masculino": 176
+      },
+      {
+        "faixa": "30-39",
+        "Feminino": 326,
+        "Masculino": 177
+      },
+      {
+        "faixa": "40-49",
+        "Feminino": 320,
+        "Masculino": 131
+      },
+      {
+        "faixa": "50-59",
+        "Feminino": 235,
+        "Masculino": 99
+      },
+      {
+        "faixa": "60-69",
+        "Feminino": 140,
+        "Masculino": 57
+      },
+      {
+        "faixa": "70-79",
+        "Feminino": 41,
+        "Masculino": 28
+      },
+      {
+        "faixa": "80+",
+        "Feminino": 14,
+        "Masculino": 7
+      }
+    ],
+    "2015": [
+      {
+        "faixa": "0-9",
+        "Feminino": 109,
+        "Masculino": 131
+      },
+      {
+        "faixa": "10-19",
+        "Feminino": 229,
+        "Masculino": 279
+      },
+      {
+        "faixa": "20-29",
+        "Feminino": 390,
+        "Masculino": 277
+      },
+      {
+        "faixa": "30-39",
+        "Feminino": 469,
+        "Masculino": 262
+      },
+      {
+        "faixa": "40-49",
+        "Feminino": 428,
+        "Masculino": 237
+      },
+      {
+        "faixa": "50-59",
+        "Feminino": 366,
+        "Masculino": 160
+      },
+      {
+        "faixa": "60-69",
+        "Feminino": 162,
+        "Masculino": 83
+      },
+      {
+        "faixa": "70-79",
+        "Feminino": 65,
+        "Masculino": 28
+      },
+      {
+        "faixa": "80+",
+        "Feminino": 15,
+        "Masculino": 12
+      }
+    ],
+    "2014": [
+      {
+        "faixa": "0-9",
+        "Feminino": 0,
+        "Masculino": 0
+      },
+      {
+        "faixa": "10-19",
+        "Feminino": 1,
+        "Masculino": 0
+      },
+      {
+        "faixa": "20-29",
+        "Feminino": 1,
+        "Masculino": 1
+      },
+      {
+        "faixa": "30-39",
+        "Feminino": 0,
+        "Masculino": 0
+      },
+      {
+        "faixa": "40-49",
+        "Feminino": 0,
+        "Masculino": 0
+      },
+      {
+        "faixa": "50-59",
+        "Feminino": 0,
+        "Masculino": 0
+      },
+      {
+        "faixa": "60-69",
+        "Feminino": 0,
+        "Masculino": 0
+      },
+      {
+        "faixa": "70-79",
+        "Feminino": 0,
+        "Masculino": 0
+      },
+      {
+        "faixa": "80+",
+        "Feminino": 0,
+        "Masculino": 0
+      }
+    ],
     "TODOS": [
       {
         "faixa": "0-9",
@@ -9477,77 +9961,542 @@
       }
     ]
   },
-  "raca_cor": [
-    {
-      "raca": "Parda",
-      "total": 18732,
-      "total_2026": 4263
-    },
-    {
-      "raca": "Ignorado/Sem Info",
-      "total": 5598,
-      "total_2026": 908
-    },
-    {
-      "raca": "Branca",
-      "total": 5084,
-      "total_2026": 805
-    },
-    {
-      "raca": "Preta",
-      "total": 1635,
-      "total_2026": 340
-    },
-    {
-      "raca": "Amarela",
-      "total": 190,
-      "total_2026": 44
-    },
-    {
-      "raca": "Indígena",
-      "total": 110,
-      "total_2026": 24
-    }
-  ],
-  "sorotipo": [
-    {
-      "sorotipo": "DENV 2",
-      "total": 9988,
-      "total_2026": 620
-    },
-    {
-      "sorotipo": "DENV 1",
-      "total": 5211,
-      "total_2026": 465
-    },
-    {
-      "sorotipo": "DENV 4",
-      "total": 3130,
-      "total_2026": 1000
-    },
-    {
-      "sorotipo": "DENV 3",
-      "total": 584,
-      "total_2026": 44
-    }
-  ],
-  "criterio": [
-    {
-      "criterio": "Laboratorial",
-      "total": 20619,
-      "total_2026": 2142
-    },
-    {
-      "criterio": "Clínico-Epidemiológico",
-      "total": 8569,
-      "total_2026": 3509
-    },
-    {
-      "criterio": "Em Investigação",
-      "total": 2161,
-      "total_2026": 733
-    }
-  ],
+  "raca_cor": {
+    "2026": [
+      {
+        "raca": "Parda",
+        "total": 4263
+      },
+      {
+        "raca": "Ignorado/Sem Info",
+        "total": 908
+      },
+      {
+        "raca": "Branca",
+        "total": 805
+      },
+      {
+        "raca": "Preta",
+        "total": 340
+      },
+      {
+        "raca": "Amarela",
+        "total": 44
+      },
+      {
+        "raca": "Indígena",
+        "total": 24
+      }
+    ],
+    "2025": [
+      {
+        "raca": "Parda",
+        "total": 1956
+      },
+      {
+        "raca": "Ignorado/Sem Info",
+        "total": 649
+      },
+      {
+        "raca": "Branca",
+        "total": 457
+      },
+      {
+        "raca": "Preta",
+        "total": 168
+      },
+      {
+        "raca": "Amarela",
+        "total": 23
+      },
+      {
+        "raca": "Indígena",
+        "total": 16
+      }
+    ],
+    "2024": [
+      {
+        "raca": "Parda",
+        "total": 3303
+      },
+      {
+        "raca": "Ignorado/Sem Info",
+        "total": 2114
+      },
+      {
+        "raca": "Branca",
+        "total": 985
+      },
+      {
+        "raca": "Preta",
+        "total": 338
+      },
+      {
+        "raca": "Amarela",
+        "total": 29
+      },
+      {
+        "raca": "Indígena",
+        "total": 25
+      }
+    ],
+    "2023": [
+      {
+        "raca": "Parda",
+        "total": 713
+      },
+      {
+        "raca": "Branca",
+        "total": 234
+      },
+      {
+        "raca": "Ignorado/Sem Info",
+        "total": 170
+      },
+      {
+        "raca": "Preta",
+        "total": 65
+      },
+      {
+        "raca": "Amarela",
+        "total": 5
+      },
+      {
+        "raca": "Indígena",
+        "total": 1
+      }
+    ],
+    "2022": [
+      {
+        "raca": "Parda",
+        "total": 557
+      },
+      {
+        "raca": "Branca",
+        "total": 133
+      },
+      {
+        "raca": "Ignorado/Sem Info",
+        "total": 117
+      },
+      {
+        "raca": "Preta",
+        "total": 42
+      },
+      {
+        "raca": "Amarela",
+        "total": 7
+      },
+      {
+        "raca": "Indígena",
+        "total": 3
+      }
+    ],
+    "2021": [
+      {
+        "raca": "Parda",
+        "total": 742
+      },
+      {
+        "raca": "Branca",
+        "total": 307
+      },
+      {
+        "raca": "Ignorado/Sem Info",
+        "total": 210
+      },
+      {
+        "raca": "Preta",
+        "total": 53
+      },
+      {
+        "raca": "Amarela",
+        "total": 8
+      },
+      {
+        "raca": "Indígena",
+        "total": 4
+      }
+    ],
+    "2020": [
+      {
+        "raca": "Parda",
+        "total": 432
+      },
+      {
+        "raca": "Branca",
+        "total": 124
+      },
+      {
+        "raca": "Ignorado/Sem Info",
+        "total": 36
+      },
+      {
+        "raca": "Preta",
+        "total": 30
+      },
+      {
+        "raca": "Amarela",
+        "total": 10
+      },
+      {
+        "raca": "Indígena",
+        "total": 1
+      }
+    ],
+    "2019": [
+      {
+        "raca": "Parda",
+        "total": 524
+      },
+      {
+        "raca": "Branca",
+        "total": 141
+      },
+      {
+        "raca": "Preta",
+        "total": 39
+      },
+      {
+        "raca": "Ignorado/Sem Info",
+        "total": 38
+      },
+      {
+        "raca": "Amarela",
+        "total": 11
+      }
+    ],
+    "2018": [
+      {
+        "raca": "Parda",
+        "total": 1475
+      },
+      {
+        "raca": "Branca",
+        "total": 409
+      },
+      {
+        "raca": "Ignorado/Sem Info",
+        "total": 150
+      },
+      {
+        "raca": "Preta",
+        "total": 146
+      },
+      {
+        "raca": "Indígena",
+        "total": 16
+      },
+      {
+        "raca": "Amarela",
+        "total": 11
+      }
+    ],
+    "2017": [
+      {
+        "raca": "Parda",
+        "total": 1035
+      },
+      {
+        "raca": "Branca",
+        "total": 262
+      },
+      {
+        "raca": "Ignorado/Sem Info",
+        "total": 179
+      },
+      {
+        "raca": "Preta",
+        "total": 98
+      },
+      {
+        "raca": "Indígena",
+        "total": 6
+      },
+      {
+        "raca": "Amarela",
+        "total": 5
+      }
+    ],
+    "2016": [
+      {
+        "raca": "Parda",
+        "total": 1721
+      },
+      {
+        "raca": "Branca",
+        "total": 440
+      },
+      {
+        "raca": "Ignorado/Sem Info",
+        "total": 269
+      },
+      {
+        "raca": "Preta",
+        "total": 138
+      },
+      {
+        "raca": "Amarela",
+        "total": 11
+      },
+      {
+        "raca": "Indígena",
+        "total": 3
+      }
+    ],
+    "2015": [
+      {
+        "raca": "Parda",
+        "total": 2009
+      },
+      {
+        "raca": "Branca",
+        "total": 787
+      },
+      {
+        "raca": "Ignorado/Sem Info",
+        "total": 755
+      },
+      {
+        "raca": "Preta",
+        "total": 178
+      },
+      {
+        "raca": "Amarela",
+        "total": 26
+      },
+      {
+        "raca": "Indígena",
+        "total": 11
+      }
+    ],
+    "2014": [
+      {
+        "raca": "Ignorado/Sem Info",
+        "total": 3
+      },
+      {
+        "raca": "Parda",
+        "total": 2
+      }
+    ],
+    "TODOS": [
+      {
+        "raca": "Parda",
+        "total": 18732
+      },
+      {
+        "raca": "Ignorado/Sem Info",
+        "total": 5598
+      },
+      {
+        "raca": "Branca",
+        "total": 5084
+      },
+      {
+        "raca": "Preta",
+        "total": 1635
+      },
+      {
+        "raca": "Amarela",
+        "total": 190
+      },
+      {
+        "raca": "Indígena",
+        "total": 110
+      }
+    ]
+  },
+  "criterio": {
+    "2026": [
+      {
+        "criterio": "Clínico-Epidemiológico",
+        "total": 3509
+      },
+      {
+        "criterio": "Laboratorial",
+        "total": 2142
+      },
+      {
+        "criterio": "Em Investigação",
+        "total": 733
+      }
+    ],
+    "2025": [
+      {
+        "criterio": "Laboratorial",
+        "total": 1759
+      },
+      {
+        "criterio": "Clínico-Epidemiológico",
+        "total": 1356
+      },
+      {
+        "criterio": "Em Investigação",
+        "total": 154
+      }
+    ],
+    "2024": [
+      {
+        "criterio": "Laboratorial",
+        "total": 4149
+      },
+      {
+        "criterio": "Clínico-Epidemiológico",
+        "total": 2323
+      },
+      {
+        "criterio": "Em Investigação",
+        "total": 322
+      }
+    ],
+    "2023": [
+      {
+        "criterio": "Laboratorial",
+        "total": 1017
+      },
+      {
+        "criterio": "Em Investigação",
+        "total": 120
+      },
+      {
+        "criterio": "Clínico-Epidemiológico",
+        "total": 51
+      }
+    ],
+    "2022": [
+      {
+        "criterio": "Laboratorial",
+        "total": 780
+      },
+      {
+        "criterio": "Em Investigação",
+        "total": 50
+      },
+      {
+        "criterio": "Clínico-Epidemiológico",
+        "total": 29
+      }
+    ],
+    "2021": [
+      {
+        "criterio": "Laboratorial",
+        "total": 1264
+      },
+      {
+        "criterio": "Clínico-Epidemiológico",
+        "total": 41
+      },
+      {
+        "criterio": "Em Investigação",
+        "total": 19
+      }
+    ],
+    "2020": [
+      {
+        "criterio": "Laboratorial",
+        "total": 573
+      },
+      {
+        "criterio": "Em Investigação",
+        "total": 37
+      },
+      {
+        "criterio": "Clínico-Epidemiológico",
+        "total": 23
+      }
+    ],
+    "2019": [
+      {
+        "criterio": "Laboratorial",
+        "total": 583
+      },
+      {
+        "criterio": "Em Investigação",
+        "total": 92
+      },
+      {
+        "criterio": "Clínico-Epidemiológico",
+        "total": 78
+      }
+    ],
+    "2018": [
+      {
+        "criterio": "Laboratorial",
+        "total": 1521
+      },
+      {
+        "criterio": "Clínico-Epidemiológico",
+        "total": 538
+      },
+      {
+        "criterio": "Em Investigação",
+        "total": 148
+      }
+    ],
+    "2017": [
+      {
+        "criterio": "Laboratorial",
+        "total": 1336
+      },
+      {
+        "criterio": "Clínico-Epidemiológico",
+        "total": 154
+      },
+      {
+        "criterio": "Em Investigação",
+        "total": 95
+      }
+    ],
+    "2016": [
+      {
+        "criterio": "Laboratorial",
+        "total": 2139
+      },
+      {
+        "criterio": "Clínico-Epidemiológico",
+        "total": 253
+      },
+      {
+        "criterio": "Em Investigação",
+        "total": 190
+      }
+    ],
+    "2015": [
+      {
+        "criterio": "Laboratorial",
+        "total": 3351
+      },
+      {
+        "criterio": "Clínico-Epidemiológico",
+        "total": 214
+      },
+      {
+        "criterio": "Em Investigação",
+        "total": 201
+      }
+    ],
+    "2014": [
+      {
+        "criterio": "Laboratorial",
+        "total": 5
+      }
+    ],
+    "TODOS": [
+      {
+        "criterio": "Laboratorial",
+        "total": 20619
+      },
+      {
+        "criterio": "Clínico-Epidemiológico",
+        "total": 8569
+      },
+      {
+        "criterio": "Em Investigação",
+        "total": 2161
+      }
+    ]
+  },
   "ranking_unidades": [
     {
       "unidade": "HOSPITAL RIO MAR",

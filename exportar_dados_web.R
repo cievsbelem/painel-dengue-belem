@@ -1,9 +1,9 @@
 # ==============================================================================
-# EXPORTADOR DE DADOS EPIDEMIOLÓGICOS PARA PORTAL WEB (GITHUB PAGES)
+# EXPORTADOR OFICIAL DE DADOS EPIDEMIOLÓGICOS PARA PORTAL WEB
 # Painel Epidemiológico da Dengue - Belém / SESMA / CIEVS
 # ==============================================================================
-# Este script extrai os dados agregados da base oficial ou sintética
-# e gera o arquivo 'dados_dengue_publico.json' 100% livre de dados pessoais (LGPD).
+# Extrai dados agregados para 'dados_dengue_publico.json'
+# 100% em conformidade com a LGPD (sem dados nominais ou individualizados).
 # ==============================================================================
 
 suppressPackageStartupMessages({
@@ -26,15 +26,15 @@ max_se_2026 <- if (nrow(d26) > 0) max(d26$SEMANA_EPID[d26$SEMANA_EPID <= 52], na
 
 # 1. Metadados Gerais
 meta <- list(
-  municipio           = "Belém - PA",
-  secretaria          = "Secretaria Municipal de Saúde (SESMA)",
-  setor               = "Centro de Informações Estratégicas em Vigilância em Saúde (CIEVS)",
-  data_atualizacao    = format(Sys.time(), "%d/%m/%Y %H:%M"),
-  ano_vigente         = 2026,
-  max_semana_vigente  = max_se_2026,
-  total_notificacoes  = nrow(df),
+  municipio            = "Belém - PA",
+  secretaria           = "Secretaria Municipal de Saúde (SESMA)",
+  setor                = "Centro de Informações Estratégicas em Vigilância em Saúde (CIEVS)",
+  data_atualizacao     = format(Sys.time(), "%d/%m/%Y %H:%M"),
+  ano_vigente          = 2026,
+  max_semana_vigente   = max_se_2026,
+  total_notificacoes   = nrow(df),
   populacao_referencia = pop_belem,
-  serie_historica     = paste0(min(anos_disp), "–", max(anos_disp))
+  serie_historica      = paste0(min(anos_disp), "–", max(anos_disp))
 )
 
 # 2. KPIs por Ano
@@ -43,11 +43,12 @@ calc_kpis <- function(sub_df) {
   notif   <- nrow(sub_df)
   conf    <- sum(sub_df$CLASSI_FIN == "Confirmado", na.rm = TRUE)
   desc    <- sum(sub_df$CLASSI_FIN == "Descartado", na.rm = TRUE)
-  inv     <- sum(sub_df$CLASSI_FIN == "Em Investigação/Suspeito", na.rm = TRUE)
+  inv     <- sum(sub_df$CLASSI_FIN %in% c("Em Investigação/Suspeito", "Suspeito", "Em Investigação"), na.rm = TRUE)
   inconc  <- sum(sub_df$CLASSI_FIN == "Inconclusivo", na.rm = TRUE)
   prov    <- pmax(0, notif - desc)
-  obit    <- sum(sub_df$EVOLUCAO == "Óbito por dengue", na.rm = TRUE)
+  obit    <- sum(grepl("Óbito por dengue|obito por dengue", sub_df$EVOLUCAO, ignore.case = TRUE), na.rm = TRUE)
   incid   <- round((conf / pop_belem) * 100000, 1)
+  incid_prov <- round((prov / pop_belem) * 100000, 1)
   letal   <- if (conf > 0) round((obit / conf) * 100, 2) else 0
   
   list(
@@ -59,6 +60,7 @@ calc_kpis <- function(sub_df) {
     provaveis      = prov,
     obitos         = obit,
     incidencia     = incid,
+    incidencia_prov = incid_prov,
     letalidade     = letal
   )
 }
@@ -69,7 +71,7 @@ for (a in as.character(anos_disp)) {
 }
 kpis_por_ano[["TODOS"]] <- calc_kpis(df)
 
-# 3. Série Semanal por Ano (Semanas 1 a 53)
+# 3. Série Semanal por Ano
 serie_semanal <- list()
 for (a in as.character(anos_disp)) {
   df_a <- df %>% filter(ANO_NOTIF == as.numeric(a))
@@ -82,7 +84,7 @@ for (a in as.character(anos_disp)) {
       notificados  = n(),
       confirmados  = sum(CLASSI_FIN == "Confirmado", na.rm = TRUE),
       descartados  = sum(CLASSI_FIN == "Descartado", na.rm = TRUE),
-      investigacao = sum(CLASSI_FIN == "Em Investigação/Suspeito", na.rm = TRUE),
+      investigacao = sum(CLASSI_FIN %in% c("Em Investigação/Suspeito", "Suspeito", "Em Investigação"), na.rm = TRUE),
       .groups      = "drop"
     ) %>%
     arrange(semana)
@@ -90,7 +92,7 @@ for (a in as.character(anos_disp)) {
   serie_semanal[[a]] <- sems_df
 }
 
-# 4. Diagrama de Controle (Canal Endêmico Municipal)
+# 4. Diagrama de Controle (Canal Endêmico)
 grid_base <- expand.grid(ANO_NOTIF = anos_base_canal, SEMANA_EPID = 1:52)
 cont_base <- df %>%
   filter(ANO_NOTIF %in% anos_base_canal, SEMANA_EPID <= 52) %>%
@@ -122,7 +124,7 @@ canal_endemico <- diag_stat %>%
 
 # 5. Distribuição por Bairros de Belém
 bairros_df <- df %>%
-  filter(NM_BAIRRO_MAPA != "NÃO INFORMADO") %>%
+  filter(!is.na(NM_BAIRRO_MAPA), NM_BAIRRO_MAPA != "", NM_BAIRRO_MAPA != "NÃO INFORMADO") %>%
   group_by(bairro = NM_BAIRRO_MAPA) %>%
   summarise(
     total       = n(),
@@ -149,48 +151,54 @@ calc_piramide <- function(sub_df) {
   if (!"Masculino" %in% names(pir)) pir$Masculino <- 0
   if (!"Feminino" %in% names(pir)) pir$Feminino <- 0
   
-  pir %>% arrange(match(faixa, faixas_rotulos))
+  # Garante que todas as faixas existam
+  grid_faixas <- data.frame(faixa = factor(faixas_rotulos, levels = faixas_rotulos))
+  res <- grid_faixas %>%
+    left_join(pir, by = "faixa") %>%
+    mutate(
+      Masculino = ifelse(is.na(Masculino), 0, Masculino),
+      Feminino  = ifelse(is.na(Feminino), 0, Feminino)
+    )
+  res
 }
 
 piramide_por_ano <- list()
-for (a in as.character(c(2026, 2025, 2024))) {
-  if (a %in% as.character(anos_disp)) {
-    piramide_por_ano[[a]] <- calc_piramide(df %>% filter(ANO_NOTIF == as.numeric(a)))
-  }
+for (a in as.character(anos_disp)) {
+  piramide_por_ano[[a]] <- calc_piramide(df %>% filter(ANO_NOTIF == as.numeric(a)))
 }
 piramide_por_ano[["TODOS"]] <- calc_piramide(df)
 
-# 7. Raça / Cor (2026 e Geral)
-raca_df <- df %>%
-  group_by(raca = CS_RACA) %>%
-  summarise(
-    total = n(),
-    total_2026 = sum(ANO_NOTIF == 2026, na.rm = TRUE),
-    .groups = "drop"
-  ) %>%
-  arrange(desc(total_2026))
+# 7. Raça / Cor por Ano
+calc_raca <- function(sub_df) {
+  sub_df %>%
+    mutate(CS_RACA = ifelse(is.na(CS_RACA) | CS_RACA == "", "Ignorado/Sem Info", CS_RACA)) %>%
+    group_by(raca = CS_RACA) %>%
+    summarise(total = n(), .groups = "drop") %>%
+    arrange(desc(total))
+}
 
-# 8. Sorotipo e Critério
-sorotipo_df <- df %>%
-  filter(!tp_sorotipo %in% c("Não Realizado/Sem Info", NA)) %>%
-  group_by(sorotipo = tp_sorotipo) %>%
-  summarise(
-    total = n(),
-    total_2026 = sum(ANO_NOTIF == 2026, na.rm = TRUE),
-    .groups = "drop"
-  ) %>%
-  arrange(desc(total))
+raca_por_ano <- list()
+for (a in as.character(anos_disp)) {
+  raca_por_ano[[a]] <- calc_raca(df %>% filter(ANO_NOTIF == as.numeric(a)))
+}
+raca_por_ano[["TODOS"]] <- calc_raca(df)
 
-criterio_df <- df %>%
-  group_by(criterio = CRITERIO_FINAL) %>%
-  summarise(
-    total = n(),
-    total_2026 = sum(ANO_NOTIF == 2026, na.rm = TRUE),
-    .groups = "drop"
-  ) %>%
-  arrange(desc(total))
+# 8. Critério Diagnóstico por Ano
+calc_criterio <- function(sub_df) {
+  sub_df %>%
+    mutate(CRITERIO_FINAL = ifelse(is.na(CRITERIO_FINAL) | CRITERIO_FINAL == "", "Em Investigação", CRITERIO_FINAL)) %>%
+    group_by(criterio = CRITERIO_FINAL) %>%
+    summarise(total = n(), .groups = "drop") %>%
+    arrange(desc(total))
+}
 
-# 9. Ranking de Unidades Notificadoras (Top 20)
+criterio_por_ano <- list()
+for (a in as.character(anos_disp)) {
+  criterio_por_ano[[a]] <- calc_criterio(df %>% filter(ANO_NOTIF == as.numeric(a)))
+}
+criterio_por_ano[["TODOS"]] <- calc_criterio(df)
+
+# 9. Ranking de Unidades Notificadoras (Top 25)
 ranking_df <- df %>%
   filter(!is.na(UNIDADE_NOTIF), UNIDADE_NOTIF != "", UNIDADE_NOTIF != "NÃO INFORMADO") %>%
   group_by(unidade = UNIDADE_NOTIF) %>%
@@ -202,7 +210,7 @@ ranking_df <- df %>%
   arrange(desc(total_2026), desc(total)) %>%
   head(25)
 
-# Consolidação final do objeto JSON
+# Consolidação do objeto JSON
 dados_web <- list(
   meta             = meta,
   anos_disponiveis = anos_disp,
@@ -211,12 +219,14 @@ dados_web <- list(
   canal_endemico   = canal_endemico,
   bairros          = bairros_df,
   piramide         = piramide_por_ano,
-  raca_cor         = raca_df,
-  sorotipo         = sorotipo_df,
-  criterio         = criterio_df,
+  raca_cor         = raca_por_ano,
+  criterio         = criterio_por_ano,
   ranking_unidades = ranking_df
 )
 
 caminho_saida <- "dados_dengue_publico.json"
-write_json(dados_web, caminho_saida, pretty = TRUE, auto_unbox = TRUE)
+# Escrever em UTF-8 estrito
+json_txt <- toJSON(dados_web, pretty = TRUE, auto_unbox = TRUE)
+writeLines(json_txt, con = caminho_saida, useBytes = FALSE)
+
 cat(paste0("Arquivo '", caminho_saida, "' gerado com sucesso! (", round(file.info(caminho_saida)$size / 1024, 1), " KB)\n"))

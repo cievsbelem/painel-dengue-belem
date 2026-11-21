@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Painel Epidemiológico da Dengue — Belém / SESMA / CIEVS</title>
   
-  <!-- Fontes e Estilos Modernos -->
+  <!-- Fontes Oficiais e Estilos -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   
@@ -16,353 +16,554 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-  <!-- Chart.js para os Gráficos Interativos -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <!-- Plotly.js para gráficos interativos idênticos ao R Shiny -->
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 
   <style>
     :root {
       --primary-color: #1E3A8A;
+      --primary-dark: #172554;
       --secondary-color: #3B82F6;
-      --accent-color: #DC2626;
-      --bg-color: #F8FAFC;
+      --accent-alert: #DC2626;
+      --accent-warning: #F59E0B;
+      --accent-success: #10B981;
+      --bg-page: #F1F5F9;
+      --sidebar-bg: #FFFFFF;
+      --card-bg: #FFFFFF;
+      --border-color: #E2E8F0;
     }
     
     body {
-      background-color: var(--bg-color);
+      background-color: var(--bg-page);
       color: #1E293B;
       font-family: 'Plus Jakarta Sans', sans-serif;
+      margin: 0;
+      padding: 0;
     }
-    
-    .navbar-brand-header {
-      background: linear-gradient(135deg, #1E3A8A 0%, #172554 100%);
+
+    /* Top Header com Identidade Institucional Oficial */
+    .top-navbar-official {
+      background: linear-gradient(135deg, #1E3A8A 0%, #0F172A 100%);
       color: #FFFFFF;
-      padding: 14px 0;
       border-bottom: 3px solid #3B82F6;
+      padding: 10px 24px;
+    }
+    .header-sub {
+      font-size: 0.72rem;
+      letter-spacing: 0.5px;
+      color: #93C5FD;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .header-main-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      margin: 0;
+      color: #FFFFFF;
+    }
+
+    /* Layout estilo bslib com Barra Lateral (Sidebar) */
+    .layout-wrapper {
+      display: flex;
+      min-height: calc(100vh - 65px);
     }
     
-    .card-kpi {
+    .sidebar-controls {
+      width: 290px;
+      min-width: 290px;
+      background: var(--sidebar-bg);
+      border-right: 1px solid var(--border-color);
+      padding: 20px 18px;
+    }
+
+    .main-viewport {
+      flex: 1;
+      padding: 20px 24px;
+      overflow-x: hidden;
+    }
+
+    /* Abas de Navegação (Tabs) */
+    .nav-tabs-official {
+      border-bottom: 2px solid var(--border-color);
+      margin-bottom: 20px;
+      gap: 6px;
+    }
+    .nav-tabs-official .nav-link {
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: #64748B;
+      border: 1px solid transparent;
+      border-radius: 8px 8px 0 0;
+      padding: 10px 18px;
+      background: transparent;
+      transition: all 0.2s ease-in-out;
+    }
+    .nav-tabs-official .nav-link:hover {
+      color: var(--primary-color);
+      background-color: #E2E8F0;
+    }
+    .nav-tabs-official .nav-link.active {
+      color: #FFFFFF;
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+
+    /* ValueBoxes / Cartões de Indicadores */
+    .kpi-card {
       background: #FFFFFF;
-      border: 1px solid #E2E8F0;
-      border-radius: 12px;
-      padding: 16px;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-      transition: transform 0.2s, box-shadow 0.2s;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 14px 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      border-left: 4px solid var(--primary-color);
+      transition: transform 0.15s, box-shadow 0.15s;
     }
-    .card-kpi:hover {
+    .kpi-card:hover {
       transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(30, 58, 138, 0.1);
+      box-shadow: 0 4px 12px rgba(30, 58, 138, 0.08);
     }
-    
-    .kpi-title {
-      font-size: 0.75rem;
+    .kpi-card.kpi-blue { border-left-color: #1E3A8A; }
+    .kpi-card.kpi-cyan { border-left-color: #0284C7; }
+    .kpi-card.kpi-green { border-left-color: #10B981; }
+    .kpi-card.kpi-amber { border-left-color: #F59E0B; }
+    .kpi-card.kpi-gray { border-left-color: #64748B; }
+    .kpi-card.kpi-red { border-left-color: #DC2626; }
+    .kpi-card.kpi-purple { border-left-color: #8B5CF6; }
+
+    .kpi-label {
+      font-size: 0.72rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       color: #64748B;
       margin-bottom: 4px;
     }
-    
     .kpi-value {
-      font-size: 1.6rem;
+      font-size: 1.55rem;
       font-weight: 800;
-      color: #1E3A8A;
+      color: #0F172A;
       margin: 0;
+      line-height: 1.2;
     }
-    
-    .chart-container-box {
+    .kpi-subtext {
+      font-size: 0.72rem;
+      color: #94A3B8;
+      margin-top: 4px;
+    }
+
+    /* Caixas de Gráficos e Cartões */
+    .dashboard-card {
       background: #FFFFFF;
-      border: 1px solid #E2E8F0;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-      margin-bottom: 24px;
-    }
-    
-    .nav-tabs .nav-link {
-      font-weight: 600;
-      color: #64748B;
-      border: none;
-      padding: 12px 20px;
-    }
-    .nav-tabs .nav-link.active {
-      color: var(--primary-color);
-      border-bottom: 3px solid var(--primary-color);
-      background: transparent;
-    }
-    
-    #mapa-belem {
-      height: 480px;
-      width: 100%;
+      border: 1px solid var(--border-color);
       border-radius: 10px;
+      padding: 18px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+      margin-bottom: 20px;
     }
-    
+    .dashboard-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      border-bottom: 1px solid #F1F5F9;
+      padding-bottom: 10px;
+    }
+    .dashboard-card-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--primary-color);
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Status Box na Sidebar */
+    .status-badge-box {
+      background-color: #F0FDF4;
+      border: 1px solid #BBF7D0;
+      border-left: 4px solid #10B981;
+      padding: 10px 12px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      color: #166534;
+      margin-top: 16px;
+    }
+
+    /* Mapa Leaflet */
+    #mapa-belem {
+      height: 520px;
+      width: 100%;
+      border-radius: 8px;
+      background: #F8FAFC;
+    }
+
     .table-scrollable {
       max-height: 480px;
       overflow-y: auto;
+    }
+
+    @media (max-width: 992px) {
+      .layout-wrapper {
+        flex-direction: column;
+      }
+      .sidebar-controls {
+        width: 100%;
+        min-width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- 1. Header Oficial -->
-  <header class="navbar-brand-header shadow-sm">
-    <div class="container-fluid px-4">
-      <div class="d-flex align-items-center justify-content-between flex-wrap">
-        <div class="d-flex align-items-center mb-2 mb-md-0">
-          <img src="www/logo_sesma.png" alt="SESMA Belém" height="48" class="me-3" onerror="this.style.display='none'">
-          <div>
-            <h1 class="h5 m-0 fw-bold">PREFEITURA DE BELÉM — SECRETARIA MUNICIPAL DE SAÚDE (SESMA)</h1>
-            <p class="m-0 small opacity-75">Centro de Informações Estratégicas em Vigilância em Saúde (CIEVS) — Painel Oficial da Dengue</p>
-          </div>
-        </div>
-        <div class="d-flex align-items-center gap-2">
-          <span class="badge bg-primary text-uppercase px-3 py-2">Vigilância Epidemiológica</span>
-          <span class="badge bg-success px-3 py-2"><i class="bi bi-shield-check me-1"></i> LGPD Compliant</span>
-        </div>
+  <!-- Top Navbar Oficial (Prefeitura / SESMA / CIEVS) -->
+  <header class="top-navbar-official d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center gap-3">
+      <div class="bg-white text-primary rounded p-1 d-flex align-items-center justify-content-center" style="width: 38px; height: 38px;">
+        <i class="bi bi-activity fs-4 text-primary"></i>
       </div>
+      <div>
+        <p class="header-sub">Prefeitura de Belém &bull; Secretaria Municipal de Saúde &bull; CIEVS</p>
+        <h1 class="header-main-title">Painel Epidemiológico da Dengue &bull; Belém / PA</h1>
+      </div>
+    </div>
+    <div class="d-none d-md-flex align-items-center gap-2">
+      <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill fw-bold">
+        <i class="bi bi-shield-check me-1"></i> Dados Oficiais SINAN &bull; LGPD Compliant
+      </span>
     </div>
   </header>
 
-  <!-- 2. Barra de Controle e Metadados -->
-  <div class="bg-white border-bottom py-2 shadow-sm mb-4">
-    <div class="container-fluid px-4">
-      <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
-        <div class="d-flex align-items-center gap-2">
-          <label for="select-ano" class="fw-bold small text-secondary m-0">Ano de Análise:</label>
-          <select id="select-ano" class="form-select form-select-sm fw-semibold" style="width: 180px;">
-            <option value="2026">2026</option>
-          </select>
-        </div>
-        
-        <div class="small text-muted d-flex align-items-center gap-3">
-          <span><i class="bi bi-calendar-check me-1 text-primary"></i> Vigência: <b id="meta-semana-vigente" class="text-dark">SE 44 / 2026</b></span>
-          <span><i class="bi bi-database me-1 text-primary"></i> Série Total: <b id="meta-total-notif" class="text-dark">...</b> notificações</span>
-          <span><i class="bi bi-clock-history me-1 text-primary"></i> Atualizado em: <b id="meta-data-atualizacao" class="text-dark">...</b></span>
-        </div>
+  <!-- Layout Wrapper: Sidebar + Conteúdo Principal -->
+  <div class="layout-wrapper">
+    
+    <!-- Barra Lateral (Sidebar estilo Shiny bslib) -->
+    <aside class="sidebar-controls">
+      <div class="d-flex align-items-center gap-2 mb-3 pb-2 border-bottom">
+        <i class="bi bi-sliders text-primary fs-5"></i>
+        <h6 class="fw-bold m-0 text-dark">Controles & Filtros</h6>
       </div>
-    </div>
-  </div>
 
-  <!-- Loading Spinner -->
-  <div id="loading-spinner" class="container text-center py-5">
-    <div class="spinner-border text-primary" role="status"></div>
-    <p class="mt-3 text-muted fw-semibold">Carregando dados epidemiológicos oficiais de Belém...</p>
-  </div>
+      <!-- Filtro de Ano Epidemiológico -->
+      <div class="mb-3">
+        <label for="select-ano" class="form-label fw-bold small text-muted mb-1">
+          <i class="bi bi-calendar3 me-1"></i> Ano Epidemiológico:
+        </label>
+        <select id="select-ano" class="form-select form-select-sm fw-bold border-primary shadow-none">
+          <option value="2026" selected>2026 (Ano Vigente)</option>
+        </select>
+        <small class="text-muted" style="font-size: 0.7rem;">Altera indicadores, curvas e análises demográficas.</small>
+      </div>
 
-  <!-- 3. Conteúdo Principal -->
-  <main id="conteudo-painel" class="container-fluid px-4" style="display: none;">
+      <!-- Caixa de Informações da Vigilância -->
+      <div class="card bg-light border-0 p-3 mb-3" style="border-radius: 8px;">
+        <div class="fw-bold text-dark small mb-2"><i class="bi bi-info-circle text-primary me-1"></i> Situação da Base</div>
+        <div class="d-flex justify-content-between small text-muted mb-1">
+          <span>Semana Vigente:</span>
+          <span class="fw-bold text-dark" id="meta-semana-vigente">SE -- / ----</span>
+        </div>
+        <div class="d-flex justify-content-between small text-muted mb-1">
+          <span>Última Atualização:</span>
+          <span class="fw-bold text-dark" id="meta-data-atualizacao">--/--/----</span>
+        </div>
+        <div class="d-flex justify-content-between small text-muted mb-1">
+          <span>Total Notificações:</span>
+          <span class="fw-bold text-primary" id="meta-total-notif">--</span>
+        </div>
+        <div class="d-flex justify-content-between small text-muted">
+          <span>Pop. Belém (IBGE):</span>
+          <span class="fw-bold text-dark">1.303.403 hab.</span>
+        </div>
+      </div>
 
-    <!-- Linha de Cards KPIs -->
-    <div class="row g-3 mb-4">
-      <div class="col-6 col-md-3 col-xl-1-5">
-        <div class="card-kpi">
-          <div class="kpi-title text-primary"><i class="bi bi-clipboard-data me-1"></i> Notificados</div>
-          <div class="kpi-value text-primary" id="kpi-notificados">-</div>
+      <!-- Caixa de Status Verde -->
+      <div class="status-badge-box">
+        <div class="fw-bold"><i class="bi bi-check-circle-fill me-1"></i> Base Integrada</div>
+        <div class="mt-1" style="font-size: 0.72rem; line-height: 1.3;">
+          Dados agregados para vigilância epidemiológica conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).
         </div>
       </div>
-      <div class="col-6 col-md-3 col-xl-1-5">
-        <div class="card-kpi">
-          <div class="kpi-title text-danger"><i class="bi bi-check-circle me-1"></i> Confirmados</div>
-          <div class="kpi-value text-danger" id="kpi-confirmados">-</div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3 col-xl-1-5">
-        <div class="card-kpi">
-          <div class="kpi-title text-secondary"><i class="bi bi-x-circle me-1"></i> Descartados</div>
-          <div class="kpi-value text-secondary" id="kpi-descartados">-</div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3 col-xl-1-5">
-        <div class="card-kpi">
-          <div class="kpi-title text-warning"><i class="bi bi-hourglass-split me-1"></i> Em Investigação</div>
-          <div class="kpi-value text-warning" id="kpi-investigacao">-</div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3 col-xl-1-5">
-        <div class="card-kpi">
-          <div class="kpi-title text-dark"><i class="bi bi-person-x me-1"></i> Óbitos</div>
-          <div class="kpi-value text-dark" id="kpi-obitos">-</div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3 col-xl-1-5">
-        <div class="card-kpi">
-          <div class="kpi-title text-info"><i class="bi bi-graph-up me-1"></i> Incidência</div>
-          <div class="kpi-value text-info fs-4" id="kpi-incidencia">-</div>
-        </div>
-      </div>
-    </div>
+    </aside>
 
-    <!-- Navegação por Abas -->
-    <ul class="nav nav-tabs mb-4" id="painelTab" role="tablist">
-      <li class="nav-item">
-        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-visao-geral" type="button">
-          <i class="bi bi-bar-chart-fill me-1"></i> 1. Curva Semanal
-        </button>
-      </li>
-      <li class="nav-item">
-        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-canal" type="button">
-          <i class="bi bi-shield-shaded me-1"></i> 2. Canal Endêmico (2026)
-        </button>
-      </li>
-      <li class="nav-item">
-        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-espacial" type="button">
-          <i class="bi bi-geo-alt-fill me-1"></i> 3. Análise Espacial (Belém)
-        </button>
-      </li>
-      <li class="nav-item">
-        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-sociodemo" type="button">
-          <i class="bi bi-people-fill me-1"></i> 4. Sociodemográfico
-        </button>
-      </li>
-      <li class="nav-item">
-        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-unidades" type="button">
-          <i class="bi bi-hospital-fill me-1"></i> 5. Rede Notificadora
-        </button>
-      </li>
-    </ul>
-
-    <!-- Conteúdo das Abas -->
-    <div class="tab-content" id="painelTabContent">
+    <!-- Área Principal do Dashboard -->
+    <main class="main-viewport">
       
-      <!-- ABA 1: VISÃO GERAL / CURVA SEMANAL -->
-      <div class="tab-pane fade show active" id="tab-visao-geral">
-        <div class="chart-container-box">
-          <div class="d-flex justify-content-between align-items-center mb-3">
-            <h2 class="h6 fw-bold m-0 text-primary">Distribuição Semanal de Casos Notificados e Confirmados</h2>
-            <span class="badge bg-light text-muted border">Barras por Semana Epidemiológica</span>
-          </div>
-          <div style="height: 420px;">
-            <canvas id="chart-semanal"></canvas>
-          </div>
+      <!-- Indicador de Carregamento -->
+      <div id="loading-spinner" class="text-center py-5">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
+          <span class="visually-hidden">Carregando painel...</span>
         </div>
+        <h5 class="fw-bold text-primary mt-3">Carregando dados epidemiológicos oficiais...</h5>
+        <p class="text-muted small">Processando série histórica da Dengue em Belém</p>
       </div>
 
-      <!-- ABA 2: CANAL ENDÊMICO (ANO VIGENTE 2026) -->
-      <div class="tab-pane fade" id="tab-canal">
-        <div class="chart-container-box">
-          <div class="d-flex justify-content-between align-items-center mb-3">
-            <div>
-              <h2 class="h6 fw-bold m-0 text-primary">Diagrama de Controle Municipal (Canal Endêmico - Belém / 2026)</h2>
-              <small class="text-muted">Série Histórica Não Epidêmica de Referência: 2015 a 2019, 2022 e 2023 | Limite Superior: Média + 1,96 × DP</small>
-            </div>
-            <span class="badge bg-warning text-dark">Monitoramento Oficial 2026</span>
-          </div>
-          <div style="height: 440px;">
-            <canvas id="chart-canal"></canvas>
-          </div>
-        </div>
-      </div>
-
-      <!-- ABA 3: ANÁLISE ESPACIAL -->
-      <div class="tab-pane fade" id="tab-espacial">
-        <div class="row g-3">
-          <div class="col-lg-8">
-            <div class="chart-container-box">
-              <h2 class="h6 fw-bold mb-3 text-primary">Mapa de Notificações por Bairros Oficiais de Belém</h2>
-              <div id="mapa-belem"></div>
+      <!-- Conteúdo do Painel (Exibido após carregamento dos dados) -->
+      <div id="conteudo-painel" style="display: none;">
+        
+        <!-- Cartões de Indicadores (KPIs / ValueBoxes Oficiais) -->
+        <div class="row g-2 mb-4">
+          <div class="col-6 col-md-4 col-xl">
+            <div class="kpi-card kpi-blue">
+              <span class="kpi-label">Notificados</span>
+              <h3 class="kpi-value" id="kpi-notificados">0</h3>
+              <span class="kpi-subtext">Total no período</span>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="chart-container-box">
-              <h2 class="h6 fw-bold mb-3 text-primary">Ranking de Casos por Bairro</h2>
-              <div class="table-scrollable">
-                <table class="table table-sm table-hover align-middle">
-                  <thead class="table-light sticky-top">
-                    <tr>
-                      <th>#</th>
-                      <th>Bairro</th>
-                      <th class="text-end">2026</th>
-                      <th class="text-end">Histórico</th>
-                    </tr>
-                  </thead>
-                  <tbody id="tbody-bairros"></tbody>
-                </table>
-              </div>
+          <div class="col-6 col-md-4 col-xl">
+            <div class="kpi-card kpi-cyan">
+              <span class="kpi-label">Casos Prováveis</span>
+              <h3 class="kpi-value text-info" id="kpi-provaveis">0</h3>
+              <span class="kpi-subtext">Notif. − Descartados</span>
             </div>
           </div>
-        </div>
-      </div>
-
-      <!-- ABA 4: SOCIODEMOGRÁFICO -->
-      <div class="tab-pane fade" id="tab-sociodemo">
-        <div class="row g-3">
-          <div class="col-lg-7">
-            <div class="chart-container-box">
-              <h2 class="h6 fw-bold mb-3 text-primary">Pirâmide Etária por Sexo</h2>
-              <div style="height: 380px;">
-                <canvas id="chart-piramide"></canvas>
-              </div>
+          <div class="col-6 col-md-4 col-xl">
+            <div class="kpi-card kpi-green">
+              <span class="kpi-label">Confirmados</span>
+              <h3 class="kpi-value text-success" id="kpi-confirmados">0</h3>
+              <span class="kpi-subtext">Crit. Lab. ou Clínico</span>
             </div>
           </div>
-          <div class="col-lg-5">
-            <div class="chart-container-box">
-              <h2 class="h6 fw-bold mb-3 text-primary">Distribuição por Raça/Cor</h2>
-              <div style="height: 380px;">
-                <canvas id="chart-raca"></canvas>
-              </div>
+          <div class="col-6 col-md-4 col-xl">
+            <div class="kpi-card kpi-gray">
+              <span class="kpi-label">Descartados</span>
+              <h3 class="kpi-value text-muted" id="kpi-descartados">0</h3>
+              <span class="kpi-subtext">Diagnóstico negativo</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-xl">
+            <div class="kpi-card kpi-amber">
+              <span class="kpi-label">Em Investigação</span>
+              <h3 class="kpi-value text-warning" id="kpi-investigacao">0</h3>
+              <span class="kpi-subtext">Aguardando laudo</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-xl">
+            <div class="kpi-card kpi-purple">
+              <span class="kpi-label">Incidência /100k</span>
+              <h3 class="kpi-value text-primary" id="kpi-incidencia">0,0</h3>
+              <span class="kpi-subtext">Casos conf. / pop.</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-xl">
+            <div class="kpi-card kpi-red">
+              <span class="kpi-label">Óbitos Confirmados</span>
+              <h3 class="kpi-value text-danger" id="kpi-obitos">0</h3>
+              <span class="kpi-subtext" id="kpi-letalidade">Letalidade: 0,00%</span>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- ABA 5: REDE NOTIFICADORA & DIAGNÓSTICO -->
-      <div class="tab-pane fade" id="tab-unidades">
-        <div class="row g-3">
-          <div class="col-lg-7">
-            <div class="chart-container-box">
-              <h2 class="h6 fw-bold mb-3 text-primary">Principais Estabelecimentos Notificadores (CNES)</h2>
-              <div class="table-scrollable">
-                <table class="table table-sm table-hover align-middle">
-                  <thead class="table-light sticky-top">
-                    <tr>
-                      <th>Posição</th>
-                      <th>Unidade / Estabelecimento</th>
-                      <th class="text-end">2026</th>
-                      <th class="text-end">Histórico</th>
-                    </tr>
-                  </thead>
-                  <tbody id="tbody-unidades"></tbody>
-                </table>
+        <!-- Abas Oficiais estilo Shiny bslib (Visão Geral, Canal Endêmico, Espacial, Sociodemo, Rede) -->
+        <ul class="nav nav-tabs nav-tabs-official" id="painelTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="tab-visao-btn" data-bs-toggle="tab" data-bs-target="#tab-visao" type="button" role="tab">
+              <i class="bi bi-bar-chart-fill me-1"></i> Visão Geral & Curva Semanal
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab-canal-btn" data-bs-toggle="tab" data-bs-target="#tab-canal" type="button" role="tab">
+              <i class="bi bi-graph-up-arrow me-1"></i> Canal Endêmico (Diagrama de Controle)
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab-espacial-btn" data-bs-toggle="tab" data-bs-target="#tab-espacial" type="button" role="tab">
+              <i class="bi bi-geo-alt-fill me-1"></i> Análise Espacial (Bairros de Belém)
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab-sociodemo-btn" data-bs-toggle="tab" data-bs-target="#tab-sociodemo" type="button" role="tab">
+              <i class="bi bi-people-fill me-1"></i> Perfil Sociodemográfico
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab-rede-btn" data-bs-toggle="tab" data-bs-target="#tab-rede" type="button" role="tab">
+              <i class="bi bi-hospital me-1"></i> Rede Notificadora & Diagnóstico
+            </button>
+          </li>
+        </ul>
+
+        <!-- Conteúdo das Abas -->
+        <div class="tab-content" id="painelTabContent">
+          
+          <!-- ABA 1: VISÃO GERAL / CURVA SEMANAL (PLOTLY) -->
+          <div class="tab-pane fade show active" id="tab-visao" role="tabpanel">
+            <div class="dashboard-card">
+              <div class="dashboard-card-header">
+                <div>
+                  <h2 class="dashboard-card-title">
+                    <i class="bi bi-bar-chart-line-fill"></i> Curva Epidêmica Semanal (Notificados vs Confirmados)
+                  </h2>
+                  <small class="text-muted">Distribuição temporal por Semana Epidemiológica (SE 1 a SE 53)</small>
+                </div>
+                <span class="badge bg-light text-primary border px-2 py-1 small fw-bold">Plotly Interativo</span>
+              </div>
+              <div id="plot-semanal" style="height: 440px; width: 100%;"></div>
+            </div>
+          </div>
+
+          <!-- ABA 2: CANAL ENDÊMICO / DIAGRAMA DE CONTROLE (PLOTLY) -->
+          <div class="tab-pane fade" id="tab-canal" role="tabpanel">
+            <div class="dashboard-card">
+              <div class="dashboard-card-header">
+                <div>
+                  <h2 class="dashboard-card-title text-danger">
+                    <i class="bi bi-graph-up-arrow"></i> Diagrama de Controle Oficial (Canal Endêmico Municipal — 2026)
+                  </h2>
+                  <small class="text-muted">
+                    Série Histórica Não Epidêmica: 2015 a 2019, 2022 e 2023 | Limite Superior: Média + 1,96 &times; DP
+                  </small>
+                </div>
+                <span class="badge bg-warning-subtle text-warning-emphasis border border-warning px-2 py-1 fw-bold">Monitoramento Epidemiológico</span>
+              </div>
+              <div id="plot-canal" style="height: 460px; width: 100%;"></div>
+            </div>
+          </div>
+
+          <!-- ABA 3: ANÁLISE ESPACIAL (LEAFLET + TABELA) -->
+          <div class="tab-pane fade" id="tab-espacial" role="tabpanel">
+            <div class="row g-3">
+              <div class="col-lg-8">
+                <div class="dashboard-card mb-0 h-100">
+                  <div class="dashboard-card-header">
+                    <h2 class="dashboard-card-title">
+                      <i class="bi bi-map-fill"></i> Mapa Coroplético de Casos por Bairros de Belém
+                    </h2>
+                    <span class="badge bg-light text-muted border">Malha Cartográfica Oficial</span>
+                  </div>
+                  <div id="mapa-belem"></div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="dashboard-card mb-0 h-100">
+                  <div class="dashboard-card-header">
+                    <h2 class="dashboard-card-title">
+                      <i class="bi bi-list-ol"></i> Ranking de Bairros
+                    </h2>
+                  </div>
+                  <div class="mb-2">
+                    <input type="text" id="busca-bairro" class="form-control form-control-sm" placeholder="Buscar bairro...">
+                  </div>
+                  <div class="table-scrollable">
+                    <table class="table table-sm table-hover align-middle mb-0">
+                      <thead class="table-light sticky-top">
+                        <tr>
+                          <th>#</th>
+                          <th>Bairro</th>
+                          <th class="text-end">2026</th>
+                          <th class="text-end">Total</th>
+                        </tr>
+                      </thead>
+                      <tbody id="tbody-bairros"></tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-5">
-            <div class="chart-container-box">
-              <h2 class="h6 fw-bold mb-3 text-primary">Critério de Confirmação</h2>
-              <div style="height: 380px;">
-                <canvas id="chart-criterio"></canvas>
+
+          <!-- ABA 4: SOCIODEMOGRÁFICO (PLOTLY PIRÂMIDE + RAÇA/COR) -->
+          <div class="tab-pane fade" id="tab-sociodemo" role="tabpanel">
+            <div class="row g-3">
+              <div class="col-lg-7">
+                <div class="dashboard-card mb-0 h-100">
+                  <div class="dashboard-card-header">
+                    <h2 class="dashboard-card-title">
+                      <i class="bi bi-people"></i> Pirâmide Etária por Sexo
+                    </h2>
+                    <span class="badge bg-light text-muted border">Faixas Etárias Decenais</span>
+                  </div>
+                  <div id="plot-piramide" style="height: 420px; width: 100%;"></div>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="dashboard-card mb-0 h-100">
+                  <div class="dashboard-card-header">
+                    <h2 class="dashboard-card-title">
+                      <i class="bi bi-pie-chart"></i> Distribuição por Raça/Cor
+                    </h2>
+                  </div>
+                  <div id="plot-raca" style="height: 420px; width: 100%;"></div>
+                </div>
               </div>
             </div>
           </div>
+
+          <!-- ABA 5: REDE NOTIFICADORA & DIAGNÓSTICO (PLOTLY CRITÉRIO + TABELA CNES) -->
+          <div class="tab-pane fade" id="tab-rede" role="tabpanel">
+            <div class="row g-3">
+              <div class="col-lg-7">
+                <div class="dashboard-card mb-0 h-100">
+                  <div class="dashboard-card-header">
+                    <h2 class="dashboard-card-title">
+                      <i class="bi bi-building"></i> Principais Estabelecimentos Notificadores (CNES)
+                    </h2>
+                    <span class="badge bg-light text-muted border">Hospitais, UPAs e UBS</span>
+                  </div>
+                  <div class="table-scrollable">
+                    <table class="table table-sm table-hover align-middle mb-0">
+                      <thead class="table-light sticky-top">
+                        <tr>
+                          <th>Posição</th>
+                          <th>Unidade Notificadora</th>
+                          <th class="text-end">2026</th>
+                          <th class="text-end">Total</th>
+                        </tr>
+                      </thead>
+                      <tbody id="tbody-unidades"></tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="dashboard-card mb-0 h-100">
+                  <div class="dashboard-card-header">
+                    <h2 class="dashboard-card-title">
+                      <i class="bi bi-clipboard2-pulse"></i> Critério de Confirmação
+                    </h2>
+                  </div>
+                  <div id="plot-criterio" style="height: 420px; width: 100%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
+
       </div>
 
-    </div>
+    </main>
+  </div>
 
-  </main>
-
-  <!-- 4. Footer Institucional com LGPD -->
-  <footer class="bg-white border-top py-4 mt-5">
+  <!-- Rodapé Institucional Oficial com LGPD -->
+  <footer class="bg-white border-top py-3 mt-4">
     <div class="container-fluid px-4">
       <div class="row align-items-center">
         <div class="col-md-8">
-          <p class="m-0 fw-semibold text-secondary small">
-            Prefeitura Municipal de Belém — Secretaria Municipal de Saúde (SESMA)
+          <p class="m-0 fw-bold text-dark small">
+            Prefeitura Municipal de Belém &bull; Secretaria Municipal de Saúde (SESMA)
           </p>
           <p class="m-0 text-muted small">
-            Centro de Informações Estratégicas em Vigilância em Saúde (CIEVS) | Sistema de Informação de Agravos de Notificação (SINAN)
+            Centro de Informações Estratégicas em Vigilância em Saúde (CIEVS) &bull; SINAN Dengue
           </p>
           <p class="m-0 text-muted" style="font-size: 0.72rem;">
-            <b>Conformidade LGPD:</b> Este portal disponibiliza exclusivamente dados epidemiológicos públicos agregados para vigilância em saúde (Lei nº 13.709/2018).
+            <b>Conformidade LGPD:</b> Disponibilização exclusiva de indicadores e microdados agregados para vigilância em saúde (Lei nº 13.709/2018).
           </p>
         </div>
-        <div class="col-md-4 text-md-end mt-3 mt-md-0">
-          <span class="badge bg-light text-secondary border px-3 py-2">Versão Web GitHub Pages</span>
+        <div class="col-md-4 text-md-end mt-2 mt-md-0">
+          <span class="badge bg-light text-secondary border px-3 py-2">Versão Web Oficial &bull; GitHub Pages</span>
         </div>
       </div>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="app.js"></script>
 </body>
