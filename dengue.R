@@ -13,8 +13,8 @@ pacotes <- c("shiny", "bslib", "foreign", "dplyr", "plotly", "lubridate",
              "bsicons", "shinyjs", "base64enc", "openxlsx", "leaflet", "sf", "leaflet.extras",
              "officer", "gridExtra")
 novos_pacotes <- pacotes[!(pacotes %in% installed.packages()[, "Package"])]
-if (length(novos_pacotes) > 0) {
-  install.packages(novos_pacotes, repos = "https://cloud.r-project.org")
+if (length(novos_pacotes) > 0 && !nzchar(Sys.getenv("SHINY_PORT"))) {
+  try(install.packages(novos_pacotes, repos = "https://cloud.r-project.org"), silent = TRUE)
 }
 
 library(shiny)

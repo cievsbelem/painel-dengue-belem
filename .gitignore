@@ -75,3 +75,8 @@ Thumbs.db
 ehthumbs.db
 desktop.ini
 [Nn]otebooks/.ipynb_checkpoints/
+
+rsconnect/
+rsconnect-python/
+*.secret
+
