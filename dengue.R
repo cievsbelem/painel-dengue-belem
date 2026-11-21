@@ -361,6 +361,30 @@ ui <- page_fillable(
   
   tags$head(
     tags$meta(name = "viewport", content = "width=device-width, initial-scale=1, shrink-to-fit=no"),
+    
+    # Favicons & Ícone Mobile (Aedes aegypti)
+    tags$link(rel = "icon", type = "image/png", href = "favicon.png"),
+    tags$link(rel = "shortcut icon", href = "favicon.ico"),
+    tags$link(rel = "apple-touch-icon", sizes = "180x180", href = "apple-touch-icon.png"),
+    
+    # Metatags Open Graph (OG) para Compartilhamento em WhatsApp, Telegram e Redes Sociais
+    tags$meta(property = "og:title", content = "Painel Epidemiológico da Dengue — Belém / SESMA / CIEVS"),
+    tags$meta(property = "og:description", content = "Sistema Oficial de Vigilância Epidemiológica da Dengue em Belém. Monitoramento de 2026, canal endêmico e análise por bairros."),
+    tags$meta(property = "og:image", content = "https://cievsbelem.shinyapps.io/painel-dengue-belem/card_compartilhamento.png"),
+    tags$meta(property = "og:image:secure_url", content = "https://cievsbelem.shinyapps.io/painel-dengue-belem/card_compartilhamento.png"),
+    tags$meta(property = "og:image:type", content = "image/png"),
+    tags$meta(property = "og:image:width", content = "1200"),
+    tags$meta(property = "og:image:height", content = "630"),
+    tags$meta(property = "og:url", content = "https://cievsbelem.shinyapps.io/painel-dengue-belem/"),
+    tags$meta(property = "og:type", content = "website"),
+    tags$meta(property = "og:site_name", content = "CIEVS Belém — Vigilância Epidemiológica"),
+    
+    # Twitter Card
+    tags$meta(name = "twitter:card", content = "summary_large_image"),
+    tags$meta(name = "twitter:title", content = "Painel Epidemiológico da Dengue — Belém / SESMA / CIEVS"),
+    tags$meta(name = "twitter:description", content = "Sistema Oficial de Vigilância Epidemiológica da Dengue em Belém."),
+    tags$meta(name = "twitter:image", content = "https://cievsbelem.shinyapps.io/painel-dengue-belem/card_compartilhamento.png"),
+    
     useShinyjs(),
     tags$link(rel = "stylesheet", href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"),
     tags$script(src = "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"),

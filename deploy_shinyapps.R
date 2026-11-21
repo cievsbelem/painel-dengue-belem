@@ -22,6 +22,7 @@ library(rsconnect)
 # 3. Publicar aplicação
 message("Iniciando publicação do Painel da Dengue no shinyapps.io...")
 
+arquivos_www <- list.files("www", full.names = TRUE)
 arquivos_deploy <- c(
   "dengue.R",
   "app.R",
@@ -31,12 +32,9 @@ arquivos_deploy <- c(
   "mapa_distritos_belem.rds",
   "mapa_ilhas_belem.rds",
   "estabelecimentos_pa.rds",
-  "notificacoes_estabelecimentos.rds"
+  "notificacoes_estabelecimentos.rds",
+  arquivos_www
 )
-
-if (file.exists("www/logo_sesma.png")) {
-  arquivos_deploy <- c(arquivos_deploy, "www/logo_sesma.png")
-}
 
 # Filtra apenas os arquivos que existem
 arquivos_existentes <- arquivos_deploy[file.exists(arquivos_deploy)]
