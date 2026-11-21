@@ -486,10 +486,15 @@ max_sem_atual <- if (length(sems_2026) > 0) max(sems_2026, na.rm = TRUE) else 44
 cat(paste0("   Semana de monitoramento mais recente em 2026: SE ", max_sem_atual, "\n"))
 cat("   Regenerando base sintética de demonstração para o GitHub...\n")
 
-# B. Executa o gerador de dados sintéticos com a nova semana
+# B. Executa o gerador de dados sintéticos e exportador web (GitHub Pages)
 if (file.exists("gerar_dados_exemplo.R")) {
   system2("Rscript", args = "gerar_dados_exemplo.R", stdout = FALSE, stderr = FALSE)
   cat("   [OK] dados_historico_dengue_exemplo.rds atualizado com dados sintéticos seguros.\n")
+}
+
+if (file.exists("exportar_dados_web.R")) {
+  system2("Rscript", args = "exportar_dados_web.R", stdout = FALSE, stderr = FALSE)
+  cat("   [OK] dados_dengue_publico.json atualizado para o portal GitHub Pages.\n")
 }
 
 # C. Salva o relatório de auditoria
