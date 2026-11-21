@@ -4,6 +4,8 @@
 # ==============================================================================
 
 # 1. Carregar pacote rsconnect
+options(timeout = 180)
+options(rsconnect.http.timeout = 180)
 if (!requireNamespace("rsconnect", quietly = TRUE)) {
   install.packages("rsconnect", repos = "https://cloud.r-project.org")
 }
@@ -39,13 +41,30 @@ arquivos_deploy <- c(
 # Filtra apenas os arquivos que existem
 arquivos_existentes <- arquivos_deploy[file.exists(arquivos_deploy)]
 
-rsconnect::deployApp(
-  appDir = getwd(),
-  appPrimaryDoc = "dengue.R",
-  appName = "painel-dengue-belem",
-  appTitle = "Painel Epidemiológico da Dengue - CIEVS Belém",
-  appFiles = arquivos_existentes,
-  forceUpdate = TRUE
-)
+sucesso <- FALSE
+tentativas <- 3
+for (t in 1:tentativas) {
+  message(sprintf("Tentativa %d de %d...", t, tentativas))
+  res <- try({
+    rsconnect::deployApp(
+      appDir = getwd(),
+      appPrimaryDoc = "dengue.R",
+      appName = "painel-dengue-belem",
+      appTitle = "Painel Epidemiológico da Dengue - CIEVS Belém",
+      appFiles = arquivos_existentes,
+      forceUpdate = TRUE
+    )
+  }, silent = FALSE)
+  if (!inherits(res, "try-error")) {
+    sucesso <- TRUE
+    break
+  }
+  message("Aguardando 5 segundos antes de tentar novamente...")
+  Sys.sleep(5)
+}
 
-message("Publicação concluída com sucesso! Verifique o link público gerado.")
+if (sucesso) {
+  message("Publicação concluída com sucesso! Verifique o link público gerado.")
+} else {
+  stop("Falha na publicação após tentativas.")
+}
