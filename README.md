@@ -64,17 +64,21 @@ O painel é estruturado em 7 eixos estratégicos de análise:
 
 ```text
 ├── dengue.R                           # Aplicação principal R Shiny (UI & Server)
+├── atualizar_dados.R                  # Pipeline de ingestão, auditoria e sincronização segura
 ├── gerar_dados_exemplo.R              # Gerador de base sintética para demonstração segura
+├── relatorio_auditoria_dados.md       # Relatório de qualidade da última auditoria executada
 ├── dados_historico_dengue_exemplo.rds # Base sintética 100% fictícia (LGPD Compliant)
 ├── estabelecimentos_pa.rds            # Catálogo de Unidades Notificadoras do Pará (CNES público)
 ├── notificacoes_estabelecimentos.rds   # Estatísticas consolidadas por unidade de saúde
 ├── mapa_bairros_belem.rds             # Polígonos espaciais oficiais dos Bairros de Belém (SF)
 ├── mapa_distritos_belem.rds           # Polígonos espaciais dos Distritos Administrativos de Belém (SF)
 ├── mapa_ilhas_belem.rds               # Polígonos espaciais das Ilhas de Belém (SF)
+├── dados/                             # Pasta local para depósito de novos arquivos brutos (SINAN)
+│   ├── .gitkeep                       # Mantém a pasta versionada sem expor arquivos internos
+│   └── README.md                      # Instruções de uso local da pasta de dados
 ├── www/
 │   └── logo_sesma.png                 # Logotipo institucional SESMA / Prefeitura de Belém
 ├── .gitignore                         # Regras rigorosas de bloqueio de dados confidenciais
-├── LICENSE                            # Licença de uso
 └── README.md                          # Documentação técnica do projeto
 ```
 
@@ -128,13 +132,48 @@ O aplicativo iniciará automaticamente no seu navegador padrão utilizando a bas
 Para os profissionais autorizados pela vigilância epidemiológica municipal que possuem acesso aos arquivos oficiais:
 
 1. Obtenha a base compilada oficial `dados_historico_dengue.rds` através dos canais internos e seguros do CIEVS/SESMA.
-2. Cole o arquivo `dados_historico_dengue.rds` na raiz do projeto (ou dentro de uma pasta `data/`).
+2. Cole o arquivo `dados_historico_dengue.rds` na raiz do projeto (ou dentro da pasta `dados/`).
 3. Inicie o painel:
    ```r
    shiny::runApp("dengue.R", launch.browser = TRUE)
    ```
 4. O painel detectará a base oficial e mudará automaticamente o indicador superior para **`[Base Oficial SINAN]`**.
-5. Se desejar atualizar com novas notificações no ano vigente, utilize o botão lateral **"Upload DBF/DBC Ano Vigente"** dentro do próprio painel.
+
+---
+
+## 🔄 Fluxo de Atualização de Dados (Pasta `dados/`) e Auditoria de Qualidade
+
+Para incorporar novas notificações semanais ou mensais (ex: novos arquivos `.dbf` ou `.dbc` do SINAN):
+
+### 1. Inserção dos Arquivos
+Deposite o arquivo novo extraído do SINAN diretamente na pasta:
+```text
+dados/
+```
+*(Exemplo: `dados/DENGON2026.dbf`)*.
+
+### 2. Execução da Auditoria e Ingestão
+Você pode processar a atualização de duas formas:
+* **Via Terminal:** Execute `Rscript atualizar_dados.R`
+* **Pelo próprio Painel Shiny:** Clique no botão lateral **"Processar Pasta 'dados'"**.
+
+### 3. Mecanismo de Revisão e Auditoria Automática
+O script [atualizar_dados.R](atualizar_dados.R) realiza validações prévias e emite um laudo completo em [relatorio_auditoria_dados.md](relatorio_auditoria_dados.md):
+* **Auditoria Estrutural:** Validação das colunas fundamentais do SINAN.
+* **Auditoria de Datas:** Identificação de datas futuras, incompletas ou inválidas.
+* **Alinhamento do Ano Epidemiológico:** Identificação e correção automática de casos de virada de ano (`SEM_NOT` no padrão `YYYY53` ou `YYYY01`).
+* **Qualidade do Georreferenciamento:** Mapeamento contra a malha oficial dos 71 bairros de Belém com cálculo da taxa de sucesso.
+* **Detecção de Duplicidades:** Verificação de registros duplicados por número de notificação.
+* **Backup de Segurança:** Criação automática de cópia de segurança (`dados_historico_dengue.rds.bak`) antes da gravação.
+
+### 4. Sincronização Segura com o GitHub
+Após a ingestão local, o script regenera a base de demonstração sintética para acompanhar a nova semana máxima de monitoramento e prepara o commit:
+```bash
+git add .gitignore README.md dengue.R gerar_dados_exemplo.R dados_historico_dengue_exemplo.rds dados/ relatorio_auditoria_dados.md
+git commit -m "chore(dados): atualizacao epidemiologica para SE XX / 2026"
+git push origin main
+```
+> O arquivo `.gitignore` bloqueia 100% dos microdados da pasta `dados/` e o banco real consolidado, garantindo que o GitHub receba apenas o código e os dados sintéticos seguros.
 
 ---
 

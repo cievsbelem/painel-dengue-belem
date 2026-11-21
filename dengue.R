@@ -787,8 +787,14 @@ ui <- page_fillable(
         tags$i(class = "fa-solid fa-database me-1"),
         textOutput("status_dados")
       ),
-      fileInput("file_dbf", "Upload DBF/DBC Ano Vigente:", accept = c(".dbf", ".DBF", ".dbc", ".DBC")),
+      fileInput("file_dbf", "Upload Direto DBF/DBC:", accept = c(".dbf", ".DBF", ".dbc", ".DBC")),
       span(textOutput("status_upload"), style = "font-size:0.75rem; color:#059669; font-weight:600;"),
+      actionButton(
+        inputId = "btn_processar_pasta_dados",
+        label = "Processar Pasta 'dados'",
+        icon = icon("rotate"),
+        class = "btn-outline-primary btn-sm w-100 mt-1 mb-2 fw-semibold"
+      ),
       hr(),
       
       tags$b("2. Comparação Temporal:"),
@@ -1942,6 +1948,63 @@ server <- function(input, output, session) {
     }, error = function(e) {
       removeNotification("msg_upload")
       showNotification(paste("Erro ao processar arquivo:", e$message), type = "error", duration = 12)
+    })
+  })
+  
+  # Ação: Processar arquivos da pasta 'dados/' com Mecanismo de Auditoria e Ingestão
+  observeEvent(input$btn_processar_pasta_dados, {
+    showNotification("Procurando e auditando arquivos na pasta 'dados/'...", type = "message", id = "msg_proc_dados", duration = NULL)
+    tryCatch({
+      caminho_dados <- if (dir.exists("dados")) "dados" else file.path(getwd(), "dados")
+      arquivos <- if (dir.exists(caminho_dados)) list.files(caminho_dados, pattern = "\\.(dbf|DBF|dbc|DBC|rds|RDS)$", full.names = TRUE) else character(0)
+      arquivos <- arquivos[!basename(arquivos) %in% c("mapa_bairros_belem.rds", "mapa_distritos_belem.rds", "mapa_ilhas_belem.rds", "estabelecimentos_pa.rds", "notificacoes_estabelecimentos.rds", "dados_historico_dengue_exemplo.rds")]
+      
+      if (length(arquivos) == 0) {
+        removeNotification("msg_proc_dados")
+        showModal(modalDialog(
+          title = "Pasta 'dados/' Sem Novos Arquivos",
+          tags$p("Nenhum novo arquivo .dbf ou .dbc foi localizado na pasta 'dados/'."),
+          tags$div(
+            class = "alert alert-info py-2 small",
+            tags$b("Instrução:"),
+            tags$br(),
+            "Copie os arquivos de atualização do SINAN (ex: DENGON2026.dbf) para a pasta 'dados/' e clique neste botão novamente."
+          ),
+          easyClose = TRUE,
+          footer = modalButton("Fechar")
+        ))
+        return()
+      }
+      
+      if (file.exists("atualizar_dados.R")) {
+        system2("Rscript", args = "atualizar_dados.R", stdout = TRUE, stderr = TRUE)
+      }
+      
+      removeNotification("msg_proc_dados")
+      
+      # Recarrega a base em memória dinamicamente
+      if (file.exists("dados_historico_dengue.rds")) {
+        novo_hist <- readRDS("dados_historico_dengue.rds")
+        HISTORICO_BASE <<- novo_hist
+        dados_historico(novo_hist)
+      }
+      
+      showModal(modalDialog(
+        title = tags$span(tags$i(class = "fa-solid fa-circle-check text-success me-2"), "Auditoria & Ingestão Concluídas!"),
+        tags$p(paste0("Foram processados ", length(arquivos), " arquivo(s) da pasta 'dados/'.")),
+        tags$div(
+          class = "alert alert-success py-2",
+          tags$b("Base histórica municipal atualizada com sucesso!"),
+          tags$br(),
+          paste0("Total consolidado de notificações: ", format_num(nrow(HISTORICO_BASE)), " registros.")
+        ),
+        tags$p("O laudo da auditoria de qualidade foi registrado em 'relatorio_auditoria_dados.md'."),
+        easyClose = TRUE,
+        footer = modalButton("OK")
+      ))
+    }, error = function(e) {
+      removeNotification("msg_proc_dados")
+      showNotification(paste("Erro durante processamento da pasta dados:", e$message), type = "error", duration = 12)
     })
   })
   

@@ -13,13 +13,16 @@
 *.dbc
 *.DBC
 DENGON*
-data/*.dbf
-data/*.DBF
-data/*.dbc
-data/*.DBC
+dados/*
+!dados/.gitkeep
+!dados/README.md
+data/*
+!data/.gitkeep
+!data/README.md
 
 # 2. Base Consolidada Real de Notificações com Microdados
 dados_historico_dengue.rds
+dados/dados_historico_dengue.rds
 data/dados_historico_dengue.rds
 *.rds.bak
 *_backup.rds
