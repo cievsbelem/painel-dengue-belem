@@ -30,13 +30,14 @@ const FONT_FAMILY = "'Plus Jakarta Sans', sans-serif";
 // Inicialização imediata
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    const res = await fetch("dados_dengue_publico.json");
+    const ts = new Date().getTime();
+    const res = await fetch(`dados_dengue_publico.json?t=${ts}`);
     if (!res.ok) throw new Error("Status HTTP: " + res.status);
     DADOS_GLOBAIS = await res.json();
     
     // Tenta carregar GeoJSON de Bairros para o mapa
     try {
-      const resGeo = await fetch("bairros_belem.geojson");
+      const resGeo = await fetch(`bairros_belem.geojson?v=2`);
       if (resGeo.ok) {
         GEOJSON_BAIRROS = await resGeo.json();
       }
