@@ -36,9 +36,9 @@ library(grid)
 library(ggplot2)
 
 # Paletas de Cores Padrão da Vigilância Epidemiológica
-PALETTE_PRIMARY <- "#1E3A8A"
-PALETTE_PIE     <- c("#1E3A8A", "#3B82F6", "#0EA5E9", "#F59E0B", "#EF4444", "#10B981", "#8B5CF6", "#64748B", "#EC4899", "#84CC16")
-PALETTE_ANOS    <- c("#1E3A8A", "#EF4444", "#10B981", "#F59E0B", "#8B5CF6", "#EC4899", "#06B6D4", "#64748B", "#D97706", "#2563EB", "#059669", "#7C3AED", "#D946EF")
+PALETTE_PRIMARY <- "#0000A1"
+PALETTE_PIE     <- c("#0000A1", "#3B82F6", "#0EA5E9", "#F59E0B", "#EF4444", "#10B981", "#8B5CF6", "#64748B", "#EC4899", "#84CC16")
+PALETTE_ANOS    <- c("#0000A1", "#EF4444", "#10B981", "#F59E0B", "#8B5CF6", "#EC4899", "#06B6D4", "#64748B", "#D97706", "#2563EB", "#059669", "#7C3AED", "#D946EF")
 
 # ------------------------------------------------------------------------------
 # 1. CARREGAMENTO DAS BASES LOCAIS PRÉ-SALVAS (SEM REQUISIÇÕES EXTERNAS)
@@ -303,7 +303,7 @@ card_header_download <- function(title_text, prefix_id) {
   plotly_id <- paste0("plot_", prefix_id)
   tags$div(
     class = "d-flex justify-content-between align-items-center w-100",
-    tags$span(title_text, style = "font-weight: 600; font-size: 0.9rem; color: #1E3A8A;"),
+    tags$span(title_text, style = "font-weight: 600; font-size: 0.9rem; color: #0000A1;"),
     tags$div(
       class = "dropdown btn-group no-print",
       tags$button(
@@ -352,7 +352,7 @@ ui <- page_fillable(
   theme = bs_theme(
     version = 5,
     bootswatch = "zephyr",
-    primary = "#1E3A8A",
+    primary = "#0000A1",
     base_font = "system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif"
   ),
   class = "bslib-page-navbar has-page-sidebar",
@@ -499,7 +499,7 @@ ui <- page_fillable(
       }
       @media print {
         .sidebar-toggle, .bslib-sidebar, .btn, .no-print, .dropdown, .navbar { display: none !important; }
-        .header-logos-top { border-bottom: 2px solid #1E3A8A !important; margin-bottom: 12px !important; }
+        .header-logos-top { border-bottom: 2px solid #0000A1 !important; margin-bottom: 12px !important; }
         .main { width: 100% !important; margin: 0 !important; padding: 0 !important; }
         .card { break-inside: avoid; page-break-inside: avoid; }
       }
@@ -539,7 +539,7 @@ ui <- page_fillable(
       }
       .navbar-brand {
         font-weight: 700 !important;
-        color: #1E3A8A !important;
+        color: #0000A1 !important;
         font-size: 0.95rem !important;
         letter-spacing: -0.2px;
         padding-top: 0.15rem !important;
@@ -552,11 +552,11 @@ ui <- page_fillable(
         padding: 0.35rem 0.75rem !important;
       }
       .nav-underline .nav-link.active {
-        color: #1E3A8A !important;
-        border-bottom: 3px solid #1E3A8A !important;
+        color: #0000A1 !important;
+        border-bottom: 3px solid #0000A1 !important;
       }
       .nav-underline .nav-link:hover {
-        color: #1E3A8A !important;
+        color: #0000A1 !important;
       }
       .value-box { margin-bottom: 0.45rem; padding: 0.42rem 0.75rem !important; border-radius: 8px; }
       .value-box .value-box-value { font-size: 1.25rem !important; font-weight: 700; }
@@ -570,7 +570,7 @@ ui <- page_fillable(
       .leaflet-control-attribution { display: none !important; }
       .custom-scroll-table { max-height: 250px; overflow-y: auto; border: 1px solid #E2E8F0; border-radius: 6px; margin-bottom: 10px; }
       .custom-scroll-table table { margin-bottom: 0 !important; font-size: 0.8rem; }
-      .custom-scroll-table th { position: sticky; top: 0; background: #F1F5F9; z-index: 10; color: #1E3A8A; font-weight: 600; }
+      .custom-scroll-table th { position: sticky; top: 0; background: #F1F5F9; z-index: 10; color: #0000A1; font-weight: 600; }
       .controles-mapa-centralizados .form-group { margin-bottom: 0 !important; }
       .controles-mapa-centralizados .selectize-input,
       .controles-mapa-centralizados .selectize-input input,
@@ -632,7 +632,7 @@ ui <- page_fillable(
         text-overflow: ellipsis !important;
         background-color: #F8FAFC !important;
         border: 1px solid #CBD5E1 !important;
-        color: #1E3A8A !important;
+        color: #0000A1 !important;
         font-weight: 600 !important;
       }
       .slide-deck-toolbar .selectize-input input {
@@ -670,7 +670,7 @@ ui <- page_fillable(
       .grupo-grafico-titulo {
         font-size: 0.74rem;
         font-weight: 700;
-        color: #1E3A8A;
+        color: #0000A1;
         text-transform: uppercase;
         letter-spacing: 0.3px;
         margin-bottom: 4px;
@@ -714,14 +714,14 @@ ui <- page_fillable(
         position: relative;
       }
       .slide-header {
-        border-left: 4px solid #1E3A8A;
+        border-left: 4px solid #0000A1;
         padding-left: 12px;
         margin-bottom: 12px;
       }
       .slide-header h4 {
         margin: 0;
         font-weight: 800;
-        color: #1E3A8A;
+        color: #0000A1;
         font-size: 1.05rem;
         letter-spacing: -0.2px;
       }
@@ -741,7 +741,7 @@ ui <- page_fillable(
       .slide-kpi-value {
         font-size: 1.30rem;
         font-weight: 800;
-        color: #1E3A8A;
+        color: #0000A1;
         line-height: 1.1;
       }
       .slide-kpi-label {
@@ -759,7 +759,7 @@ ui <- page_fillable(
         padding: 8px 14px;
         margin-top: 12px;
         font-size: 0.82rem;
-        color: #1E3A8A;
+        color: #0000A1;
       }
       #apresentacao_container:fullscreen {
         background: #0F172A;
@@ -910,7 +910,7 @@ ui <- page_fillable(
     if(logo_sesma_b64 != "") tags$img(src = logo_sesma_b64, alt = "Prefeitura de Belém - SESMA") else tags$div(style = "width: 140px;"),
     tags$div(
       class = "text-center flex-grow-1 px-3",
-      tags$h5("SECRETARIA MUNICIPAL DE SAÚDE DE BELÉM — SESMA / CIEVS", style = "margin:0; font-weight:800; color:#1E3A8A; letter-spacing: 0.3px; font-size: 0.95rem;"),
+      tags$h5("SECRETARIA MUNICIPAL DE SAÚDE DE BELÉM — SESMA / CIEVS", style = "margin:0; font-weight:800; color:#0000A1; letter-spacing: 0.3px; font-size: 0.95rem;"),
       tags$div(
         tags$span("Série Histórica 2015-2025 / Ano de monitoramento 2026", style = "color:#64748B; font-weight: 600; font-size: 0.80rem; margin-top: 1px;"),
         if (DADOS_MODO_DEMO) tags$span(class = "badge bg-warning text-dark ms-2", style = "font-size: 0.68rem;", "Modo Demonstração (Dados Sintéticos - LGPD)") else tags$span(class = "badge bg-success ms-2", style = "font-size: 0.68rem;", "Base Oficial")
@@ -919,7 +919,7 @@ ui <- page_fillable(
     tags$div(
       class = "d-none d-md-flex flex-column align-items-end justify-content-center",
       style = "min-width: 140px;",
-      tags$span(class = "badge bg-primary px-3 py-2 text-uppercase", style = "font-size: 0.70rem; letter-spacing: 0.5px; font-weight:700; background-color: #1E3A8A !important;", "Vigilância Epidemiológica"),
+      tags$span(class = "badge bg-primary px-3 py-2 text-uppercase", style = "font-size: 0.70rem; letter-spacing: 0.5px; font-weight:700; background-color: #0000A1 !important;", "Vigilância Epidemiológica"),
       tags$small(class = "text-muted mt-1 fw-semibold", style = "font-size: 0.70rem; color: #64748B;", "SINAN / CISC Belém")
     )
   ),
@@ -1022,14 +1022,14 @@ ui <- page_fillable(
             tags$div(
               class = "d-flex align-items-center gap-2 mb-2",
               tags$i(class = "fa-solid fa-map-location-dot text-primary fs-5"),
-              tags$span("ANÁLISE ESPACIAL DO TERRITÓRIO DE BELÉM", style = "font-weight: 800; color: #1E3A8A; font-size: 0.95rem; letter-spacing: 0.3px;")
+              tags$span("ANÁLISE ESPACIAL DO TERRITÓRIO DE BELÉM", style = "font-weight: 800; color: #0000A1; font-size: 0.95rem; letter-spacing: 0.3px;")
             ),
             tags$div(
               class = "d-flex justify-content-center align-items-end gap-3 flex-wrap w-100 controles-mapa-centralizados",
               # 1. Caixa de Seleção: Tipo de Mapa
               tags$div(
                 style = "min-width: 175px; text-align: center;",
-                tags$label("Tipo de Mapa", style = "font-size: 0.72rem; font-weight: 700; color: #1E3A8A; margin-bottom: 3px; display: block; text-transform: uppercase; letter-spacing: 0.4px; text-align: center;"),
+                tags$label("Tipo de Mapa", style = "font-size: 0.72rem; font-weight: 700; color: #0000A1; margin-bottom: 3px; display: block; text-transform: uppercase; letter-spacing: 0.4px; text-align: center;"),
                 selectInput(
                   "tipo_visualizacao_mapa",
                   label = NULL,
@@ -1041,7 +1041,7 @@ ui <- page_fillable(
               # 2. Caixa de Seleção: Camada Territorial
               tags$div(
                 style = "min-width: 145px; text-align: center;",
-                tags$label("Camada Territorial", style = "font-size: 0.72rem; font-weight: 700; color: #1E3A8A; margin-bottom: 3px; display: block; text-transform: uppercase; letter-spacing: 0.4px; text-align: center;"),
+                tags$label("Camada Territorial", style = "font-size: 0.72rem; font-weight: 700; color: #0000A1; margin-bottom: 3px; display: block; text-transform: uppercase; letter-spacing: 0.4px; text-align: center;"),
                 selectInput(
                   "camada_mapa_ativa",
                   label = NULL,
@@ -1053,7 +1053,7 @@ ui <- page_fillable(
               # 3. Caixa de Seleção: Dados
               tags$div(
                 style = "min-width: 195px; text-align: center;",
-                tags$label("Dados", style = "font-size: 0.72rem; font-weight: 700; color: #1E3A8A; margin-bottom: 3px; display: block; text-transform: uppercase; letter-spacing: 0.4px; text-align: center;"),
+                tags$label("Dados", style = "font-size: 0.72rem; font-weight: 700; color: #0000A1; margin-bottom: 3px; display: block; text-transform: uppercase; letter-spacing: 0.4px; text-align: center;"),
                 selectInput(
                   "metrica_mapa",
                   label = NULL,
@@ -1075,7 +1075,7 @@ ui <- page_fillable(
           tags$div(
             class = "d-flex justify-content-between align-items-center small text-muted flex-wrap gap-2",
             tags$span(textOutput("mapa_tipo_legenda_rodape", inline = TRUE)),
-            tags$span(textOutput("mapa_subtitulo_anos", inline = TRUE), style = "font-weight: 600; color: #1E3A8A;")
+            tags$span(textOutput("mapa_subtitulo_anos", inline = TRUE), style = "font-weight: 600; color: #0000A1;")
           )
         )
       ),
@@ -1092,7 +1092,7 @@ ui <- page_fillable(
           card_header(
             tags$div(
               class = "d-flex justify-content-between align-items-center w-100",
-              tags$b("Detalhamento por bairro", style = "font-size: 0.85rem; color: #1E3A8A;"),
+              tags$b("Detalhamento por bairro", style = "font-size: 0.85rem; color: #0000A1;"),
               downloadButton("dl_excel_mapa_bairros", "Baixar Excel", class = "btn-sm py-0 px-2 btn-outline-success")
             )
           ),
@@ -1104,7 +1104,7 @@ ui <- page_fillable(
           card_header(
             tags$div(
               class = "d-flex justify-content-between align-items-center w-100",
-              tags$b("Distritos Administrativos no Período", style = "font-size: 0.85rem; color: #1E3A8A;"),
+              tags$b("Distritos Administrativos no Período", style = "font-size: 0.85rem; color: #0000A1;"),
               downloadButton("dl_excel_mapa_distritos", "Baixar Excel", class = "btn-sm py-0 px-2 btn-outline-success")
             )
           ),
@@ -1190,7 +1190,7 @@ ui <- page_fillable(
           tags$div(
             class = "d-flex justify-content-between align-items-center small text-muted",
             tags$span("Ranking decrescente de notificações oficiais registradas pelos estabelecimentos de saúde no SINAN."),
-            tags$span(textOutput("subtitulo_anos_unidades", inline = TRUE), style = "font-weight: 600; color: #1E3A8A;")
+            tags$span(textOutput("subtitulo_anos_unidades", inline = TRUE), style = "font-weight: 600; color: #0000A1;")
           )
         )
       ),
@@ -1198,7 +1198,7 @@ ui <- page_fillable(
         card_header(
           tags$div(
             class = "d-flex justify-content-between align-items-center w-100",
-            tags$b("Detalhamento do Ranking", style = "font-size: 0.85rem; color: #1E3A8A;"),
+            tags$b("Detalhamento do Ranking", style = "font-size: 0.85rem; color: #0000A1;"),
             downloadButton("dl_excel_tabela_ranking_unidades", "Baixar Excel", class = "btn-sm py-0 px-2 btn-outline-success")
           )
         ),
@@ -1226,7 +1226,7 @@ ui <- page_fillable(
         tags$div(
           class = "d-flex justify-content-between align-items-center small text-muted",
           tags$span("Série de referência não epidêmica: 2015, 2016, 2017, 2018, 2019, 2022 e 2023. Limite Superior = Média + 1,96 × DP."),
-          tags$span("Ano de Observação Vigente: 2026 (Colunas por Semana Epidemiológica)", style = "font-weight:600; color:#1E3A8A;")
+          tags$span("Ano de Observação Vigente: 2026 (Colunas por Semana Epidemiológica)", style = "font-weight:600; color:#0000A1;")
         )
       )
     ),
@@ -1268,7 +1268,7 @@ ui <- page_fillable(
         tags$div(
           class = "d-flex align-items-center gap-2 me-1",
           tags$i(class = "fa-solid fa-person-chalkboard text-primary fs-5"),
-          tags$span("APRESENTAÇÃO EXECUTIVA", style = "font-weight: 800; color: #1E3A8A; font-size: 0.92rem; letter-spacing: 0.3px;")
+          tags$span("APRESENTAÇÃO EXECUTIVA", style = "font-weight: 800; color: #0000A1; font-size: 0.92rem; letter-spacing: 0.3px;")
         ),
         actionButton(
           "btn_toggle_caixinha",
@@ -1335,7 +1335,7 @@ ui <- page_fillable(
               tags$div(
                 class = "d-flex align-items-center gap-2",
                 tags$i(class = "fa-solid fa-list-check text-primary"),
-                tags$b("Seleção dos Gráficos", style = "font-size: 0.88rem; color: #1E3A8A;")
+                tags$b("Seleção dos Gráficos", style = "font-size: 0.88rem; color: #0000A1;")
               ),
               tags$span(class = "badge bg-primary text-white fw-bold", style = "font-size: 0.70rem;", textOutput("txt_badge_sel2", inline = TRUE))
             ),
@@ -1434,7 +1434,7 @@ ui <- page_fillable(
             condition = "input.sel_slide_apres == 'g_capa' || input.modo_apres_layout == 'todos'",
             tags$div(
               class = "slide-frame mb-3",
-              style = "background: linear-gradient(135deg, #1E3A8A 0%, #0F172A 100%); color: white; border-radius: 8px; padding: 48px 32px; text-align: center; box-shadow: 0 4px 12px rgba(30,58,138,0.25); border: 1px solid #1E3A8A;",
+              style = "background: linear-gradient(135deg, #0000A1 0%, #0F172A 100%); color: white; border-radius: 8px; padding: 48px 32px; text-align: center; box-shadow: 0 4px 12px rgba(30,58,138,0.25); border: 1px solid #0000A1;",
               tags$div(
                 tags$i(class = "fa-solid fa-shield-virus fs-1 mb-3", style = "color: #93C5FD;"),
                 tags$h1("Atualização Epidemiológica de Dengue", style = "color: #FFFFFF; font-weight: 800; font-size: 2.2rem; letter-spacing: 0.5px; margin-bottom: 12px;"),
@@ -2210,7 +2210,7 @@ server <- function(input, output, session) {
       tagList(
         tags$div(
           class = "d-flex justify-content-between align-items-center mb-1",
-          tags$span("Anos Selecionados:", style = "font-size:0.82rem; font-weight:600; color:#1E3A8A;"),
+          tags$span("Anos Selecionados:", style = "font-size:0.82rem; font-weight:600; color:#0000A1;"),
           tags$div(
             actionLink("btn_todos_anos", "Todos", class = "badge bg-primary text-decoration-none me-1"),
             actionLink("btn_ultimos_anos", "Últimos 3", class = "badge bg-secondary text-decoration-none me-1"),
@@ -2495,7 +2495,7 @@ server <- function(input, output, session) {
         )
       
       plotly::plot_ly(df_grp, x = ~SEMANA_EPID) %>%
-        plotly::add_trace(y = ~Notificados, type = 'bar', name = "Notificados", marker = list(color = "#1E3A8A")) %>%
+        plotly::add_trace(y = ~Notificados, type = 'bar', name = "Notificados", marker = list(color = "#0000A1")) %>%
         plotly::add_trace(y = ~Confirmados, type = 'bar', name = "Confirmados", marker = list(color = "#3B82F6")) %>%
         plotly::layout(
           barmode = "group",
@@ -2553,7 +2553,7 @@ server <- function(input, output, session) {
     plotly::plot_ly() %>%
       plotly::add_trace(
         data = df_masc, x = ~Casos_Neg, y = ~Faixa_Etaria, type = 'bar', orientation = 'h', name = 'Masculino',
-        marker = list(color = '#1E3A8A'), text = ~ifelse(Casos > 0, format_num(Casos), ""), 
+        marker = list(color = '#0000A1'), text = ~ifelse(Casos > 0, format_num(Casos), ""), 
         textposition = 'auto',
         hovertemplate = "<b>%{y}</b><br>Homens: %{text}<extra></extra>"
       ) %>%
@@ -2774,7 +2774,7 @@ server <- function(input, output, session) {
     
     # Cores com destaque especial para o Top 3
     cores_barras <- sapply(rk_plot$Posicao, function(pos) {
-      if (pos == 1) "#1E3A8A"
+      if (pos == 1) "#0000A1"
       else if (pos == 2) "#2563EB"
       else if (pos == 3) "#3B82F6"
       else "#0284C7"
@@ -3031,7 +3031,7 @@ server <- function(input, output, session) {
       rotulos_ilhas <- paste0(milhas$nome_ilha, " (Área Insular - ", milhas$sigla_distrito, ")")
       popup_ilhas <- paste0(
         "<div style='font-family: system-ui, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;'>",
-        "<h6 style='margin:0 0 6px 0; font-weight:700; color:#1E3A8A; border-bottom: 2px solid #E2E8F0; padding-bottom: 4px;'>",
+        "<h6 style='margin:0 0 6px 0; font-weight:700; color:#0000A1; border-bottom: 2px solid #E2E8F0; padding-bottom: 4px;'>",
         milhas$nome_ilha, "</h6>",
         "<b>Distrito Administrativo:</b> ", milhas$nome_distrito, "<br/>",
         "<b>Área Territorial:</b> ", format_num(milhas$area_km2, digits = 2), " km²<br/>",
@@ -3086,15 +3086,15 @@ server <- function(input, output, session) {
       
       popup_calor <- paste0(
         "<div style='font-family: system-ui, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;'>",
-        "<h6 style='margin:0 0 6px 0; font-weight:700; color:#1E3A8A; border-bottom: 2px solid #E2E8F0; padding-bottom: 4px;'>",
+        "<h6 style='margin:0 0 6px 0; font-weight:700; color:#0000A1; border-bottom: 2px solid #E2E8F0; padding-bottom: 4px;'>",
         nome_loc, "</h6>",
-        "<div style='background:#EFF6FF; padding:4px 8px; border-radius:4px; margin-bottom:6px; border-left:3px solid #1E3A8A;'>",
+        "<div style='background:#EFF6FF; padding:4px 8px; border-radius:4px; margin-bottom:6px; border-left:3px solid #0000A1;'>",
         "<b>Métrica Ativa:</b> <span style='font-weight:700; color:#B91C1C;'>", valor_fmt, "</span>",
         "</div>",
         "<b>Taxa de Incidência:</b> <span style='font-weight:700; color:#B91C1C;'>", format_num(dados_territorio$incidencia, digits = 1), " por 100 mil hab.</span><br/>",
         "<b>Casos Prováveis:</b> <span style='font-weight:600; color:#D97706;'>", format_num(dados_territorio$provaveis), "</span><br/>",
         "<b>Casos Confirmados:</b> <span style='font-weight:600; color:#DC2626;'>", format_num(dados_territorio$confirmados), "</span><br/>",
-        "<b>Total Notificados:</b> <span style='font-weight:600; color:#1E3A8A;'>", format_num(dados_territorio$total_casos), "</span><br/>",
+        "<b>Total Notificados:</b> <span style='font-weight:600; color:#0000A1;'>", format_num(dados_territorio$total_casos), "</span><br/>",
         "<b>População:</b> ", format_num(pop_loc), " hab.<br/>",
         "<b>Domicílios:</b> ", format_num(dom_loc), " dom.",
         "</div>"
@@ -3147,7 +3147,7 @@ server <- function(input, output, session) {
           data = dados_territorio,
           fillColor = "#FFFFFF",
           fillOpacity = 0.04, # Transparência sutil que capta eventos de clique e hover
-          color = if(camada_ativa == "distritos") "#1E3A8A" else "#94A3B8",
+          color = if(camada_ativa == "distritos") "#0000A1" else "#94A3B8",
           weight = if(camada_ativa == "distritos") 1.4 else 0.85,
           opacity = if(camada_ativa == "distritos") 0.85 else 0.65,
           dashArray = "",
@@ -3174,7 +3174,7 @@ server <- function(input, output, session) {
       
       html_legenda_calor <- paste0(
         "<div style='background:rgba(255,255,255,0.96); padding:9px 13px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.15); font-family:system-ui,-apple-system,sans-serif; font-size:12px; border:1px solid #CBD5E1;'>",
-        "<b style='color:#1E3A8A; font-size:12px; display:block; margin-bottom:4px;'>Concentração Térmica: ", titulo_calor_legenda, "</b>",
+        "<b style='color:#0000A1; font-size:12px; display:block; margin-bottom:4px;'>Concentração Térmica: ", titulo_calor_legenda, "</b>",
         "<div style='display:flex; align-items:center; justify-content:space-between; gap:6px; margin-top:6px; margin-bottom:3px;'>",
         "<span style='font-size:10px; font-weight:600; color:#1D4ED8;'>Baixa (", min_fmt, ")</span>",
         "<div style='width:140px; height:12px; border-radius:4px; border:1px solid #94A3B8; background:linear-gradient(to right, #1D4ED8, #06B6D4, #10B981, #FACC15, #F97316, #EF4444, #7F1D1D);'></div>",
@@ -3227,13 +3227,13 @@ server <- function(input, output, session) {
     if (camada_ativa == "distritos") {
       popup_conteudo <- paste0(
         "<div style='font-family: system-ui, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;'>",
-        "<h6 style='margin:0 0 6px 0; font-weight:700; color:#1E3A8A; border-bottom: 2px solid #E2E8F0; padding-bottom: 4px;'>",
+        "<h6 style='margin:0 0 6px 0; font-weight:700; color:#0000A1; border-bottom: 2px solid #E2E8F0; padding-bottom: 4px;'>",
         md$nome, "</h6>",
         "<b>Sede Administrativa:</b> ", md$sede, "<br/>",
         "<b>Bairros Oficiais:</b> ", format_num(md$qtd_bairros), "<br/>",
         "<b>População (Censo 2022):</b> ", format_num(md$populacao_2022), " hab.<br/>",
         "<b>Domicílios (Censo 2022):</b> ", format_num(md$domicilios_2022), " dom.<br/>",
-        "<b>Casos Notificados:</b> <span style='font-weight:600; color:#1E3A8A;'>", format_num(md$total_casos), "</span><br/>",
+        "<b>Casos Notificados:</b> <span style='font-weight:600; color:#0000A1;'>", format_num(md$total_casos), "</span><br/>",
         "<b>Casos Prováveis:</b> <span style='font-weight:600; color:#D97706;'>", format_num(md$provaveis), "</span><br/>",
         "<b>Confirmados:</b> <span style='font-weight:600; color:#DC2626;'>", format_num(md$confirmados), "</span><br/>",
         "<b>Óbitos Dengue:</b> <span style='font-weight:600;'>", format_num(md$obitos), "</span><br/>",
@@ -3245,13 +3245,13 @@ server <- function(input, output, session) {
     } else {
       popup_conteudo <- paste0(
         "<div style='font-family: system-ui, sans-serif; font-size: 13px; line-height: 1.5; min-width: 210px;'>",
-        "<h6 style='margin:0 0 6px 0; font-weight:700; color:#1E3A8A; border-bottom: 2px solid #E2E8F0; padding-bottom: 4px;'>",
+        "<h6 style='margin:0 0 6px 0; font-weight:700; color:#0000A1; border-bottom: 2px solid #E2E8F0; padding-bottom: 4px;'>",
         mb$nm_bairro, "</h6>",
         "<b>Distrito:</b> ", mb$nome_distrito, "<br/>",
         "<b>População (Censo 2022):</b> ", format_num(mb$populacao_total), " hab.<br/>",
         "<b>Domicílios (Censo 2022):</b> ", format_num(mb$domicilios_ocupados), " dom.<br/>",
         "<b>Densidade Demográfica:</b> ", format_num(mb$densidade_hab_km2), " hab./km²<br/>",
-        "<b>Casos Notificados:</b> <span style='font-weight:600; color:#1E3A8A;'>", format_num(mb$total_casos), "</span><br/>",
+        "<b>Casos Notificados:</b> <span style='font-weight:600; color:#0000A1;'>", format_num(mb$total_casos), "</span><br/>",
         "<b>Casos Prováveis:</b> <span style='font-weight:600; color:#D97706;'>", format_num(mb$provaveis), "</span><br/>",
         "<b>Confirmados:</b> <span style='font-weight:600; color:#DC2626;'>", format_num(mb$confirmados), "</span><br/>",
         "<b>Óbitos Dengue:</b> <span style='font-weight:600;'>", format_num(mb$obitos), "</span><br/>",
@@ -3295,7 +3295,7 @@ server <- function(input, output, session) {
         fillColor = fill_cores,
         weight = if(camada_ativa == "distritos") 1.6 else 0.85,
         opacity = if(camada_ativa == "distritos") 0.9 else 0.7,
-        color = if(camada_ativa == "distritos") "#1E3A8A" else "#94A3B8",
+        color = if(camada_ativa == "distritos") "#0000A1" else "#94A3B8",
         dashArray = "",
         smoothFactor = 1.0,
         fillOpacity = 0.78,
@@ -3327,7 +3327,7 @@ server <- function(input, output, session) {
               direction = "center",
               textOnly = FALSE,
               style = list(
-                "color" = "#1E3A8A",
+                "color" = "#0000A1",
                 "font-family" = "system-ui, sans-serif",
                 "text-align" = "center",
                 "line-height" = "1.1",
@@ -3446,7 +3446,7 @@ server <- function(input, output, session) {
       plotly::add_trace(
         data = df_diag, x = ~SEMANA_EPID, y = ~Media,
         type = 'scatter', mode = 'lines',
-        line = list(color = '#1E3A8A', dash = 'dot', width = 2),
+        line = list(color = '#0000A1', dash = 'dot', width = 2),
         name = 'Média Esperada (Anos Não Epidêmicos)',
         hovertemplate = '<b>Semana %{x}</b><br>Média Esperada: %{y} casos<extra></extra>'
       ) %>%
@@ -3492,7 +3492,7 @@ server <- function(input, output, session) {
     plotly::plot_ly(
       df_mensal, x = ~Ano_Mes, y = ~Incidencia,
       type = 'bar',
-      marker = list(color = '#1E3A8A'),
+      marker = list(color = '#0000A1'),
       hovertemplate = '<b>%{x}</b><br>Incidência: %{y} por 100 mil hab.<br>Casos: %{customdata}<extra></extra>',
       customdata = ~Casos
     ) %>%
@@ -4259,7 +4259,7 @@ server <- function(input, output, session) {
     req(nrow(df_b) > 0)
     
     plot_ly(df_b, x = ~n, y = ~reorder(Bairro, n), type = 'bar', orientation = 'h',
-            marker = list(color = "#1E3A8A"),
+            marker = list(color = "#0000A1"),
             hovertemplate = '<b>%{y}</b><br>Notificações: %{x:,}<extra></extra>') %>%
       layout(
         xaxis = list(title = "Total Notificado"),
@@ -4326,7 +4326,7 @@ server <- function(input, output, session) {
             marker = list(color = PALETTE_PIE[1:nrow(df_raca)]),
             hovertemplate = '<b>%{y}</b><br>Casos: %{x:,}<extra></extra>') %>%
       layout(
-        title = list(text = "Distribuição por Raça/Cor Declarada", font = list(size = 13, color = "#1E3A8A")),
+        title = list(text = "Distribuição por Raça/Cor Declarada", font = list(size = 13, color = "#0000A1")),
         xaxis = list(title = "Total Notificado"),
         yaxis = list(title = "", automargin = TRUE),
         margin = list(l = 100, r = 20, t = 40, b = 40)
@@ -4349,7 +4349,7 @@ server <- function(input, output, session) {
             textinfo = 'label+percent',
             hovertemplate = '<b>%{label}</b><br>Total: %{value:,}<br>Percentual: %{percent}<extra></extra>') %>%
       layout(
-        title = list(text = "Classificação Final dos Casos", font = list(size = 13, color = "#1E3A8A")),
+        title = list(text = "Classificação Final dos Casos", font = list(size = 13, color = "#0000A1")),
         legend = list(orientation = "h", x = 0.1, y = -0.1),
         margin = list(t = 40, b = 40, l = 20, r = 20)
       ) %>%
@@ -4367,7 +4367,7 @@ server <- function(input, output, session) {
             textinfo = 'label+percent',
             hovertemplate = '<b>%{label}</b><br>Casos: %{value:,}<br>Proporção: %{percent}<extra></extra>') %>%
       layout(
-        title = list(text = "Critério de Confirmação / Diagnóstico", font = list(size = 13, color = "#1E3A8A")),
+        title = list(text = "Critério de Confirmação / Diagnóstico", font = list(size = 13, color = "#0000A1")),
         legend = list(orientation = "h", x = 0.1, y = -0.1),
         margin = list(t = 40, b = 40, l = 20, r = 20)
       ) %>% estilo_base()
@@ -4385,7 +4385,7 @@ server <- function(input, output, session) {
             textinfo = 'label+percent',
             hovertemplate = '<b>%{label}</b><br>Casos: %{value:,}<br>Proporção: %{percent}<extra></extra>') %>%
       layout(
-        title = list(text = "Casos por Sorotipo Viral (DENV)", font = list(size = 13, color = "#1E3A8A")),
+        title = list(text = "Casos por Sorotipo Viral (DENV)", font = list(size = 13, color = "#0000A1")),
         legend = list(orientation = "h", x = 0.1, y = -0.1),
         margin = list(t = 40, b = 40, l = 20, r = 20)
       ) %>% estilo_base()
@@ -4405,7 +4405,7 @@ server <- function(input, output, session) {
             marker = list(color = cores_ev[df_ev$Desfecho]),
             hovertemplate = '<b>%{y}</b><br>Casos: %{x:,}<extra></extra>') %>%
       layout(
-        title = list(text = "Evolução Clínica e Desfechos", font = list(size = 13, color = "#1E3A8A")),
+        title = list(text = "Evolução Clínica e Desfechos", font = list(size = 13, color = "#0000A1")),
         xaxis = list(title = "Total de Pacientes"),
         yaxis = list(title = "", automargin = TRUE),
         margin = list(l = 150, r = 20, t = 40, b = 40)
@@ -4424,7 +4424,7 @@ server <- function(input, output, session) {
             hovertemplate = '<b>%{y}</b><br>Notificações: %{x:,}<br>Participação: %{customdata}%<extra></extra>',
             customdata = ~Pct) %>%
       layout(
-        title = list(text = "Top 10 Estabelecimentos Notificadores", font = list(size = 13, color = "#1E3A8A")),
+        title = list(text = "Top 10 Estabelecimentos Notificadores", font = list(size = 13, color = "#0000A1")),
         xaxis = list(title = "Total Notificado"),
         yaxis = list(title = "", automargin = TRUE),
         margin = list(l = 220, r = 20, t = 40, b = 40)
@@ -4461,7 +4461,7 @@ server <- function(input, output, session) {
       add_trace(
         data = df_diag, x = ~SEMANA_EPID, y = ~Media,
         type = 'scatter', mode = 'lines',
-        line = list(color = '#1E3A8A', dash = 'dot', width = 2),
+        line = list(color = '#0000A1', dash = 'dot', width = 2),
         name = 'Média Esperada (2015-2023)',
         hovertemplate = '<b>Semana %{x}</b><br>Média Esperada: %{y} casos<extra></extra>'
       ) %>%
@@ -4495,7 +4495,7 @@ server <- function(input, output, session) {
       arrange(Ano_Mes) %>%
       mutate(Incidencia = round((Casos / pop) * 100000, 1))
     req(nrow(df_mensal) > 0)
-    plot_ly(df_mensal, x = ~Ano_Mes, y = ~Incidencia, type = 'bar', marker = list(color = '#1E3A8A'),
+    plot_ly(df_mensal, x = ~Ano_Mes, y = ~Incidencia, type = 'bar', marker = list(color = '#0000A1'),
             hovertemplate = '<b>%{x}</b><br>Incidência: %{y} por 100 mil hab.<extra></extra>') %>%
       layout(xaxis = list(title = "Mês / Ano", tickangle = -45), yaxis = list(title = "Taxa de Incidência (por 100 mil hab.)")) %>%
       estilo_base()
@@ -4552,7 +4552,7 @@ server <- function(input, output, session) {
   # Função compartilhada para desenhar o Slide Inicial (Capa Executiva Corporativa)
   desenhar_capa_executiva <- function() {
     grid.newpage()
-    grid.rect(gp = gpar(fill = "#1E3A8A", col = NA))
+    grid.rect(gp = gpar(fill = "#0000A1", col = NA))
     grid.text("Atualização Epidemiológica de Dengue", y = 0.62, gp = gpar(col = "white", fontsize = 26, fontface = "bold"))
     grid.text("Belém - Pará", y = 0.50, gp = gpar(col = "#93C5FD", fontsize = 20, fontface = "bold"))
     grid.text(paste0("Secretaria Municipal de Saúde - Centro de Informações em Vigilância em Saúde - CIEVS/ Monitoramento de Epidemiológico da Dengue\nEmissão Oficial: ", format(Sys.Date(), "%d/%m/%Y")), y = 0.38, gp = gpar(col = "#E2E8F0", fontsize = 13))
@@ -4562,7 +4562,7 @@ server <- function(input, output, session) {
   desenhar_slide_executivo <- function(titulo, subtitulo, plot_obj, insight) {
     grid.newpage()
     # 1. Barra Superior Corporativa Azul SESMA (sem badges ou descrições no topo)
-    grid.rect(x = 0.5, y = 0.94, width = 1, height = 0.12, gp = gpar(fill = "#1E3A8A", col = NA))
+    grid.rect(x = 0.5, y = 0.94, width = 1, height = 0.12, gp = gpar(fill = "#0000A1", col = NA))
     grid.text(titulo, x = 0.04, y = 0.96, just = "left", gp = gpar(col = "white", fontsize = 14, fontface = "bold"))
     grid.text(subtitulo, x = 0.04, y = 0.92, just = "left", gp = gpar(col = "#93C5FD", fontsize = 10))
     
@@ -4573,7 +4573,7 @@ server <- function(input, output, session) {
     
     # 3. Caixa Inferior da Nota Técnica Executiva
     grid.rect(x = 0.5, y = 0.06, width = 0.92, height = 0.07, gp = gpar(fill = "#F1F5F9", col = "#CBD5E1"))
-    grid.text(paste("Nota Técnica Executiva:", insight), x = 0.05, y = 0.06, just = "left", gp = gpar(col = "#1E3A8A", fontsize = 9, fontface = "italic"))
+    grid.text(paste("Nota Técnica Executiva:", insight), x = 0.05, y = 0.06, just = "left", gp = gpar(col = "#0000A1", fontsize = 9, fontface = "italic"))
   }
 
   # Função geradora de conteúdo individual de cada slide
@@ -4619,7 +4619,7 @@ server <- function(input, output, session) {
                   format_num(desc), format_num(ob), paste0(format_num(incid, 1), " por 100 mil hab."), format_pct(let, 2)),
         x = c(1, 2, 3, 4, 1, 2, 3, 4),
         y = c(2, 2, 2, 2, 1, 1, 1, 1),
-        cor = c("#1E3A8A", "#D97706", "#DC2626", "#0284C7", "#64748B", "#7F1D1D", "#B91C1C", "#991B1B")
+        cor = c("#0000A1", "#D97706", "#DC2626", "#0284C7", "#64748B", "#7F1D1D", "#B91C1C", "#991B1B")
       )
       p <- ggplot(df_kpis, aes(x = x, y = y)) +
         geom_tile(fill = "#F8FAFC", color = "#CBD5E1", linewidth = 0.8, width = 0.92, height = 0.85) +
@@ -4656,7 +4656,7 @@ server <- function(input, output, session) {
           scale_fill_gradientn(colors = CORES_MAPA_CONFORTAVEL, name = titulo_legenda) +
           labs(title = paste0("Mapa Territorial por Bairros — ", titulo_legenda),
                subtitle = paste0("Configuração ativa: ", ifelse(tipo_vis == "calor", "Mancha Térmica/Calor", "Coroplético"), " | Métrica: ", metrica_ativa)) +
-          theme_void(base_size = 11) + theme(legend.position = "right", plot.title = element_text(face = "bold", color = "#1E3A8A"))
+          theme_void(base_size = 11) + theme(legend.position = "right", plot.title = element_text(face = "bold", color = "#0000A1"))
       }
 
     } else if (gid == "g_mapa_distritos") {
@@ -4672,14 +4672,14 @@ server <- function(input, output, session) {
         
         p <- ggplot() +
           (if (!is.null(milhas) && nrow(milhas) > 0) geom_sf(data = milhas, fill = "#FFFFFF", color = "#CBD5E1", linewidth = 0.3) else NULL) +
-          geom_sf(data = md, aes(fill = .data[[metrica_ativa]]), color = "#1E3A8A", linewidth = 0.6) +
+          geom_sf(data = md, aes(fill = .data[[metrica_ativa]]), color = "#0000A1", linewidth = 0.6) +
           geom_label(data = md, aes(x = centroid_lon, y = centroid_lat, label = rotulo_mapa), size = 2.5, fontface = "bold",
-                        fill = "#FFFFFF", color = "#1E3A8A", alpha = 0.92, linewidth = 0.25,
+                        fill = "#FFFFFF", color = "#0000A1", alpha = 0.92, linewidth = 0.25,
                         label.padding = unit(0.14, "lines")) +
           scale_fill_gradientn(colors = CORES_MAPA_CONFORTAVEL, name = titulo_legenda) +
           labs(title = paste0("Mapa Territorial por Distrito — ", titulo_legenda),
                subtitle = paste0("Configuração ativa: ", ifelse(tipo_vis == "calor", "Mancha Térmica/Calor", "Coroplético"), " | Métrica: ", metrica_ativa)) +
-          theme_void(base_size = 11) + theme(legend.position = "right", plot.title = element_text(face = "bold", color = "#1E3A8A"))
+          theme_void(base_size = 11) + theme(legend.position = "right", plot.title = element_text(face = "bold", color = "#0000A1"))
       }
 
     } else if (gid == "g_bairros") {
@@ -4690,8 +4690,8 @@ server <- function(input, output, session) {
       df_b <- df %>% filter(!is.na(NM_BAIRRO), NM_BAIRRO != "") %>%
         count(NM_BAIRRO, sort = TRUE) %>% head(12)
       p <- ggplot(df_b, aes(x = n, y = reorder(NM_BAIRRO, n))) +
-        geom_col(fill = "#1E3A8A", width = 0.7) +
-        geom_text(aes(label = n), hjust = -0.2, fontface = "bold", size = 3.8, color = "#1E3A8A") +
+        geom_col(fill = "#0000A1", width = 0.7) +
+        geom_text(aes(label = n), hjust = -0.2, fontface = "bold", size = 3.8, color = "#0000A1") +
         labs(title = "Top 12 Bairros com Maior Volume de Notificações", x = "Total de Notificações", y = "Bairro") +
         theme_minimal(base_size = 12) + theme(panel.grid.major.y = element_blank())
 
@@ -4722,7 +4722,7 @@ server <- function(input, output, session) {
         count(Faixa, CS_SEXO) %>% mutate(Qtd = ifelse(CS_SEXO == "Masculino", -n, n))
       p <- ggplot(df_pir, aes(x = Faixa, y = Qtd, fill = CS_SEXO)) +
         geom_col(width = 0.8) + coord_flip() +
-        scale_fill_manual(values = c("Masculino" = "#1E3A8A", "Feminino" = "#EC4899")) +
+        scale_fill_manual(values = c("Masculino" = "#0000A1", "Feminino" = "#EC4899")) +
         scale_y_continuous(labels = function(x) abs(x)) +
         labs(title = "Pirâmide Etária dos Casos Notificados", x = "Faixa Etária", y = "Número de Notificações", fill = "Sexo") +
         theme_minimal(base_size = 12) + theme(legend.position = "bottom")
@@ -4852,8 +4852,8 @@ server <- function(input, output, session) {
         geom_line(aes(y = Media, color = "Média Histórica"), linewidth = 1, linetype = "dotted") +
         geom_line(aes(y = Limite_Sup, color = "Limite Superior Epidêmico"), linewidth = 1.1) +
         geom_col(aes(y = Casos_2026, fill = "Observado 2026 (Ano Vigente)"), alpha = 0.90, width = 0.7) +
-        scale_fill_manual(values = c("Faixa Endêmica" = "#BFDBFE", "Observado 2026 (Ano Vigente)" = "#1E3A8A")) +
-        scale_color_manual(values = c("Média Histórica" = "#1E3A8A", "Limite Superior Epidêmico" = "#DC2626")) +
+        scale_fill_manual(values = c("Faixa Endêmica" = "#BFDBFE", "Observado 2026 (Ano Vigente)" = "#0000A1")) +
+        scale_color_manual(values = c("Média Histórica" = "#0000A1", "Limite Superior Epidêmico" = "#DC2626")) +
         labs(title = "Canal Endêmico da Dengue em Belém (Ano Vigente: 2026)", x = "Semana Epidemiológica", y = "Casos Esperados / Notificados", fill = "", color = "") +
         theme_minimal(base_size = 12) + theme(legend.position = "bottom")
 
@@ -4867,7 +4867,7 @@ server <- function(input, output, session) {
         group_by(Ano_Mes) %>% summarise(Casos = n(), .groups = "drop") %>% arrange(Ano_Mes) %>%
         mutate(Incidencia = round((Casos / pop) * 100000, 1))
       p <- ggplot(df_mensal, aes(x = Ano_Mes, y = Incidencia)) +
-        geom_col(fill = "#1E3A8A", width = 0.7) +
+        geom_col(fill = "#0000A1", width = 0.7) +
         labs(title = "Evolução da Taxa de Incidência (por 100 mil hab.)", x = "Mês / Ano", y = "Incidência (por 100 mil hab.)") +
         theme_minimal(base_size = 12) + theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
