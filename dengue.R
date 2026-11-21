@@ -360,6 +360,7 @@ ui <- page_fillable(
   gap = 0,
   
   tags$head(
+    tags$meta(name = "viewport", content = "width=device-width, initial-scale=1, shrink-to-fit=no"),
     useShinyjs(),
     tags$link(rel = "stylesheet", href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"),
     tags$script(src = "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"),
@@ -745,6 +746,134 @@ ui <- page_fillable(
         max-width: 1400px;
         margin: 0 auto;
         min-height: 90vh;
+      }
+
+      /* =======================================================================
+         OTIMIZAÇÃO RESPONSIVA DEDICADA PARA CELULAR E DISPOSITIVOS MÓVEIS
+         ======================================================================= */
+      @media (max-width: 768px) {
+        /* 1. Cabeçalho Institucional Mobile */
+        .header-logos-top {
+          flex-direction: column !important;
+          padding: 8px 12px !important;
+          text-align: center !important;
+          gap: 6px !important;
+        }
+        .header-logos-top img {
+          max-height: 34px !important;
+          margin-bottom: 2px !important;
+        }
+        .header-logos-top h5 {
+          font-size: 0.82rem !important;
+          line-height: 1.25 !important;
+        }
+        .header-logos-top div {
+          font-size: 0.72rem !important;
+        }
+
+        /* 2. Barra de Navegação e Abas */
+        .navbar {
+          padding-left: 8px !important;
+          padding-right: 8px !important;
+        }
+        .navbar-brand {
+          font-size: 0.82rem !important;
+          white-space: normal !important;
+          line-height: 1.2 !important;
+        }
+        .navbar-nav {
+          padding: 6px 0 !important;
+        }
+        .nav-underline .nav-link {
+          font-size: 0.80rem !important;
+          padding: 0.35rem 0.6rem !important;
+        }
+
+        /* 3. Espaçamento Geral do Conteúdo */
+        .tab-pane {
+          padding: 6px 6px 20px 6px !important;
+        }
+        .card {
+          margin-bottom: 0.65rem !important;
+          border-radius: 8px !important;
+        }
+        .card-header {
+          padding: 0.35rem 0.65rem !important;
+          font-size: 0.82rem !important;
+        }
+        .card-header h6, .card-header .h6 {
+          font-size: 0.80rem !important;
+        }
+
+        /* 4. Cartões de Indicadores (ValueBoxes em grade 2 colunas no mobile) */
+        .bslib-layout-column-wrap {
+          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+          gap: 6px !important;
+        }
+        .value-box {
+          margin-bottom: 0 !important;
+          padding: 0.45rem 0.65rem !important;
+          min-height: 75px !important;
+        }
+        .value-box .value-box-value {
+          font-size: 1.15rem !important;
+        }
+        .value-box .value-box-title {
+          font-size: 0.65rem !important;
+          letter-spacing: 0.2px !important;
+        }
+        .value-box .value-box-showcase {
+          max-width: 28px !important;
+          font-size: 1.1rem !important;
+        }
+
+        /* 5. Altura Adaptativa dos Gráficos e Mapas */
+        .js-plotly-plot {
+          height: 330px !important;
+          max-height: 330px !important;
+        }
+        .leaflet-container {
+          height: 340px !important;
+          min-height: 340px !important;
+        }
+
+        /* 6. Layout de Colunas (empilhamento responsivo completo) */
+        .bslib-layout-columns {
+          grid-template-columns: 1fr !important;
+        }
+
+        /* 7. Barra Lateral (Gaveta Móvel) */
+        .bslib-sidebar-layout .sidebar {
+          width: 85vw !important;
+          max-width: 340px !important;
+        }
+
+        /* 8. Tabelas com Rolagem Tátil Suave */
+        .custom-scroll-table {
+          max-height: 220px !important;
+          -webkit-overflow-scrolling: touch !important;
+        }
+        .custom-scroll-table table {
+          font-size: 0.72rem !important;
+        }
+
+        /* 9. Barra do Modo Apresentação */
+        .slide-deck-toolbar {
+          padding: 6px 8px !important;
+        }
+        .slide-deck-toolbar .selectize-control {
+          width: 100% !important;
+        }
+        .slide-deck-toolbar .selectize-input {
+          width: 100% !important;
+        }
+        .slide-deck-toolbar .btn-group {
+          width: 100% !important;
+          justify-content: center !important;
+        }
+        .slide-frame {
+          padding: 10px !important;
+        }
       }
     "))
   ),
