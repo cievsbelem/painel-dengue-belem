@@ -931,7 +931,7 @@ ui <- page_fillable(
         inputId = "modo_ano",
         label = NULL,
         choices = c("Ano Único (Individual)" = "individual", "Cruzamento / Série Multi-anos" = "cruzado"),
-        selected = "cruzado"
+        selected = "individual"
       ),
       uiOutput("filtro_anos_ui"),
       sliderInput("sel_semana", "Semanas Epidemiológicas:", min = 1, max = 53, value = c(1, 53)),
@@ -2227,9 +2227,14 @@ server <- function(input, output, session) {
   
   # Vetor unificado de anos ativos
   anos_ativos <- reactive({
-    if (input$modo_ano == "individual") {
-      if (is.null(input$sel_anos_individual)) return(NULL)
-      return(suppressWarnings(as.numeric(input$sel_anos_individual)))
+    df <- dados_base()
+    anos_disp <- if (!is.null(df) && nrow(df) > 0) sort(unique(na.omit(as.numeric(df$ANO_NOTIF))), decreasing = TRUE) else 2026
+    ano_padrao <- anos_disp[1]
+    
+    modo <- if (!is.null(input$modo_ano)) input$modo_ano else "individual"
+    if (modo == "individual") {
+      val <- if (!is.null(input$sel_anos_individual)) input$sel_anos_individual else as.character(ano_padrao)
+      return(suppressWarnings(as.numeric(val)))
     } else {
       if (is.null(input$sel_anos_multi) || length(input$sel_anos_multi) == 0) return(NULL)
       return(suppressWarnings(as.numeric(input$sel_anos_multi)))
