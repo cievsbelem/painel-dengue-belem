@@ -453,6 +453,14 @@ if (nrow(df_historico_antigo) > 0) {
   df_consolidado <- df_novos_juntos
 }
 
+# Desduplicação estrita por Notificação (evita duplicações entre arquivos complementares/sobrepostos)
+n_antes_dedup <- nrow(df_consolidado)
+df_consolidado <- df_consolidado %>% distinct(ID_NOTIFICACAO_HASH, .keep_all = TRUE)
+n_removidos <- n_antes_dedup - nrow(df_consolidado)
+if (n_removidos > 0) {
+  cat(paste0("   [AUDITORIA] Notificações em duplicidade identificadas e removidas: ", format(n_removidos, big.mark = "."), "\n"))
+}
+
 # Ordenação final
 df_consolidado <- df_consolidado %>% arrange(desc(ANO_NOTIF), desc(SEMANA_EPID), DT_NOTIFIC)
 

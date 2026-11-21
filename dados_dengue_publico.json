@@ -3,157 +3,157 @@
     "municipio": "Belém - PA",
     "secretaria": "Secretaria Municipal de Saúde (SESMA)",
     "setor": "Centro de Informações Estratégicas em Vigilância em Saúde (CIEVS)",
-    "data_atualizacao": "21/11/2026 15:40",
+    "data_atualizacao": "21/11/2026 16:19",
     "ano_vigente": 2026,
     "max_semana_vigente": 44,
-    "total_notificacoes": 31349,
+    "total_notificacoes": 27660,
     "populacao_referencia": 1303403,
     "serie_historica": "2014–2026"
   },
   "anos_disponiveis": [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014],
   "kpis": {
     "2026": {
-      "notificados": 6384,
-      "confirmados": 2670,
-      "descartados": 3008,
-      "investigacao": 160,
-      "inconclusivos": 546,
-      "provaveis": 3376,
-      "obitos": 7,
-      "incidencia": 204.8,
-      "incidencia_prov": 259,
-      "letalidade": 0.26
+      "notificados": 3256,
+      "confirmados": 1328,
+      "descartados": 1507,
+      "investigacao": 149,
+      "inconclusivos": 272,
+      "provaveis": 1749,
+      "obitos": 4,
+      "incidencia": 101.9,
+      "incidencia_prov": 134.2,
+      "letalidade": 0.3
     },
     "2025": {
-      "notificados": 3269,
-      "confirmados": 1092,
-      "descartados": 2029,
+      "notificados": 3159,
+      "confirmados": 1053,
+      "descartados": 1974,
       "investigacao": 17,
-      "inconclusivos": 131,
-      "provaveis": 1240,
-      "obitos": 4,
-      "incidencia": 83.8,
-      "incidencia_prov": 95.1,
-      "letalidade": 0.37
+      "inconclusivos": 115,
+      "provaveis": 1185,
+      "obitos": 3,
+      "incidencia": 80.8,
+      "incidencia_prov": 90.9,
+      "letalidade": 0.28
     },
     "2024": {
-      "notificados": 6794,
-      "confirmados": 3351,
-      "descartados": 3126,
+      "notificados": 6619,
+      "confirmados": 3274,
+      "descartados": 3047,
       "investigacao": 8,
-      "inconclusivos": 309,
-      "provaveis": 3668,
+      "inconclusivos": 290,
+      "provaveis": 3572,
       "obitos": 4,
-      "incidencia": 257.1,
-      "incidencia_prov": 281.4,
+      "incidencia": 251.2,
+      "incidencia_prov": 274.1,
       "letalidade": 0.12
     },
     "2023": {
-      "notificados": 1188,
-      "confirmados": 457,
-      "descartados": 614,
+      "notificados": 1147,
+      "confirmados": 449,
+      "descartados": 591,
       "investigacao": 4,
-      "inconclusivos": 113,
-      "provaveis": 574,
+      "inconclusivos": 103,
+      "provaveis": 556,
       "obitos": 0,
-      "incidencia": 35.1,
-      "incidencia_prov": 44,
+      "incidencia": 34.4,
+      "incidencia_prov": 42.7,
       "letalidade": 0
     },
     "2022": {
-      "notificados": 859,
-      "confirmados": 262,
-      "descartados": 545,
+      "notificados": 849,
+      "confirmados": 259,
+      "descartados": 538,
       "investigacao": 2,
       "inconclusivos": 50,
-      "provaveis": 314,
+      "provaveis": 311,
       "obitos": 1,
-      "incidencia": 20.1,
-      "incidencia_prov": 24.1,
-      "letalidade": 0.38
+      "incidencia": 19.9,
+      "incidencia_prov": 23.9,
+      "letalidade": 0.39
     },
     "2021": {
-      "notificados": 1324,
-      "confirmados": 631,
-      "descartados": 666,
+      "notificados": 1312,
+      "confirmados": 626,
+      "descartados": 659,
       "investigacao": 0,
       "inconclusivos": 27,
-      "provaveis": 658,
+      "provaveis": 653,
       "obitos": 1,
-      "incidencia": 48.4,
-      "incidencia_prov": 50.5,
+      "incidencia": 48,
+      "incidencia_prov": 50.1,
       "letalidade": 0.16
     },
     "2020": {
-      "notificados": 633,
-      "confirmados": 203,
-      "descartados": 379,
+      "notificados": 629,
+      "confirmados": 202,
+      "descartados": 377,
       "investigacao": 0,
-      "inconclusivos": 51,
-      "provaveis": 254,
+      "inconclusivos": 50,
+      "provaveis": 252,
       "obitos": 0,
-      "incidencia": 15.6,
-      "incidencia_prov": 19.5,
+      "incidencia": 15.5,
+      "incidencia_prov": 19.3,
       "letalidade": 0
     },
     "2019": {
-      "notificados": 753,
-      "confirmados": 129,
-      "descartados": 516,
+      "notificados": 747,
+      "confirmados": 128,
+      "descartados": 513,
       "investigacao": 2,
-      "inconclusivos": 106,
-      "provaveis": 237,
+      "inconclusivos": 104,
+      "provaveis": 234,
       "obitos": 0,
-      "incidencia": 9.9,
-      "incidencia_prov": 18.2,
+      "incidencia": 9.8,
+      "incidencia_prov": 18,
       "letalidade": 0
     },
     "2018": {
-      "notificados": 2207,
-      "confirmados": 109,
-      "descartados": 1894,
+      "notificados": 2154,
+      "confirmados": 108,
+      "descartados": 1851,
       "investigacao": 1,
-      "inconclusivos": 203,
-      "provaveis": 313,
+      "inconclusivos": 194,
+      "provaveis": 303,
       "obitos": 1,
-      "incidencia": 8.4,
-      "incidencia_prov": 24,
-      "letalidade": 0.92
+      "incidencia": 8.3,
+      "incidencia_prov": 23.2,
+      "letalidade": 0.93
     },
     "2017": {
-      "notificados": 1585,
+      "notificados": 1567,
       "confirmados": 96,
-      "descartados": 1353,
+      "descartados": 1337,
       "investigacao": 2,
-      "inconclusivos": 134,
-      "provaveis": 232,
+      "inconclusivos": 132,
+      "provaveis": 230,
       "obitos": 0,
       "incidencia": 7.4,
-      "incidencia_prov": 17.8,
+      "incidencia_prov": 17.6,
       "letalidade": 0
     },
     "2016": {
-      "notificados": 2582,
-      "confirmados": 590,
-      "descartados": 1801,
+      "notificados": 2526,
+      "confirmados": 582,
+      "descartados": 1759,
       "investigacao": 1,
-      "inconclusivos": 190,
-      "provaveis": 781,
+      "inconclusivos": 184,
+      "provaveis": 767,
       "obitos": 0,
-      "incidencia": 45.3,
-      "incidencia_prov": 59.9,
+      "incidencia": 44.7,
+      "incidencia_prov": 58.8,
       "letalidade": 0
     },
     "2015": {
-      "notificados": 3766,
-      "confirmados": 1408,
-      "descartados": 2159,
+      "notificados": 3690,
+      "confirmados": 1385,
+      "descartados": 2116,
       "investigacao": 0,
-      "inconclusivos": 199,
-      "provaveis": 1607,
+      "inconclusivos": 189,
+      "provaveis": 1574,
       "obitos": 2,
-      "incidencia": 108,
-      "incidencia_prov": 123.3,
+      "incidencia": 106.3,
+      "incidencia_prov": 120.8,
       "letalidade": 0.14
     },
     "2014": {
@@ -169,299 +169,299 @@
       "letalidade": 0
     },
     "TODOS": {
-      "notificados": 31349,
-      "confirmados": 11002,
-      "descartados": 18091,
-      "investigacao": 197,
-      "inconclusivos": 2059,
-      "provaveis": 13258,
-      "obitos": 20,
-      "incidencia": 844.1,
-      "incidencia_prov": 1017.2,
-      "letalidade": 0.18
+      "notificados": 27660,
+      "confirmados": 9494,
+      "descartados": 16270,
+      "investigacao": 186,
+      "inconclusivos": 1710,
+      "provaveis": 11390,
+      "obitos": 16,
+      "incidencia": 728.4,
+      "incidencia_prov": 873.9,
+      "letalidade": 0.17
     }
   },
   "serie_semanal": {
     "2026": [
       {
         "semana": 1,
-        "notificados": 148,
-        "confirmados": 36,
-        "descartados": 104,
+        "notificados": 72,
+        "confirmados": 17,
+        "descartados": 51,
         "investigacao": 0
       },
       {
         "semana": 2,
-        "notificados": 130,
-        "confirmados": 46,
-        "descartados": 72,
+        "notificados": 64,
+        "confirmados": 23,
+        "descartados": 35,
         "investigacao": 0
       },
       {
         "semana": 3,
-        "notificados": 146,
-        "confirmados": 36,
-        "descartados": 96,
+        "notificados": 72,
+        "confirmados": 18,
+        "descartados": 47,
         "investigacao": 0
       },
       {
         "semana": 4,
-        "notificados": 210,
-        "confirmados": 76,
-        "descartados": 126,
+        "notificados": 96,
+        "confirmados": 36,
+        "descartados": 56,
         "investigacao": 0
       },
       {
         "semana": 5,
-        "notificados": 178,
-        "confirmados": 74,
-        "descartados": 87,
+        "notificados": 88,
+        "confirmados": 37,
+        "descartados": 42,
         "investigacao": 0
       },
       {
         "semana": 6,
-        "notificados": 180,
-        "confirmados": 59,
-        "descartados": 99,
+        "notificados": 83,
+        "confirmados": 27,
+        "descartados": 47,
         "investigacao": 0
       },
       {
         "semana": 7,
-        "notificados": 200,
-        "confirmados": 50,
-        "descartados": 129,
+        "notificados": 98,
+        "confirmados": 24,
+        "descartados": 63,
         "investigacao": 0
       },
       {
         "semana": 8,
-        "notificados": 226,
-        "confirmados": 92,
-        "descartados": 122,
+        "notificados": 110,
+        "confirmados": 46,
+        "descartados": 58,
         "investigacao": 0
       },
       {
         "semana": 9,
-        "notificados": 234,
-        "confirmados": 138,
-        "descartados": 83,
+        "notificados": 113,
+        "confirmados": 66,
+        "descartados": 40,
         "investigacao": 0
       },
       {
         "semana": 10,
-        "notificados": 240,
-        "confirmados": 98,
-        "descartados": 119,
+        "notificados": 117,
+        "confirmados": 46,
+        "descartados": 59,
         "investigacao": 0
       },
       {
         "semana": 11,
-        "notificados": 248,
-        "confirmados": 105,
-        "descartados": 116,
+        "notificados": 118,
+        "confirmados": 48,
+        "descartados": 56,
         "investigacao": 0
       },
       {
         "semana": 12,
-        "notificados": 280,
-        "confirmados": 136,
-        "descartados": 124,
+        "notificados": 136,
+        "confirmados": 67,
+        "descartados": 59,
         "investigacao": 0
       },
       {
         "semana": 13,
-        "notificados": 150,
-        "confirmados": 64,
-        "descartados": 70,
+        "notificados": 72,
+        "confirmados": 31,
+        "descartados": 33,
         "investigacao": 0
       },
       {
         "semana": 14,
-        "notificados": 198,
-        "confirmados": 106,
-        "descartados": 72,
+        "notificados": 97,
+        "confirmados": 52,
+        "descartados": 35,
         "investigacao": 0
       },
       {
         "semana": 15,
-        "notificados": 286,
-        "confirmados": 144,
-        "descartados": 126,
+        "notificados": 135,
+        "confirmados": 67,
+        "descartados": 61,
         "investigacao": 0
       },
       {
         "semana": 16,
-        "notificados": 218,
-        "confirmados": 96,
-        "descartados": 110,
+        "notificados": 107,
+        "confirmados": 47,
+        "descartados": 53,
         "investigacao": 0
       },
       {
         "semana": 17,
-        "notificados": 230,
-        "confirmados": 96,
-        "descartados": 117,
+        "notificados": 114,
+        "confirmados": 48,
+        "descartados": 57,
         "investigacao": 0
       },
       {
         "semana": 18,
-        "notificados": 223,
-        "confirmados": 115,
-        "descartados": 93,
+        "notificados": 110,
+        "confirmados": 57,
+        "descartados": 46,
         "investigacao": 0
       },
       {
         "semana": 19,
-        "notificados": 200,
-        "confirmados": 96,
-        "descartados": 79,
+        "notificados": 96,
+        "confirmados": 45,
+        "descartados": 37,
         "investigacao": 0
       },
       {
         "semana": 20,
-        "notificados": 276,
-        "confirmados": 128,
-        "descartados": 115,
+        "notificados": 135,
+        "confirmados": 62,
+        "descartados": 56,
         "investigacao": 0
       },
       {
         "semana": 21,
-        "notificados": 162,
-        "confirmados": 76,
-        "descartados": 67,
+        "notificados": 81,
+        "confirmados": 38,
+        "descartados": 33,
         "investigacao": 0
       },
       {
         "semana": 22,
-        "notificados": 156,
-        "confirmados": 83,
-        "descartados": 57,
-        "investigacao": 2
+        "notificados": 77,
+        "confirmados": 40,
+        "descartados": 29,
+        "investigacao": 1
       },
       {
         "semana": 23,
-        "notificados": 195,
-        "confirmados": 112,
-        "descartados": 63,
+        "notificados": 96,
+        "confirmados": 54,
+        "descartados": 32,
         "investigacao": 0
       },
       {
         "semana": 24,
-        "notificados": 146,
-        "confirmados": 50,
-        "descartados": 75,
+        "notificados": 71,
+        "confirmados": 25,
+        "descartados": 37,
         "investigacao": 0
       },
       {
         "semana": 25,
-        "notificados": 165,
-        "confirmados": 80,
-        "descartados": 71,
+        "notificados": 81,
+        "confirmados": 40,
+        "descartados": 34,
         "investigacao": 0
       },
       {
         "semana": 26,
-        "notificados": 151,
-        "confirmados": 61,
-        "descartados": 74,
+        "notificados": 74,
+        "confirmados": 30,
+        "descartados": 36,
         "investigacao": 0
       },
       {
         "semana": 27,
-        "notificados": 147,
-        "confirmados": 62,
-        "descartados": 71,
+        "notificados": 75,
+        "confirmados": 31,
+        "descartados": 36,
         "investigacao": 0
       },
       {
         "semana": 28,
-        "notificados": 124,
-        "confirmados": 47,
-        "descartados": 63,
+        "notificados": 64,
+        "confirmados": 24,
+        "descartados": 33,
         "investigacao": 0
       },
       {
         "semana": 29,
-        "notificados": 124,
-        "confirmados": 57,
-        "descartados": 55,
+        "notificados": 63,
+        "confirmados": 28,
+        "descartados": 26,
         "investigacao": 7
       },
       {
         "semana": 30,
-        "notificados": 100,
-        "confirmados": 39,
-        "descartados": 51,
+        "notificados": 54,
+        "confirmados": 21,
+        "descartados": 26,
         "investigacao": 3
       },
       {
         "semana": 31,
-        "notificados": 111,
-        "confirmados": 37,
-        "descartados": 59,
-        "investigacao": 8
+        "notificados": 56,
+        "confirmados": 19,
+        "descartados": 29,
+        "investigacao": 7
       },
       {
         "semana": 32,
-        "notificados": 144,
-        "confirmados": 57,
-        "descartados": 71,
+        "notificados": 72,
+        "confirmados": 29,
+        "descartados": 33,
         "investigacao": 6
       },
       {
         "semana": 33,
-        "notificados": 86,
-        "confirmados": 29,
-        "descartados": 36,
-        "investigacao": 15
+        "notificados": 51,
+        "confirmados": 15,
+        "descartados": 21,
+        "investigacao": 13
       },
       {
         "semana": 34,
-        "notificados": 84,
-        "confirmados": 22,
-        "descartados": 29,
-        "investigacao": 17
-      },
-      {
-        "semana": 35,
-        "notificados": 78,
-        "confirmados": 18,
-        "descartados": 33,
+        "notificados": 55,
+        "confirmados": 15,
+        "descartados": 17,
         "investigacao": 15
       },
       {
+        "semana": 35,
+        "notificados": 55,
+        "confirmados": 12,
+        "descartados": 22,
+        "investigacao": 14
+      },
+      {
         "semana": 36,
-        "notificados": 36,
-        "confirmados": 16,
-        "descartados": 9,
+        "notificados": 29,
+        "confirmados": 11,
+        "descartados": 7,
         "investigacao": 11
       },
       {
         "semana": 37,
-        "notificados": 47,
+        "notificados": 46,
         "confirmados": 15,
         "descartados": 20,
-        "investigacao": 12
+        "investigacao": 11
       },
       {
         "semana": 38,
-        "notificados": 35,
-        "confirmados": 6,
+        "notificados": 34,
+        "confirmados": 5,
         "descartados": 15,
         "investigacao": 14
       },
       {
         "semana": 39,
-        "notificados": 17,
+        "notificados": 16,
         "confirmados": 6,
         "descartados": 6,
-        "investigacao": 5
+        "investigacao": 4
       },
       {
         "semana": 40,
-        "notificados": 26,
+        "notificados": 25,
         "confirmados": 2,
         "descartados": 15,
-        "investigacao": 9
+        "investigacao": 8
       },
       {
         "semana": 41,
@@ -472,10 +472,10 @@
       },
       {
         "semana": 42,
-        "notificados": 22,
+        "notificados": 21,
         "confirmados": 1,
         "descartados": 4,
-        "investigacao": 17
+        "investigacao": 16
       },
       {
         "semana": 43,
@@ -495,37 +495,37 @@
     "2025": [
       {
         "semana": 1,
-        "notificados": 45,
+        "notificados": 44,
         "confirmados": 19,
-        "descartados": 25,
+        "descartados": 24,
         "investigacao": 0
       },
       {
         "semana": 2,
-        "notificados": 66,
+        "notificados": 65,
         "confirmados": 25,
-        "descartados": 40,
+        "descartados": 39,
         "investigacao": 1
       },
       {
         "semana": 3,
-        "notificados": 77,
-        "confirmados": 31,
+        "notificados": 76,
+        "confirmados": 30,
         "descartados": 44,
         "investigacao": 0
       },
       {
         "semana": 4,
-        "notificados": 97,
-        "confirmados": 38,
+        "notificados": 95,
+        "confirmados": 36,
         "descartados": 57,
         "investigacao": 1
       },
       {
         "semana": 5,
-        "notificados": 114,
-        "confirmados": 45,
-        "descartados": 67,
+        "notificados": 112,
+        "confirmados": 44,
+        "descartados": 66,
         "investigacao": 0
       },
       {
@@ -537,113 +537,113 @@
       },
       {
         "semana": 7,
-        "notificados": 118,
-        "confirmados": 50,
-        "descartados": 67,
+        "notificados": 113,
+        "confirmados": 49,
+        "descartados": 63,
         "investigacao": 0
       },
       {
         "semana": 8,
-        "notificados": 144,
-        "confirmados": 58,
-        "descartados": 84,
+        "notificados": 140,
+        "confirmados": 55,
+        "descartados": 83,
         "investigacao": 1
       },
       {
         "semana": 9,
-        "notificados": 147,
-        "confirmados": 57,
-        "descartados": 88,
+        "notificados": 142,
+        "confirmados": 54,
+        "descartados": 86,
         "investigacao": 0
       },
       {
         "semana": 10,
-        "notificados": 105,
-        "confirmados": 44,
-        "descartados": 59,
+        "notificados": 103,
+        "confirmados": 43,
+        "descartados": 58,
         "investigacao": 0
       },
       {
         "semana": 11,
-        "notificados": 134,
-        "confirmados": 55,
-        "descartados": 77,
+        "notificados": 131,
+        "confirmados": 53,
+        "descartados": 76,
         "investigacao": 0
       },
       {
         "semana": 12,
-        "notificados": 128,
-        "confirmados": 49,
-        "descartados": 78,
-        "investigacao": 0
-      },
-      {
-        "semana": 13,
-        "notificados": 154,
-        "confirmados": 51,
-        "descartados": 103,
-        "investigacao": 0
-      },
-      {
-        "semana": 14,
-        "notificados": 123,
-        "confirmados": 45,
+        "notificados": 125,
+        "confirmados": 48,
         "descartados": 77,
         "investigacao": 0
       },
       {
+        "semana": 13,
+        "notificados": 151,
+        "confirmados": 50,
+        "descartados": 101,
+        "investigacao": 0
+      },
+      {
+        "semana": 14,
+        "notificados": 119,
+        "confirmados": 44,
+        "descartados": 74,
+        "investigacao": 0
+      },
+      {
         "semana": 15,
-        "notificados": 100,
-        "confirmados": 26,
-        "descartados": 73,
+        "notificados": 97,
+        "confirmados": 25,
+        "descartados": 72,
         "investigacao": 0
       },
       {
         "semana": 16,
-        "notificados": 93,
-        "confirmados": 24,
-        "descartados": 66,
+        "notificados": 90,
+        "confirmados": 22,
+        "descartados": 65,
         "investigacao": 2
       },
       {
         "semana": 17,
-        "notificados": 68,
-        "confirmados": 23,
-        "descartados": 44,
+        "notificados": 61,
+        "confirmados": 22,
+        "descartados": 38,
         "investigacao": 0
       },
       {
         "semana": 18,
-        "notificados": 41,
-        "confirmados": 13,
+        "notificados": 39,
+        "confirmados": 12,
         "descartados": 27,
         "investigacao": 0
       },
       {
         "semana": 19,
-        "notificados": 53,
-        "confirmados": 21,
+        "notificados": 51,
+        "confirmados": 20,
         "descartados": 29,
         "investigacao": 0
       },
       {
         "semana": 20,
-        "notificados": 49,
+        "notificados": 44,
         "confirmados": 10,
-        "descartados": 35,
+        "descartados": 32,
         "investigacao": 0
       },
       {
         "semana": 21,
-        "notificados": 62,
+        "notificados": 60,
         "confirmados": 16,
-        "descartados": 40,
+        "descartados": 39,
         "investigacao": 1
       },
       {
         "semana": 22,
-        "notificados": 50,
-        "confirmados": 15,
+        "notificados": 47,
+        "confirmados": 13,
         "descartados": 30,
         "investigacao": 0
       },
@@ -656,30 +656,30 @@
       },
       {
         "semana": 24,
-        "notificados": 35,
+        "notificados": 34,
         "confirmados": 8,
         "descartados": 21,
         "investigacao": 1
       },
       {
         "semana": 25,
-        "notificados": 30,
-        "confirmados": 6,
+        "notificados": 29,
+        "confirmados": 5,
         "descartados": 19,
         "investigacao": 1
       },
       {
         "semana": 26,
-        "notificados": 36,
+        "notificados": 35,
         "confirmados": 9,
-        "descartados": 22,
+        "descartados": 21,
         "investigacao": 0
       },
       {
         "semana": 27,
-        "notificados": 33,
+        "notificados": 32,
         "confirmados": 4,
-        "descartados": 26,
+        "descartados": 25,
         "investigacao": 0
       },
       {
@@ -691,8 +691,8 @@
       },
       {
         "semana": 29,
-        "notificados": 35,
-        "confirmados": 10,
+        "notificados": 34,
+        "confirmados": 9,
         "descartados": 25,
         "investigacao": 0
       },
@@ -719,7 +719,7 @@
       },
       {
         "semana": 33,
-        "notificados": 40,
+        "notificados": 39,
         "confirmados": 10,
         "descartados": 25,
         "investigacao": 0
@@ -740,30 +740,30 @@
       },
       {
         "semana": 36,
-        "notificados": 31,
-        "confirmados": 6,
-        "descartados": 23,
+        "notificados": 27,
+        "confirmados": 5,
+        "descartados": 21,
         "investigacao": 0
       },
       {
         "semana": 37,
-        "notificados": 36,
-        "confirmados": 12,
-        "descartados": 24,
+        "notificados": 33,
+        "confirmados": 11,
+        "descartados": 22,
         "investigacao": 0
       },
       {
         "semana": 38,
-        "notificados": 33,
+        "notificados": 32,
         "confirmados": 9,
-        "descartados": 24,
+        "descartados": 23,
         "investigacao": 0
       },
       {
         "semana": 39,
-        "notificados": 43,
+        "notificados": 42,
         "confirmados": 12,
-        "descartados": 29,
+        "descartados": 28,
         "investigacao": 0
       },
       {
@@ -775,7 +775,7 @@
       },
       {
         "semana": 41,
-        "notificados": 28,
+        "notificados": 27,
         "confirmados": 8,
         "descartados": 16,
         "investigacao": 0
@@ -789,16 +789,16 @@
       },
       {
         "semana": 43,
-        "notificados": 28,
+        "notificados": 26,
         "confirmados": 11,
-        "descartados": 15,
+        "descartados": 13,
         "investigacao": 0
       },
       {
         "semana": 44,
-        "notificados": 30,
+        "notificados": 29,
         "confirmados": 9,
-        "descartados": 21,
+        "descartados": 20,
         "investigacao": 0
       },
       {
@@ -817,9 +817,9 @@
       },
       {
         "semana": 47,
-        "notificados": 40,
-        "confirmados": 11,
-        "descartados": 26,
+        "notificados": 38,
+        "confirmados": 10,
+        "descartados": 25,
         "investigacao": 0
       },
       {
@@ -838,16 +838,16 @@
       },
       {
         "semana": 50,
-        "notificados": 47,
-        "confirmados": 12,
+        "notificados": 44,
+        "confirmados": 10,
         "descartados": 33,
         "investigacao": 0
       },
       {
         "semana": 51,
-        "notificados": 71,
+        "notificados": 70,
         "confirmados": 18,
-        "descartados": 41,
+        "descartados": 40,
         "investigacao": 1
       },
       {
@@ -859,9 +859,9 @@
       },
       {
         "semana": 53,
-        "notificados": 65,
-        "confirmados": 20,
-        "descartados": 38,
+        "notificados": 43,
+        "confirmados": 13,
+        "descartados": 26,
         "investigacao": 0
       }
     ],
@@ -875,15 +875,15 @@
       },
       {
         "semana": 2,
-        "notificados": 51,
+        "notificados": 49,
         "confirmados": 25,
         "descartados": 21,
         "investigacao": 0
       },
       {
         "semana": 3,
-        "notificados": 74,
-        "confirmados": 43,
+        "notificados": 73,
+        "confirmados": 42,
         "descartados": 30,
         "investigacao": 0
       },
@@ -896,79 +896,79 @@
       },
       {
         "semana": 5,
-        "notificados": 147,
-        "confirmados": 91,
-        "descartados": 52,
+        "notificados": 143,
+        "confirmados": 90,
+        "descartados": 49,
         "investigacao": 0
       },
       {
         "semana": 6,
-        "notificados": 208,
-        "confirmados": 131,
-        "descartados": 74,
+        "notificados": 202,
+        "confirmados": 129,
+        "descartados": 70,
         "investigacao": 0
       },
       {
         "semana": 7,
-        "notificados": 261,
-        "confirmados": 166,
-        "descartados": 82,
+        "notificados": 259,
+        "confirmados": 165,
+        "descartados": 81,
         "investigacao": 1
       },
       {
         "semana": 8,
-        "notificados": 423,
-        "confirmados": 250,
-        "descartados": 164,
+        "notificados": 418,
+        "confirmados": 246,
+        "descartados": 163,
         "investigacao": 0
       },
       {
         "semana": 9,
-        "notificados": 393,
-        "confirmados": 228,
-        "descartados": 147,
+        "notificados": 381,
+        "confirmados": 222,
+        "descartados": 143,
         "investigacao": 0
       },
       {
         "semana": 10,
-        "notificados": 472,
-        "confirmados": 272,
-        "descartados": 178,
+        "notificados": 456,
+        "confirmados": 264,
+        "descartados": 174,
         "investigacao": 1
       },
       {
         "semana": 11,
-        "notificados": 282,
-        "confirmados": 150,
-        "descartados": 117,
+        "notificados": 276,
+        "confirmados": 148,
+        "descartados": 113,
         "investigacao": 0
       },
       {
         "semana": 12,
-        "notificados": 405,
-        "confirmados": 186,
-        "descartados": 202,
+        "notificados": 393,
+        "confirmados": 183,
+        "descartados": 195,
         "investigacao": 0
       },
       {
         "semana": 13,
-        "notificados": 295,
-        "confirmados": 147,
-        "descartados": 134,
+        "notificados": 288,
+        "confirmados": 144,
+        "descartados": 130,
         "investigacao": 0
       },
       {
         "semana": 14,
-        "notificados": 301,
-        "confirmados": 163,
-        "descartados": 121,
+        "notificados": 293,
+        "confirmados": 160,
+        "descartados": 116,
         "investigacao": 0
       },
       {
         "semana": 15,
-        "notificados": 298,
-        "confirmados": 143,
-        "descartados": 145,
+        "notificados": 290,
+        "confirmados": 137,
+        "descartados": 144,
         "investigacao": 0
       },
       {
@@ -980,135 +980,135 @@
       },
       {
         "semana": 17,
-        "notificados": 188,
-        "confirmados": 89,
-        "descartados": 89,
-        "investigacao": 0
-      },
-      {
-        "semana": 18,
-        "notificados": 171,
-        "confirmados": 76,
-        "descartados": 86,
-        "investigacao": 1
-      },
-      {
-        "semana": 19,
-        "notificados": 165,
-        "confirmados": 73,
+        "notificados": 182,
+        "confirmados": 86,
         "descartados": 87,
         "investigacao": 0
       },
       {
-        "semana": 20,
-        "notificados": 159,
+        "semana": 18,
+        "notificados": 164,
         "confirmados": 73,
-        "descartados": 81,
+        "descartados": 82,
+        "investigacao": 1
+      },
+      {
+        "semana": 19,
+        "notificados": 159,
+        "confirmados": 69,
+        "descartados": 85,
+        "investigacao": 0
+      },
+      {
+        "semana": 20,
+        "notificados": 156,
+        "confirmados": 73,
+        "descartados": 79,
         "investigacao": 0
       },
       {
         "semana": 21,
-        "notificados": 120,
-        "confirmados": 59,
-        "descartados": 57,
+        "notificados": 116,
+        "confirmados": 57,
+        "descartados": 55,
         "investigacao": 0
       },
       {
         "semana": 22,
-        "notificados": 82,
-        "confirmados": 34,
-        "descartados": 44,
+        "notificados": 80,
+        "confirmados": 33,
+        "descartados": 43,
         "investigacao": 0
       },
       {
         "semana": 23,
-        "notificados": 97,
-        "confirmados": 41,
-        "descartados": 51,
+        "notificados": 93,
+        "confirmados": 38,
+        "descartados": 50,
         "investigacao": 0
       },
       {
         "semana": 24,
-        "notificados": 137,
+        "notificados": 136,
         "confirmados": 65,
-        "descartados": 69,
+        "descartados": 68,
         "investigacao": 0
       },
       {
         "semana": 25,
-        "notificados": 118,
-        "confirmados": 50,
-        "descartados": 63,
+        "notificados": 113,
+        "confirmados": 49,
+        "descartados": 59,
         "investigacao": 0
       },
       {
         "semana": 26,
-        "notificados": 108,
-        "confirmados": 56,
-        "descartados": 46,
+        "notificados": 103,
+        "confirmados": 52,
+        "descartados": 45,
         "investigacao": 1
       },
       {
         "semana": 27,
-        "notificados": 66,
+        "notificados": 65,
         "confirmados": 42,
-        "descartados": 22,
+        "descartados": 21,
         "investigacao": 0
       },
       {
         "semana": 28,
-        "notificados": 101,
-        "confirmados": 45,
-        "descartados": 51,
+        "notificados": 97,
+        "confirmados": 42,
+        "descartados": 50,
         "investigacao": 0
       },
       {
         "semana": 29,
-        "notificados": 90,
-        "confirmados": 49,
-        "descartados": 36,
+        "notificados": 86,
+        "confirmados": 47,
+        "descartados": 34,
         "investigacao": 0
       },
       {
         "semana": 30,
-        "notificados": 70,
-        "confirmados": 37,
-        "descartados": 33,
+        "notificados": 68,
+        "confirmados": 36,
+        "descartados": 32,
         "investigacao": 0
       },
       {
         "semana": 31,
-        "notificados": 55,
-        "confirmados": 23,
+        "notificados": 54,
+        "confirmados": 22,
         "descartados": 30,
         "investigacao": 0
       },
       {
         "semana": 32,
-        "notificados": 81,
-        "confirmados": 43,
-        "descartados": 35,
+        "notificados": 78,
+        "confirmados": 41,
+        "descartados": 34,
         "investigacao": 0
       },
       {
         "semana": 33,
-        "notificados": 58,
+        "notificados": 57,
         "confirmados": 27,
-        "descartados": 28,
+        "descartados": 27,
         "investigacao": 0
       },
       {
         "semana": 34,
-        "notificados": 89,
+        "notificados": 87,
         "confirmados": 34,
-        "descartados": 50,
+        "descartados": 48,
         "investigacao": 0
       },
       {
         "semana": 35,
-        "notificados": 87,
+        "notificados": 86,
         "confirmados": 27,
-        "descartados": 59,
+        "descartados": 58,
         "investigacao": 0
       },
       {
@@ -1120,15 +1120,15 @@
       },
       {
         "semana": 37,
-        "notificados": 57,
-        "confirmados": 18,
-        "descartados": 37,
+        "notificados": 55,
+        "confirmados": 17,
+        "descartados": 36,
         "investigacao": 0
       },
       {
         "semana": 38,
-        "notificados": 44,
-        "confirmados": 17,
+        "notificados": 43,
+        "confirmados": 16,
         "descartados": 25,
         "investigacao": 1
       },
@@ -1141,29 +1141,29 @@
       },
       {
         "semana": 40,
-        "notificados": 51,
+        "notificados": 49,
         "confirmados": 22,
-        "descartados": 25,
+        "descartados": 24,
         "investigacao": 0
       },
       {
         "semana": 41,
-        "notificados": 44,
-        "confirmados": 16,
+        "notificados": 41,
+        "confirmados": 14,
         "descartados": 26,
         "investigacao": 0
       },
       {
         "semana": 42,
-        "notificados": 37,
+        "notificados": 36,
         "confirmados": 8,
-        "descartados": 28,
+        "descartados": 27,
         "investigacao": 0
       },
       {
         "semana": 43,
-        "notificados": 41,
-        "confirmados": 14,
+        "notificados": 40,
+        "confirmados": 13,
         "descartados": 25,
         "investigacao": 1
       },
@@ -1176,9 +1176,9 @@
       },
       {
         "semana": 45,
-        "notificados": 51,
-        "confirmados": 16,
-        "descartados": 34,
+        "notificados": 49,
+        "confirmados": 15,
+        "descartados": 33,
         "investigacao": 0
       },
       {
@@ -1190,30 +1190,30 @@
       },
       {
         "semana": 47,
-        "notificados": 43,
+        "notificados": 39,
         "confirmados": 10,
-        "descartados": 28,
+        "descartados": 25,
         "investigacao": 0
       },
       {
         "semana": 48,
-        "notificados": 49,
-        "confirmados": 15,
+        "notificados": 48,
+        "confirmados": 14,
         "descartados": 28,
         "investigacao": 0
       },
       {
         "semana": 49,
-        "notificados": 39,
+        "notificados": 37,
         "confirmados": 4,
-        "descartados": 26,
+        "descartados": 25,
         "investigacao": 0
       },
       {
         "semana": 50,
-        "notificados": 59,
+        "notificados": 57,
         "confirmados": 16,
-        "descartados": 38,
+        "descartados": 37,
         "investigacao": 0
       },
       {
@@ -1225,9 +1225,9 @@
       },
       {
         "semana": 52,
-        "notificados": 38,
+        "notificados": 35,
         "confirmados": 14,
-        "descartados": 22,
+        "descartados": 20,
         "investigacao": 0
       }
     ],
@@ -1241,8 +1241,8 @@
       },
       {
         "semana": 2,
-        "notificados": 20,
-        "confirmados": 12,
+        "notificados": 19,
+        "confirmados": 11,
         "descartados": 8,
         "investigacao": 0
       },
@@ -1255,16 +1255,16 @@
       },
       {
         "semana": 4,
-        "notificados": 39,
+        "notificados": 37,
         "confirmados": 19,
-        "descartados": 18,
+        "descartados": 16,
         "investigacao": 0
       },
       {
         "semana": 5,
-        "notificados": 30,
+        "notificados": 28,
         "confirmados": 12,
-        "descartados": 17,
+        "descartados": 15,
         "investigacao": 0
       },
       {
@@ -1276,7 +1276,7 @@
       },
       {
         "semana": 7,
-        "notificados": 33,
+        "notificados": 32,
         "confirmados": 15,
         "descartados": 13,
         "investigacao": 0
@@ -1304,9 +1304,9 @@
       },
       {
         "semana": 11,
-        "notificados": 36,
-        "confirmados": 16,
-        "descartados": 15,
+        "notificados": 34,
+        "confirmados": 15,
+        "descartados": 14,
         "investigacao": 0
       },
       {
@@ -1318,35 +1318,35 @@
       },
       {
         "semana": 13,
-        "notificados": 58,
-        "confirmados": 28,
-        "descartados": 23,
+        "notificados": 53,
+        "confirmados": 26,
+        "descartados": 21,
         "investigacao": 0
       },
       {
         "semana": 14,
-        "notificados": 30,
+        "notificados": 29,
         "confirmados": 13,
-        "descartados": 16,
+        "descartados": 15,
         "investigacao": 0
       },
       {
         "semana": 15,
-        "notificados": 30,
+        "notificados": 29,
         "confirmados": 10,
-        "descartados": 17,
+        "descartados": 16,
         "investigacao": 0
       },
       {
         "semana": 16,
-        "notificados": 33,
+        "notificados": 32,
         "confirmados": 14,
-        "descartados": 13,
+        "descartados": 12,
         "investigacao": 0
       },
       {
         "semana": 17,
-        "notificados": 35,
+        "notificados": 34,
         "confirmados": 14,
         "descartados": 17,
         "investigacao": 1
@@ -1360,8 +1360,8 @@
       },
       {
         "semana": 19,
-        "notificados": 33,
-        "confirmados": 9,
+        "notificados": 32,
+        "confirmados": 8,
         "descartados": 20,
         "investigacao": 0
       },
@@ -1381,9 +1381,9 @@
       },
       {
         "semana": 22,
-        "notificados": 33,
+        "notificados": 31,
         "confirmados": 10,
-        "descartados": 20,
+        "descartados": 18,
         "investigacao": 0
       },
       {
@@ -1395,23 +1395,23 @@
       },
       {
         "semana": 24,
-        "notificados": 24,
+        "notificados": 22,
         "confirmados": 12,
-        "descartados": 10,
+        "descartados": 9,
         "investigacao": 0
       },
       {
         "semana": 25,
-        "notificados": 21,
-        "confirmados": 7,
-        "descartados": 12,
+        "notificados": 19,
+        "confirmados": 6,
+        "descartados": 11,
         "investigacao": 1
       },
       {
         "semana": 26,
-        "notificados": 24,
+        "notificados": 23,
         "confirmados": 10,
-        "descartados": 11,
+        "descartados": 10,
         "investigacao": 0
       },
       {
@@ -1451,29 +1451,29 @@
       },
       {
         "semana": 32,
-        "notificados": 20,
+        "notificados": 19,
         "confirmados": 8,
         "descartados": 10,
         "investigacao": 0
       },
       {
         "semana": 33,
-        "notificados": 16,
+        "notificados": 14,
         "confirmados": 7,
-        "descartados": 8,
+        "descartados": 6,
         "investigacao": 0
       },
       {
         "semana": 34,
-        "notificados": 29,
+        "notificados": 28,
         "confirmados": 15,
         "descartados": 11,
         "investigacao": 0
       },
       {
         "semana": 35,
-        "notificados": 16,
-        "confirmados": 10,
+        "notificados": 14,
+        "confirmados": 9,
         "descartados": 3,
         "investigacao": 0
       },
@@ -1493,21 +1493,21 @@
       },
       {
         "semana": 38,
-        "notificados": 18,
+        "notificados": 17,
         "confirmados": 5,
         "descartados": 11,
         "investigacao": 0
       },
       {
         "semana": 39,
-        "notificados": 6,
+        "notificados": 5,
         "confirmados": 0,
         "descartados": 5,
         "investigacao": 0
       },
       {
         "semana": 40,
-        "notificados": 15,
+        "notificados": 14,
         "confirmados": 4,
         "descartados": 10,
         "investigacao": 0
@@ -1528,30 +1528,30 @@
       },
       {
         "semana": 43,
-        "notificados": 24,
+        "notificados": 23,
         "confirmados": 11,
-        "descartados": 11,
-        "investigacao": 0
-      },
-      {
-        "semana": 44,
-        "notificados": 12,
-        "confirmados": 1,
         "descartados": 10,
         "investigacao": 0
       },
       {
+        "semana": 44,
+        "notificados": 10,
+        "confirmados": 1,
+        "descartados": 8,
+        "investigacao": 0
+      },
+      {
         "semana": 45,
-        "notificados": 17,
+        "notificados": 15,
         "confirmados": 2,
-        "descartados": 15,
+        "descartados": 13,
         "investigacao": 0
       },
       {
         "semana": 46,
-        "notificados": 22,
+        "notificados": 21,
         "confirmados": 6,
-        "descartados": 15,
+        "descartados": 14,
         "investigacao": 0
       },
       {
@@ -1570,8 +1570,8 @@
       },
       {
         "semana": 49,
-        "notificados": 11,
-        "confirmados": 7,
+        "notificados": 10,
+        "confirmados": 6,
         "descartados": 2,
         "investigacao": 0
       },
@@ -1621,9 +1621,9 @@
       },
       {
         "semana": 4,
-        "notificados": 4,
+        "notificados": 3,
         "confirmados": 1,
-        "descartados": 3,
+        "descartados": 2,
         "investigacao": 0
       },
       {
@@ -1649,8 +1649,8 @@
       },
       {
         "semana": 8,
-        "notificados": 14,
-        "confirmados": 4,
+        "notificados": 13,
+        "confirmados": 3,
         "descartados": 8,
         "investigacao": 0
       },
@@ -1740,16 +1740,16 @@
       },
       {
         "semana": 21,
-        "notificados": 32,
-        "confirmados": 12,
-        "descartados": 19,
+        "notificados": 30,
+        "confirmados": 11,
+        "descartados": 18,
         "investigacao": 0
       },
       {
         "semana": 22,
-        "notificados": 30,
+        "notificados": 29,
         "confirmados": 9,
-        "descartados": 20,
+        "descartados": 19,
         "investigacao": 1
       },
       {
@@ -1768,9 +1768,9 @@
       },
       {
         "semana": 25,
-        "notificados": 29,
+        "notificados": 28,
         "confirmados": 12,
-        "descartados": 16,
+        "descartados": 15,
         "investigacao": 0
       },
       {
@@ -1810,9 +1810,9 @@
       },
       {
         "semana": 31,
-        "notificados": 15,
+        "notificados": 14,
         "confirmados": 3,
-        "descartados": 11,
+        "descartados": 10,
         "investigacao": 0
       },
       {
@@ -1901,9 +1901,9 @@
       },
       {
         "semana": 44,
-        "notificados": 9,
+        "notificados": 8,
         "confirmados": 3,
-        "descartados": 5,
+        "descartados": 4,
         "investigacao": 0
       },
       {
@@ -1929,9 +1929,9 @@
       },
       {
         "semana": 48,
-        "notificados": 4,
+        "notificados": 3,
         "confirmados": 0,
-        "descartados": 4,
+        "descartados": 3,
         "investigacao": 0
       },
       {
@@ -1957,8 +1957,8 @@
       },
       {
         "semana": 52,
-        "notificados": 17,
-        "confirmados": 9,
+        "notificados": 16,
+        "confirmados": 8,
         "descartados": 6,
         "investigacao": 0
       }
@@ -1966,16 +1966,16 @@
     "2021": [
       {
         "semana": 1,
-        "notificados": 27,
+        "notificados": 26,
         "confirmados": 14,
-        "descartados": 13,
+        "descartados": 12,
         "investigacao": 0
       },
       {
         "semana": 2,
-        "notificados": 26,
+        "notificados": 24,
         "confirmados": 15,
-        "descartados": 11,
+        "descartados": 9,
         "investigacao": 0
       },
       {
@@ -2057,23 +2057,23 @@
       },
       {
         "semana": 14,
-        "notificados": 30,
-        "confirmados": 14,
+        "notificados": 29,
+        "confirmados": 13,
         "descartados": 16,
         "investigacao": 0
       },
       {
         "semana": 15,
-        "notificados": 27,
-        "confirmados": 19,
+        "notificados": 26,
+        "confirmados": 18,
         "descartados": 7,
         "investigacao": 0
       },
       {
         "semana": 16,
-        "notificados": 39,
+        "notificados": 38,
         "confirmados": 19,
-        "descartados": 20,
+        "descartados": 19,
         "investigacao": 0
       },
       {
@@ -2106,8 +2106,8 @@
       },
       {
         "semana": 21,
-        "notificados": 43,
-        "confirmados": 23,
+        "notificados": 41,
+        "confirmados": 21,
         "descartados": 19,
         "investigacao": 0
       },
@@ -2190,8 +2190,8 @@
       },
       {
         "semana": 33,
-        "notificados": 20,
-        "confirmados": 10,
+        "notificados": 19,
+        "confirmados": 9,
         "descartados": 10,
         "investigacao": 0
       },
@@ -2211,9 +2211,9 @@
       },
       {
         "semana": 36,
-        "notificados": 14,
+        "notificados": 13,
         "confirmados": 4,
-        "descartados": 8,
+        "descartados": 7,
         "investigacao": 0
       },
       {
@@ -2246,9 +2246,9 @@
       },
       {
         "semana": 41,
-        "notificados": 14,
+        "notificados": 13,
         "confirmados": 4,
-        "descartados": 10,
+        "descartados": 9,
         "investigacao": 0
       },
       {
@@ -2260,9 +2260,9 @@
       },
       {
         "semana": 43,
-        "notificados": 23,
+        "notificados": 22,
         "confirmados": 10,
-        "descartados": 13,
+        "descartados": 12,
         "investigacao": 0
       },
       {
@@ -2360,9 +2360,9 @@
       },
       {
         "semana": 5,
-        "notificados": 39,
+        "notificados": 38,
         "confirmados": 13,
-        "descartados": 22,
+        "descartados": 21,
         "investigacao": 0
       },
       {
@@ -2381,8 +2381,8 @@
       },
       {
         "semana": 8,
-        "notificados": 46,
-        "confirmados": 21,
+        "notificados": 45,
+        "confirmados": 20,
         "descartados": 22,
         "investigacao": 0
       },
@@ -2493,9 +2493,9 @@
       },
       {
         "semana": 25,
-        "notificados": 4,
+        "notificados": 3,
         "confirmados": 0,
-        "descartados": 2,
+        "descartados": 1,
         "investigacao": 0
       },
       {
@@ -2584,7 +2584,7 @@
       },
       {
         "semana": 40,
-        "notificados": 2,
+        "notificados": 1,
         "confirmados": 0,
         "descartados": 1,
         "investigacao": 0
@@ -2691,9 +2691,9 @@
       },
       {
         "semana": 2,
-        "notificados": 27,
+        "notificados": 26,
         "confirmados": 1,
-        "descartados": 22,
+        "descartados": 21,
         "investigacao": 0
       },
       {
@@ -2712,9 +2712,9 @@
       },
       {
         "semana": 5,
-        "notificados": 23,
+        "notificados": 22,
         "confirmados": 1,
-        "descartados": 17,
+        "descartados": 16,
         "investigacao": 0
       },
       {
@@ -2789,7 +2789,7 @@
       },
       {
         "semana": 16,
-        "notificados": 13,
+        "notificados": 12,
         "confirmados": 0,
         "descartados": 8,
         "investigacao": 0
@@ -2915,8 +2915,8 @@
       },
       {
         "semana": 34,
-        "notificados": 12,
-        "confirmados": 3,
+        "notificados": 11,
+        "confirmados": 2,
         "descartados": 8,
         "investigacao": 0
       },
@@ -2929,16 +2929,16 @@
       },
       {
         "semana": 36,
-        "notificados": 13,
+        "notificados": 12,
         "confirmados": 3,
         "descartados": 8,
         "investigacao": 0
       },
       {
         "semana": 37,
-        "notificados": 17,
+        "notificados": 16,
         "confirmados": 2,
-        "descartados": 14,
+        "descartados": 13,
         "investigacao": 0
       },
       {
@@ -3050,30 +3050,30 @@
     "2018": [
       {
         "semana": 1,
-        "notificados": 28,
+        "notificados": 27,
         "confirmados": 4,
-        "descartados": 19,
+        "descartados": 18,
         "investigacao": 0
       },
       {
         "semana": 2,
-        "notificados": 24,
+        "notificados": 21,
         "confirmados": 2,
-        "descartados": 17,
+        "descartados": 16,
         "investigacao": 0
       },
       {
         "semana": 3,
-        "notificados": 44,
+        "notificados": 40,
         "confirmados": 5,
-        "descartados": 34,
+        "descartados": 30,
         "investigacao": 0
       },
       {
         "semana": 4,
-        "notificados": 42,
+        "notificados": 41,
         "confirmados": 1,
-        "descartados": 38,
+        "descartados": 37,
         "investigacao": 0
       },
       {
@@ -3085,8 +3085,8 @@
       },
       {
         "semana": 6,
-        "notificados": 52,
-        "confirmados": 1,
+        "notificados": 51,
+        "confirmados": 0,
         "descartados": 48,
         "investigacao": 0
       },
@@ -3099,30 +3099,30 @@
       },
       {
         "semana": 8,
-        "notificados": 82,
+        "notificados": 81,
         "confirmados": 2,
-        "descartados": 74,
+        "descartados": 73,
         "investigacao": 0
       },
       {
         "semana": 9,
-        "notificados": 78,
+        "notificados": 74,
         "confirmados": 4,
-        "descartados": 69,
+        "descartados": 65,
         "investigacao": 0
       },
       {
         "semana": 10,
-        "notificados": 72,
+        "notificados": 71,
         "confirmados": 4,
-        "descartados": 62,
+        "descartados": 61,
         "investigacao": 0
       },
       {
         "semana": 11,
-        "notificados": 69,
+        "notificados": 67,
         "confirmados": 5,
-        "descartados": 60,
+        "descartados": 58,
         "investigacao": 1
       },
       {
@@ -3134,42 +3134,42 @@
       },
       {
         "semana": 13,
-        "notificados": 69,
+        "notificados": 66,
         "confirmados": 1,
-        "descartados": 60,
+        "descartados": 58,
         "investigacao": 0
       },
       {
         "semana": 14,
-        "notificados": 84,
+        "notificados": 83,
         "confirmados": 4,
         "descartados": 65,
         "investigacao": 0
       },
       {
         "semana": 15,
-        "notificados": 63,
+        "notificados": 61,
         "confirmados": 3,
-        "descartados": 49,
+        "descartados": 47,
         "investigacao": 0
       },
       {
         "semana": 16,
-        "notificados": 68,
+        "notificados": 66,
         "confirmados": 6,
-        "descartados": 60,
+        "descartados": 59,
         "investigacao": 0
       },
       {
         "semana": 17,
-        "notificados": 93,
+        "notificados": 88,
         "confirmados": 2,
-        "descartados": 88,
+        "descartados": 83,
         "investigacao": 0
       },
       {
         "semana": 18,
-        "notificados": 49,
+        "notificados": 48,
         "confirmados": 2,
         "descartados": 44,
         "investigacao": 0
@@ -3190,9 +3190,9 @@
       },
       {
         "semana": 21,
-        "notificados": 84,
+        "notificados": 83,
         "confirmados": 2,
-        "descartados": 75,
+        "descartados": 74,
         "investigacao": 0
       },
       {
@@ -3204,58 +3204,58 @@
       },
       {
         "semana": 23,
-        "notificados": 100,
+        "notificados": 97,
         "confirmados": 5,
-        "descartados": 90,
+        "descartados": 87,
         "investigacao": 0
       },
       {
         "semana": 24,
-        "notificados": 70,
+        "notificados": 67,
         "confirmados": 1,
-        "descartados": 62,
+        "descartados": 60,
         "investigacao": 0
       },
       {
         "semana": 25,
-        "notificados": 69,
+        "notificados": 66,
         "confirmados": 6,
-        "descartados": 62,
+        "descartados": 59,
         "investigacao": 0
       },
       {
         "semana": 26,
-        "notificados": 107,
+        "notificados": 105,
         "confirmados": 7,
-        "descartados": 95,
+        "descartados": 93,
         "investigacao": 0
       },
       {
         "semana": 27,
-        "notificados": 40,
+        "notificados": 39,
         "confirmados": 2,
         "descartados": 36,
         "investigacao": 0
       },
       {
         "semana": 28,
-        "notificados": 62,
+        "notificados": 61,
         "confirmados": 4,
-        "descartados": 56,
+        "descartados": 55,
         "investigacao": 0
       },
       {
         "semana": 29,
-        "notificados": 35,
+        "notificados": 34,
         "confirmados": 1,
-        "descartados": 30,
+        "descartados": 29,
         "investigacao": 0
       },
       {
         "semana": 30,
-        "notificados": 14,
+        "notificados": 12,
         "confirmados": 0,
-        "descartados": 12,
+        "descartados": 11,
         "investigacao": 0
       },
       {
@@ -3267,9 +3267,9 @@
       },
       {
         "semana": 32,
-        "notificados": 33,
+        "notificados": 32,
         "confirmados": 1,
-        "descartados": 27,
+        "descartados": 26,
         "investigacao": 0
       },
       {
@@ -3288,9 +3288,9 @@
       },
       {
         "semana": 35,
-        "notificados": 40,
+        "notificados": 38,
         "confirmados": 2,
-        "descartados": 30,
+        "descartados": 28,
         "investigacao": 0
       },
       {
@@ -3386,9 +3386,9 @@
       },
       {
         "semana": 49,
-        "notificados": 3,
+        "notificados": 2,
         "confirmados": 0,
-        "descartados": 3,
+        "descartados": 2,
         "investigacao": 0
       },
       {
@@ -3423,30 +3423,30 @@
       },
       {
         "semana": 2,
-        "notificados": 26,
+        "notificados": 25,
         "confirmados": 2,
-        "descartados": 21,
+        "descartados": 20,
         "investigacao": 0
       },
       {
         "semana": 3,
-        "notificados": 52,
+        "notificados": 50,
         "confirmados": 2,
-        "descartados": 46,
+        "descartados": 44,
         "investigacao": 0
       },
       {
         "semana": 4,
-        "notificados": 42,
+        "notificados": 41,
         "confirmados": 3,
-        "descartados": 34,
+        "descartados": 33,
         "investigacao": 0
       },
       {
         "semana": 5,
-        "notificados": 57,
+        "notificados": 56,
         "confirmados": 3,
-        "descartados": 51,
+        "descartados": 50,
         "investigacao": 0
       },
       {
@@ -3479,9 +3479,9 @@
       },
       {
         "semana": 10,
-        "notificados": 53,
+        "notificados": 52,
         "confirmados": 7,
-        "descartados": 46,
+        "descartados": 45,
         "investigacao": 0
       },
       {
@@ -3500,9 +3500,9 @@
       },
       {
         "semana": 13,
-        "notificados": 58,
+        "notificados": 56,
         "confirmados": 3,
-        "descartados": 52,
+        "descartados": 50,
         "investigacao": 0
       },
       {
@@ -3549,9 +3549,9 @@
       },
       {
         "semana": 20,
-        "notificados": 60,
+        "notificados": 59,
         "confirmados": 3,
-        "descartados": 57,
+        "descartados": 56,
         "investigacao": 0
       },
       {
@@ -3689,9 +3689,9 @@
       },
       {
         "semana": 40,
-        "notificados": 12,
+        "notificados": 11,
         "confirmados": 1,
-        "descartados": 10,
+        "descartados": 9,
         "investigacao": 0
       },
       {
@@ -3710,9 +3710,9 @@
       },
       {
         "semana": 43,
-        "notificados": 22,
+        "notificados": 20,
         "confirmados": 0,
-        "descartados": 21,
+        "descartados": 19,
         "investigacao": 0
       },
       {
@@ -3724,9 +3724,9 @@
       },
       {
         "semana": 45,
-        "notificados": 22,
+        "notificados": 20,
         "confirmados": 1,
-        "descartados": 18,
+        "descartados": 16,
         "investigacao": 0
       },
       {
@@ -3759,9 +3759,9 @@
       },
       {
         "semana": 50,
-        "notificados": 25,
+        "notificados": 22,
         "confirmados": 1,
-        "descartados": 19,
+        "descartados": 17,
         "investigacao": 0
       },
       {
@@ -3773,7 +3773,7 @@
       },
       {
         "semana": 52,
-        "notificados": 35,
+        "notificados": 34,
         "confirmados": 4,
         "descartados": 23,
         "investigacao": 0
@@ -3782,79 +3782,79 @@
     "2016": [
       {
         "semana": 1,
-        "notificados": 110,
-        "confirmados": 33,
-        "descartados": 73,
+        "notificados": 106,
+        "confirmados": 31,
+        "descartados": 72,
         "investigacao": 0
       },
       {
         "semana": 2,
-        "notificados": 73,
+        "notificados": 72,
         "confirmados": 11,
         "descartados": 54,
         "investigacao": 0
       },
       {
         "semana": 3,
-        "notificados": 144,
+        "notificados": 142,
         "confirmados": 34,
-        "descartados": 103,
+        "descartados": 101,
         "investigacao": 0
       },
       {
         "semana": 4,
-        "notificados": 125,
-        "confirmados": 25,
-        "descartados": 96,
+        "notificados": 118,
+        "confirmados": 24,
+        "descartados": 91,
         "investigacao": 0
       },
       {
         "semana": 5,
-        "notificados": 153,
-        "confirmados": 33,
-        "descartados": 115,
+        "notificados": 149,
+        "confirmados": 32,
+        "descartados": 112,
         "investigacao": 0
       },
       {
         "semana": 6,
-        "notificados": 112,
+        "notificados": 111,
         "confirmados": 29,
-        "descartados": 73,
+        "descartados": 72,
         "investigacao": 0
       },
       {
         "semana": 7,
-        "notificados": 215,
-        "confirmados": 65,
-        "descartados": 141,
+        "notificados": 208,
+        "confirmados": 64,
+        "descartados": 135,
         "investigacao": 0
       },
       {
         "semana": 8,
-        "notificados": 164,
-        "confirmados": 43,
+        "notificados": 161,
+        "confirmados": 42,
         "descartados": 107,
         "investigacao": 0
       },
       {
         "semana": 9,
-        "notificados": 138,
+        "notificados": 137,
         "confirmados": 45,
-        "descartados": 83,
+        "descartados": 82,
         "investigacao": 0
       },
       {
         "semana": 10,
-        "notificados": 153,
+        "notificados": 152,
         "confirmados": 59,
-        "descartados": 89,
+        "descartados": 88,
         "investigacao": 0
       },
       {
         "semana": 11,
-        "notificados": 102,
+        "notificados": 99,
         "confirmados": 30,
-        "descartados": 68,
+        "descartados": 65,
         "investigacao": 0
       },
       {
@@ -3873,16 +3873,16 @@
       },
       {
         "semana": 14,
-        "notificados": 64,
+        "notificados": 63,
         "confirmados": 12,
-        "descartados": 49,
+        "descartados": 48,
         "investigacao": 0
       },
       {
         "semana": 15,
-        "notificados": 33,
+        "notificados": 32,
         "confirmados": 10,
-        "descartados": 21,
+        "descartados": 20,
         "investigacao": 0
       },
       {
@@ -3894,15 +3894,15 @@
       },
       {
         "semana": 17,
-        "notificados": 38,
+        "notificados": 36,
         "confirmados": 6,
-        "descartados": 26,
+        "descartados": 24,
         "investigacao": 0
       },
       {
         "semana": 18,
-        "notificados": 42,
-        "confirmados": 6,
+        "notificados": 41,
+        "confirmados": 5,
         "descartados": 31,
         "investigacao": 0
       },
@@ -3915,9 +3915,9 @@
       },
       {
         "semana": 20,
-        "notificados": 60,
-        "confirmados": 41,
-        "descartados": 19,
+        "notificados": 58,
+        "confirmados": 40,
+        "descartados": 18,
         "investigacao": 0
       },
       {
@@ -3929,9 +3929,9 @@
       },
       {
         "semana": 22,
-        "notificados": 22,
+        "notificados": 21,
         "confirmados": 1,
-        "descartados": 17,
+        "descartados": 16,
         "investigacao": 0
       },
       {
@@ -3950,9 +3950,9 @@
       },
       {
         "semana": 25,
-        "notificados": 25,
+        "notificados": 24,
         "confirmados": 3,
-        "descartados": 20,
+        "descartados": 19,
         "investigacao": 0
       },
       {
@@ -3964,23 +3964,23 @@
       },
       {
         "semana": 27,
-        "notificados": 27,
+        "notificados": 26,
         "confirmados": 2,
-        "descartados": 24,
+        "descartados": 23,
         "investigacao": 0
       },
       {
         "semana": 28,
-        "notificados": 13,
+        "notificados": 11,
         "confirmados": 2,
-        "descartados": 10,
+        "descartados": 8,
         "investigacao": 0
       },
       {
         "semana": 29,
-        "notificados": 23,
+        "notificados": 22,
         "confirmados": 3,
-        "descartados": 18,
+        "descartados": 17,
         "investigacao": 0
       },
       {
@@ -4006,9 +4006,9 @@
       },
       {
         "semana": 33,
-        "notificados": 18,
+        "notificados": 17,
         "confirmados": 1,
-        "descartados": 17,
+        "descartados": 16,
         "investigacao": 0
       },
       {
@@ -4034,23 +4034,23 @@
       },
       {
         "semana": 37,
-        "notificados": 28,
+        "notificados": 27,
         "confirmados": 1,
-        "descartados": 21,
+        "descartados": 20,
         "investigacao": 0
       },
       {
         "semana": 38,
-        "notificados": 37,
+        "notificados": 36,
         "confirmados": 5,
-        "descartados": 29,
+        "descartados": 28,
         "investigacao": 0
       },
       {
         "semana": 39,
-        "notificados": 22,
+        "notificados": 20,
         "confirmados": 3,
-        "descartados": 17,
+        "descartados": 15,
         "investigacao": 0
       },
       {
@@ -4111,7 +4111,7 @@
       },
       {
         "semana": 48,
-        "notificados": 22,
+        "notificados": 21,
         "confirmados": 1,
         "descartados": 17,
         "investigacao": 0
@@ -4125,16 +4125,16 @@
       },
       {
         "semana": 50,
-        "notificados": 34,
+        "notificados": 32,
         "confirmados": 1,
-        "descartados": 30,
+        "descartados": 28,
         "investigacao": 0
       },
       {
         "semana": 51,
-        "notificados": 19,
+        "notificados": 18,
         "confirmados": 0,
-        "descartados": 17,
+        "descartados": 16,
         "investigacao": 1
       },
       {
@@ -4148,8 +4148,8 @@
     "2015": [
       {
         "semana": 1,
-        "notificados": 39,
-        "confirmados": 22,
+        "notificados": 38,
+        "confirmados": 21,
         "descartados": 15,
         "investigacao": 0
       },
@@ -4162,16 +4162,16 @@
       },
       {
         "semana": 3,
-        "notificados": 32,
+        "notificados": 31,
         "confirmados": 9,
-        "descartados": 21,
+        "descartados": 20,
         "investigacao": 0
       },
       {
         "semana": 4,
-        "notificados": 44,
+        "notificados": 41,
         "confirmados": 23,
-        "descartados": 20,
+        "descartados": 18,
         "investigacao": 0
       },
       {
@@ -4204,107 +4204,107 @@
       },
       {
         "semana": 9,
-        "notificados": 69,
-        "confirmados": 37,
-        "descartados": 32,
+        "notificados": 66,
+        "confirmados": 36,
+        "descartados": 30,
         "investigacao": 0
       },
       {
         "semana": 10,
-        "notificados": 150,
-        "confirmados": 77,
-        "descartados": 72,
+        "notificados": 145,
+        "confirmados": 74,
+        "descartados": 70,
         "investigacao": 0
       },
       {
         "semana": 11,
-        "notificados": 120,
-        "confirmados": 55,
-        "descartados": 64,
+        "notificados": 116,
+        "confirmados": 54,
+        "descartados": 61,
         "investigacao": 0
       },
       {
         "semana": 12,
-        "notificados": 127,
+        "notificados": 125,
         "confirmados": 65,
         "descartados": 57,
         "investigacao": 0
       },
       {
         "semana": 13,
-        "notificados": 96,
-        "confirmados": 28,
+        "notificados": 95,
+        "confirmados": 27,
         "descartados": 59,
         "investigacao": 0
       },
       {
         "semana": 14,
-        "notificados": 77,
-        "confirmados": 34,
-        "descartados": 37,
+        "notificados": 75,
+        "confirmados": 33,
+        "descartados": 36,
         "investigacao": 0
       },
       {
         "semana": 15,
-        "notificados": 90,
+        "notificados": 87,
         "confirmados": 51,
-        "descartados": 32,
-        "investigacao": 0
-      },
-      {
-        "semana": 16,
-        "notificados": 81,
-        "confirmados": 45,
         "descartados": 30,
         "investigacao": 0
       },
       {
+        "semana": 16,
+        "notificados": 79,
+        "confirmados": 45,
+        "descartados": 28,
+        "investigacao": 0
+      },
+      {
         "semana": 17,
-        "notificados": 102,
+        "notificados": 101,
         "confirmados": 51,
-        "descartados": 46,
+        "descartados": 45,
         "investigacao": 0
       },
       {
         "semana": 18,
-        "notificados": 91,
+        "notificados": 90,
         "confirmados": 52,
         "descartados": 35,
         "investigacao": 0
       },
       {
         "semana": 19,
-        "notificados": 104,
-        "confirmados": 54,
+        "notificados": 101,
+        "confirmados": 51,
         "descartados": 44,
         "investigacao": 0
       },
       {
         "semana": 20,
-        "notificados": 128,
-        "confirmados": 75,
-        "descartados": 48,
+        "notificados": 119,
+        "confirmados": 69,
+        "descartados": 46,
         "investigacao": 0
       },
       {
         "semana": 21,
-        "notificados": 97,
+        "notificados": 96,
         "confirmados": 44,
-        "descartados": 51,
+        "descartados": 50,
         "investigacao": 0
       },
       {
         "semana": 22,
-        "notificados": 67,
+        "notificados": 66,
         "confirmados": 35,
-        "descartados": 30,
+        "descartados": 29,
         "investigacao": 0
       },
       {
         "semana": 23,
-        "notificados": 97,
+        "notificados": 94,
         "confirmados": 49,
-        "descartados": 44,
+        "descartados": 42,
         "investigacao": 0
       },
       {
@@ -4330,23 +4330,23 @@
       },
       {
         "semana": 27,
-        "notificados": 45,
+        "notificados": 44,
         "confirmados": 18,
-        "descartados": 24,
+        "descartados": 23,
         "investigacao": 0
       },
       {
         "semana": 28,
-        "notificados": 45,
+        "notificados": 42,
         "confirmados": 17,
-        "descartados": 27,
+        "descartados": 24,
         "investigacao": 0
       },
       {
         "semana": 29,
-        "notificados": 68,
-        "confirmados": 17,
-        "descartados": 43,
+        "notificados": 66,
+        "confirmados": 16,
+        "descartados": 42,
         "investigacao": 0
       },
       {
@@ -4358,44 +4358,44 @@
       },
       {
         "semana": 31,
-        "notificados": 74,
+        "notificados": 73,
         "confirmados": 32,
         "descartados": 39,
         "investigacao": 0
       },
       {
         "semana": 32,
-        "notificados": 72,
+        "notificados": 71,
         "confirmados": 18,
-        "descartados": 51,
+        "descartados": 50,
         "investigacao": 0
       },
       {
         "semana": 33,
-        "notificados": 71,
+        "notificados": 69,
         "confirmados": 14,
-        "descartados": 56,
+        "descartados": 55,
         "investigacao": 0
       },
       {
         "semana": 34,
-        "notificados": 63,
+        "notificados": 62,
         "confirmados": 28,
-        "descartados": 34,
+        "descartados": 33,
         "investigacao": 0
       },
       {
         "semana": 35,
-        "notificados": 54,
+        "notificados": 53,
         "confirmados": 11,
-        "descartados": 35,
+        "descartados": 34,
         "investigacao": 0
       },
       {
         "semana": 36,
-        "notificados": 67,
-        "confirmados": 28,
-        "descartados": 32,
+        "notificados": 64,
+        "confirmados": 26,
+        "descartados": 31,
         "investigacao": 0
       },
       {
@@ -4407,16 +4407,16 @@
       },
       {
         "semana": 38,
-        "notificados": 80,
-        "confirmados": 22,
-        "descartados": 56,
+        "notificados": 78,
+        "confirmados": 21,
+        "descartados": 55,
         "investigacao": 0
       },
       {
         "semana": 39,
-        "notificados": 88,
-        "confirmados": 16,
-        "descartados": 66,
+        "notificados": 86,
+        "confirmados": 15,
+        "descartados": 65,
         "investigacao": 0
       },
       {
@@ -4428,7 +4428,7 @@
       },
       {
         "semana": 41,
-        "notificados": 71,
+        "notificados": 70,
         "confirmados": 12,
         "descartados": 55,
         "investigacao": 0
@@ -4442,23 +4442,23 @@
       },
       {
         "semana": 43,
-        "notificados": 33,
-        "confirmados": 7,
-        "descartados": 24,
+        "notificados": 31,
+        "confirmados": 6,
+        "descartados": 23,
         "investigacao": 0
       },
       {
         "semana": 44,
-        "notificados": 42,
+        "notificados": 41,
         "confirmados": 13,
-        "descartados": 26,
+        "descartados": 25,
         "investigacao": 0
       },
       {
         "semana": 45,
-        "notificados": 49,
+        "notificados": 48,
         "confirmados": 15,
-        "descartados": 28,
+        "descartados": 27,
         "investigacao": 0
       },
       {
@@ -4470,30 +4470,30 @@
       },
       {
         "semana": 47,
-        "notificados": 81,
+        "notificados": 79,
         "confirmados": 8,
-        "descartados": 70,
+        "descartados": 68,
         "investigacao": 0
       },
       {
         "semana": 48,
-        "notificados": 93,
+        "notificados": 92,
         "confirmados": 11,
-        "descartados": 71,
+        "descartados": 70,
         "investigacao": 0
       },
       {
         "semana": 49,
-        "notificados": 80,
+        "notificados": 79,
         "confirmados": 13,
-        "descartados": 60,
+        "descartados": 59,
         "investigacao": 0
       },
       {
         "semana": 50,
-        "notificados": 120,
+        "notificados": 119,
         "confirmados": 18,
-        "descartados": 92,
+        "descartados": 91,
         "investigacao": 0
       },
       {
@@ -4505,9 +4505,9 @@
       },
       {
         "semana": 52,
-        "notificados": 57,
+        "notificados": 56,
         "confirmados": 6,
-        "descartados": 49,
+        "descartados": 48,
         "investigacao": 0
       }
     ],
@@ -4524,329 +4524,329 @@
   "canal_endemico": [
     {
       "semana": 1,
-      "media": 32.6,
-      "desvio": 35.8,
-      "limite_sup": 102.8,
+      "media": 31.7,
+      "desvio": 34.3,
+      "limite_sup": 98.9,
       "limite_inf": 0,
-      "observado_2026": 148
+      "observado_2026": 72
     },
     {
       "semana": 2,
-      "media": 30.6,
+      "media": 29.6,
       "desvio": 21,
-      "limite_sup": 71.8,
+      "limite_sup": 70.8,
       "limite_inf": 0,
-      "observado_2026": 130
+      "observado_2026": 64
     },
     {
       "semana": 3,
-      "media": 45.4,
-      "desvio": 46.1,
-      "limite_sup": 135.8,
+      "media": 44.1,
+      "desvio": 45.4,
+      "limite_sup": 133.1,
       "limite_inf": 0,
-      "observado_2026": 146
+      "observado_2026": 72
     },
     {
       "semana": 4,
-      "media": 44.7,
-      "desvio": 38.6,
-      "limite_sup": 120.4,
+      "media": 42.6,
+      "desvio": 36.4,
+      "limite_sup": 113.9,
       "limite_inf": 0,
-      "observado_2026": 210
+      "observado_2026": 96
     },
     {
       "semana": 5,
-      "media": 54.9,
-      "desvio": 47.6,
-      "limite_sup": 148.2,
+      "media": 53.7,
+      "desvio": 46.5,
+      "limite_sup": 144.8,
       "limite_inf": 0,
-      "observado_2026": 178
+      "observado_2026": 88
     },
     {
       "semana": 6,
-      "media": 47.4,
-      "desvio": 34.1,
-      "limite_sup": 114.2,
+      "media": 47.1,
+      "desvio": 33.8,
+      "limite_sup": 113.3,
       "limite_inf": 0,
-      "observado_2026": 180
+      "observado_2026": 83
     },
     {
       "semana": 7,
-      "media": 55.1,
-      "desvio": 71.3,
-      "limite_sup": 194.8,
+      "media": 54,
+      "desvio": 68.7,
+      "limite_sup": 188.7,
       "limite_inf": 0,
-      "observado_2026": 200
+      "observado_2026": 98
     },
     {
       "semana": 8,
-      "media": 57.3,
-      "desvio": 55,
-      "limite_sup": 165.1,
+      "media": 56.6,
+      "desvio": 54.1,
+      "limite_sup": 162.6,
       "limite_inf": 0,
-      "observado_2026": 226
+      "observado_2026": 110
     },
     {
       "semana": 9,
-      "media": 54.9,
-      "desvio": 44.1,
-      "limite_sup": 141.3,
+      "media": 53.7,
+      "desvio": 43.3,
+      "limite_sup": 138.6,
       "limite_inf": 0,
-      "observado_2026": 234
+      "observado_2026": 113
     },
     {
       "semana": 10,
-      "media": 69.6,
-      "desvio": 59.9,
-      "limite_sup": 187,
+      "media": 68.4,
+      "desvio": 58.6,
+      "limite_sup": 183.3,
       "limite_inf": 0,
-      "observado_2026": 240
+      "observado_2026": 117
     },
     {
       "semana": 11,
-      "media": 61.1,
-      "desvio": 39.7,
-      "limite_sup": 138.9,
+      "media": 59.6,
+      "desvio": 38.3,
+      "limite_sup": 134.7,
       "limite_inf": 0,
-      "observado_2026": 248
+      "observado_2026": 118
     },
     {
       "semana": 12,
-      "media": 54.1,
-      "desvio": 39.6,
-      "limite_sup": 131.7,
+      "media": 53.9,
+      "desvio": 39,
+      "limite_sup": 130.3,
       "limite_inf": 0,
-      "observado_2026": 280
+      "observado_2026": 136
     },
     {
       "semana": 13,
-      "media": 56.6,
-      "desvio": 29.6,
-      "limite_sup": 114.6,
+      "media": 55,
+      "desvio": 29.2,
+      "limite_sup": 112.2,
       "limite_inf": 0,
-      "observado_2026": 150
+      "observado_2026": 72
     },
     {
       "semana": 14,
-      "media": 48.1,
-      "desvio": 27.3,
-      "limite_sup": 101.6,
+      "media": 47.4,
+      "desvio": 26.7,
+      "limite_sup": 99.7,
       "limite_inf": 0,
-      "observado_2026": 198
+      "observado_2026": 97
     },
     {
       "semana": 15,
-      "media": 37.6,
-      "desvio": 28.9,
-      "limite_sup": 94.2,
+      "media": 36.6,
+      "desvio": 27.8,
+      "limite_sup": 91.1,
       "limite_inf": 0,
-      "observado_2026": 286
+      "observado_2026": 135
     },
     {
       "semana": 16,
-      "media": 39.9,
-      "desvio": 24.9,
-      "limite_sup": 88.7,
+      "media": 39,
+      "desvio": 24.2,
+      "limite_sup": 86.4,
       "limite_inf": 0,
-      "observado_2026": 218
+      "observado_2026": 107
     },
     {
       "semana": 17,
-      "media": 49.4,
-      "desvio": 34,
-      "limite_sup": 116,
+      "media": 48.1,
+      "desvio": 32.9,
+      "limite_sup": 112.6,
       "limite_inf": 0,
-      "observado_2026": 230
+      "observado_2026": 114
     },
     {
       "semana": 18,
-      "media": 37.3,
-      "desvio": 28.7,
-      "limite_sup": 93.6,
+      "media": 36.9,
+      "desvio": 28.3,
+      "limite_sup": 92.4,
       "limite_inf": 0,
-      "observado_2026": 223
+      "observado_2026": 110
     },
     {
       "semana": 19,
-      "media": 50,
-      "desvio": 39.7,
-      "limite_sup": 127.8,
+      "media": 49.4,
+      "desvio": 39.1,
+      "limite_sup": 126,
       "limite_inf": 0,
-      "observado_2026": 200
+      "observado_2026": 96
     },
     {
       "semana": 20,
-      "media": 59.4,
-      "desvio": 38.4,
-      "limite_sup": 134.7,
+      "media": 57.7,
+      "desvio": 35.7,
+      "limite_sup": 127.7,
       "limite_inf": 0,
-      "observado_2026": 276
+      "observado_2026": 135
     },
     {
       "semana": 21,
-      "media": 44.9,
-      "desvio": 32.9,
-      "limite_sup": 109.4,
+      "media": 44.3,
+      "desvio": 32.6,
+      "limite_sup": 108.2,
       "limite_inf": 0,
-      "observado_2026": 162
+      "observado_2026": 81
     },
     {
       "semana": 22,
-      "media": 38.3,
+      "media": 37.6,
       "desvio": 20.6,
-      "limite_sup": 78.7,
+      "limite_sup": 78,
       "limite_inf": 0,
-      "observado_2026": 156
+      "observado_2026": 77
     },
     {
       "semana": 23,
-      "media": 43.6,
-      "desvio": 37.8,
-      "limite_sup": 117.7,
+      "media": 42.7,
+      "desvio": 36.4,
+      "limite_sup": 114,
       "limite_inf": 0,
-      "observado_2026": 195
+      "observado_2026": 96
     },
     {
       "semana": 24,
-      "media": 38.3,
-      "desvio": 29.7,
-      "limite_sup": 96.5,
+      "media": 37.6,
+      "desvio": 29.4,
+      "limite_sup": 95.2,
       "limite_inf": 0,
-      "observado_2026": 146
+      "observado_2026": 71
     },
     {
       "semana": 25,
-      "media": 37.1,
-      "desvio": 29.1,
-      "limite_sup": 94.1,
+      "media": 36.1,
+      "desvio": 28.9,
+      "limite_sup": 92.7,
       "limite_inf": 0,
-      "observado_2026": 165
+      "observado_2026": 81
     },
     {
       "semana": 26,
-      "media": 38.4,
-      "desvio": 31.4,
-      "limite_sup": 99.9,
+      "media": 38,
+      "desvio": 30.8,
+      "limite_sup": 98.4,
       "limite_inf": 0,
-      "observado_2026": 151
+      "observado_2026": 74
     },
     {
       "semana": 27,
-      "media": 22.7,
-      "desvio": 14.7,
-      "limite_sup": 51.5,
+      "media": 22.3,
+      "desvio": 14.2,
+      "limite_sup": 50.1,
       "limite_inf": 0,
-      "observado_2026": 147
+      "observado_2026": 75
     },
     {
       "semana": 28,
-      "media": 25.3,
-      "desvio": 20.5,
-      "limite_sup": 65.5,
+      "media": 24.4,
+      "desvio": 19.9,
+      "limite_sup": 63.4,
       "limite_inf": 0,
-      "observado_2026": 124
+      "observado_2026": 64
     },
     {
       "semana": 29,
-      "media": 26.1,
-      "desvio": 21,
-      "limite_sup": 67.3,
+      "media": 25.6,
+      "desvio": 20.3,
+      "limite_sup": 65.4,
       "limite_inf": 0,
-      "observado_2026": 124
+      "observado_2026": 63
     },
     {
       "semana": 30,
-      "media": 20.6,
-      "desvio": 12.1,
-      "limite_sup": 44.3,
+      "media": 20.3,
+      "desvio": 12.4,
+      "limite_sup": 44.6,
       "limite_inf": 0,
-      "observado_2026": 100
+      "observado_2026": 54
     },
     {
       "semana": 31,
-      "media": 26.7,
-      "desvio": 21.7,
-      "limite_sup": 69.2,
+      "media": 26.4,
+      "desvio": 21.4,
+      "limite_sup": 68.3,
       "limite_inf": 0,
-      "observado_2026": 111
+      "observado_2026": 56
     },
     {
       "semana": 32,
-      "media": 25.3,
-      "desvio": 22.4,
-      "limite_sup": 69.2,
+      "media": 24.9,
+      "desvio": 22.1,
+      "limite_sup": 68.2,
       "limite_inf": 0,
-      "observado_2026": 144
+      "observado_2026": 72
     },
     {
       "semana": 33,
-      "media": 23.4,
-      "desvio": 21.3,
-      "limite_sup": 65.1,
+      "media": 22.7,
+      "desvio": 20.8,
+      "limite_sup": 63.5,
       "limite_inf": 0,
-      "observado_2026": 86
+      "observado_2026": 51
     },
     {
       "semana": 34,
-      "media": 26.7,
-      "desvio": 18.8,
-      "limite_sup": 63.5,
+      "media": 26.3,
+      "desvio": 18.5,
+      "limite_sup": 62.6,
       "limite_inf": 0,
-      "observado_2026": 84
+      "observado_2026": 55
     },
     {
       "semana": 35,
-      "media": 26,
-      "desvio": 15.1,
-      "limite_sup": 55.6,
+      "media": 25.3,
+      "desvio": 14.7,
+      "limite_sup": 54.1,
       "limite_inf": 0,
-      "observado_2026": 78
+      "observado_2026": 55
     },
     {
       "semana": 36,
-      "media": 22.1,
-      "desvio": 21.4,
-      "limite_sup": 64,
+      "media": 21.6,
+      "desvio": 20.5,
+      "limite_sup": 61.8,
       "limite_inf": 0,
-      "observado_2026": 36
+      "observado_2026": 29
     },
     {
       "semana": 37,
-      "media": 27.4,
-      "desvio": 21.6,
-      "limite_sup": 69.7,
+      "media": 27.1,
+      "desvio": 21.7,
+      "limite_sup": 69.6,
       "limite_inf": 0,
-      "observado_2026": 47
+      "observado_2026": 46
     },
     {
       "semana": 38,
-      "media": 27.6,
-      "desvio": 24.7,
-      "limite_sup": 76,
+      "media": 27,
+      "desvio": 24,
+      "limite_sup": 74,
       "limite_inf": 0,
-      "observado_2026": 35
+      "observado_2026": 34
     },
     {
       "semana": 39,
-      "media": 23.3,
-      "desvio": 29.5,
-      "limite_sup": 81.1,
+      "media": 22.6,
+      "desvio": 28.9,
+      "limite_sup": 79.2,
       "limite_inf": 0,
-      "observado_2026": 17
+      "observado_2026": 16
     },
     {
       "semana": 40,
-      "media": 21,
-      "desvio": 15.3,
-      "limite_sup": 51,
+      "media": 20.7,
+      "desvio": 15.5,
+      "limite_sup": 51.1,
       "limite_inf": 0,
-      "observado_2026": 26
+      "observado_2026": 25
     },
     {
       "semana": 41,
-      "media": 18.9,
-      "desvio": 23.4,
-      "limite_sup": 64.8,
+      "media": 18.7,
+      "desvio": 23,
+      "limite_sup": 63.8,
       "limite_inf": 0,
       "observado_2026": 12
     },
@@ -4856,648 +4856,592 @@
       "desvio": 19.3,
       "limite_sup": 59.1,
       "limite_inf": 0,
-      "observado_2026": 22
+      "observado_2026": 21
     },
     {
       "semana": 43,
-      "media": 18.7,
-      "desvio": 9.1,
-      "limite_sup": 36.5,
-      "limite_inf": 0.9,
+      "media": 18,
+      "desvio": 8.4,
+      "limite_sup": 34.5,
+      "limite_inf": 1.5,
       "observado_2026": 12
     },
     {
       "semana": 44,
-      "media": 17.3,
+      "media": 16.7,
       "desvio": 12.2,
-      "limite_sup": 41.2,
+      "limite_sup": 40.6,
       "limite_inf": 0,
       "observado_2026": 3
     },
     {
       "semana": 45,
-      "media": 20.1,
-      "desvio": 13.4,
-      "limite_sup": 46.4,
+      "media": 19.4,
+      "desvio": 13.1,
+      "limite_sup": 45.1,
       "limite_inf": 0
     },
     {
       "semana": 46,
-      "media": 28,
-      "desvio": 28.9,
-      "limite_sup": 84.6,
+      "media": 27.9,
+      "desvio": 29,
+      "limite_sup": 84.7,
       "limite_inf": 0
     },
     {
       "semana": 47,
-      "media": 27.3,
-      "desvio": 25.2,
-      "limite_sup": 76.7,
+      "media": 27,
+      "desvio": 24.5,
+      "limite_sup": 75,
       "limite_inf": 0
     },
     {
       "semana": 48,
-      "media": 27,
-      "desvio": 30.5,
-      "limite_sup": 86.8,
+      "media": 26.6,
+      "desvio": 30.3,
+      "limite_sup": 86,
       "limite_inf": 0
     },
     {
       "semana": 49,
-      "media": 21.4,
-      "desvio": 26.5,
-      "limite_sup": 73.3,
+      "media": 21,
+      "desvio": 26.3,
+      "limite_sup": 72.5,
       "limite_inf": 0
     },
     {
       "semana": 50,
-      "media": 32.7,
-      "desvio": 39.6,
-      "limite_sup": 110.3,
+      "media": 31.9,
+      "desvio": 39.4,
+      "limite_sup": 109.1,
       "limite_inf": 0
     },
     {
       "semana": 51,
-      "media": 21,
-      "desvio": 16.2,
+      "media": 20.9,
+      "desvio": 16.3,
       "limite_sup": 52.8,
       "limite_inf": 0
     },
     {
       "semana": 52,
-      "media": 24,
-      "desvio": 17.6,
-      "limite_sup": 58.5,
+      "media": 23.6,
+      "desvio": 17.2,
+      "limite_sup": 57.3,
       "limite_inf": 0
     }
   ],
   "bairros": [
     {
       "bairro": "Guamá",
-      "total": 2153,
-      "total_2026": 574,
-      "confirmados": 1012,
-      "descartados": 1065
+      "total": 1828,
+      "total_2026": 287,
+      "confirmados": 855,
+      "descartados": 911
     },
     {
       "bairro": "Marco",
-      "total": 1682,
-      "total_2026": 416,
-      "confirmados": 669,
-      "descartados": 928
+      "total": 1458,
+      "total_2026": 207,
+      "confirmados": 548,
+      "descartados": 840
     },
     {
       "bairro": "Pedreira",
-      "total": 1694,
-      "total_2026": 344,
-      "confirmados": 731,
-      "descartados": 891
+      "total": 1483,
+      "total_2026": 169,
+      "confirmados": 613,
+      "descartados": 807
     },
     {
       "bairro": "Montese (Terra Firme)",
-      "total": 1120,
-      "total_2026": 302,
-      "confirmados": 546,
-      "descartados": 530
+      "total": 956,
+      "total_2026": 154,
+      "confirmados": 462,
+      "descartados": 456
     },
     {
       "bairro": "Jurunas",
-      "total": 1103,
-      "total_2026": 280,
-      "confirmados": 518,
-      "descartados": 541
+      "total": 935,
+      "total_2026": 139,
+      "confirmados": 437,
+      "descartados": 462
     },
     {
       "bairro": "Coqueiro",
-      "total": 1309,
-      "total_2026": 239,
-      "confirmados": 421,
-      "descartados": 740
-    },
-    {
-      "bairro": "Sacramenta",
-      "total": 1294,
-      "total_2026": 229,
-      "confirmados": 546,
-      "descartados": 696
+      "total": 1179,
+      "total_2026": 125,
+      "confirmados": 369,
+      "descartados": 688
     },
     {
       "bairro": "Tapanã",
-      "total": 1145,
-      "total_2026": 209,
-      "confirmados": 321,
-      "descartados": 756
+      "total": 1035,
+      "total_2026": 109,
+      "confirmados": 297,
+      "descartados": 682
+    },
+    {
+      "bairro": "Sacramenta",
+      "total": 1132,
+      "total_2026": 108,
+      "confirmados": 459,
+      "descartados": 630
     },
     {
       "bairro": "Marambaia",
-      "total": 1206,
-      "total_2026": 198,
-      "confirmados": 465,
-      "descartados": 673
+      "total": 1079,
+      "total_2026": 100,
+      "confirmados": 417,
+      "descartados": 604
     },
     {
       "bairro": "Telégrafo",
-      "total": 919,
-      "total_2026": 186,
-      "confirmados": 386,
-      "descartados": 503
-    },
-    {
-      "bairro": "Condor",
-      "total": 662,
-      "total_2026": 147,
-      "confirmados": 340,
-      "descartados": 297
+      "total": 808,
+      "total_2026": 91,
+      "confirmados": 334,
+      "descartados": 452
     },
     {
       "bairro": "Parque Verde",
-      "total": 625,
-      "total_2026": 142,
-      "confirmados": 239,
-      "descartados": 337
+      "total": 545,
+      "total_2026": 74,
+      "confirmados": 206,
+      "descartados": 298
     },
     {
-      "bairro": "Umarizal",
-      "total": 673,
-      "total_2026": 127,
-      "confirmados": 298,
-      "descartados": 342
+      "bairro": "Condor",
+      "total": 575,
+      "total_2026": 72,
+      "confirmados": 293,
+      "descartados": 262
     },
     {
       "bairro": "Barreiro",
-      "total": 690,
-      "total_2026": 118,
-      "confirmados": 291,
-      "descartados": 384
+      "total": 623,
+      "total_2026": 59,
+      "confirmados": 258,
+      "descartados": 351
     },
     {
-      "bairro": "Curió-Utinga",
-      "total": 421,
-      "total_2026": 117,
-      "confirmados": 148,
-      "descartados": 257
-    },
-    {
-      "bairro": "Campina",
-      "total": 433,
-      "total_2026": 111,
-      "confirmados": 120,
-      "descartados": 201
+      "bairro": "Umarizal",
+      "total": 597,
+      "total_2026": 59,
+      "confirmados": 255,
+      "descartados": 314
     },
     {
       "bairro": "Cremação",
-      "total": 620,
-      "total_2026": 108,
-      "confirmados": 266,
-      "descartados": 326
+      "total": 555,
+      "total_2026": 56,
+      "confirmados": 235,
+      "descartados": 294
+    },
+    {
+      "bairro": "Campina",
+      "total": 368,
+      "total_2026": 56,
+      "confirmados": 103,
+      "descartados": 175
+    },
+    {
+      "bairro": "Curió-Utinga",
+      "total": 348,
+      "total_2026": 56,
+      "confirmados": 112,
+      "descartados": 225
     },
     {
       "bairro": "Águas Lindas",
-      "total": 420,
-      "total_2026": 101,
-      "confirmados": 98,
-      "descartados": 235
+      "total": 367,
+      "total_2026": 53,
+      "confirmados": 91,
+      "descartados": 209
     },
     {
       "bairro": "Tenoné",
-      "total": 486,
-      "total_2026": 98,
-      "confirmados": 123,
-      "descartados": 341
+      "total": 430,
+      "total_2026": 49,
+      "confirmados": 104,
+      "descartados": 306
     },
     {
       "bairro": "Maracangalha",
-      "total": 538,
-      "total_2026": 93,
-      "confirmados": 300,
-      "descartados": 218
+      "total": 482,
+      "total_2026": 46,
+      "confirmados": 268,
+      "descartados": 198
     },
     {
       "bairro": "Canudos",
-      "total": 381,
-      "total_2026": 91,
-      "confirmados": 175,
-      "descartados": 192
+      "total": 328,
+      "total_2026": 46,
+      "confirmados": 143,
+      "descartados": 173
     },
     {
       "bairro": "São João do Outeiro",
-      "total": 553,
-      "total_2026": 84,
-      "confirmados": 113,
-      "descartados": 422
+      "total": 507,
+      "total_2026": 45,
+      "confirmados": 97,
+      "descartados": 392
     },
     {
       "bairro": "Pratinha",
-      "total": 437,
-      "total_2026": 82,
-      "confirmados": 134,
-      "descartados": 283
+      "total": 394,
+      "total_2026": 45,
+      "confirmados": 115,
+      "descartados": 261
     },
     {
       "bairro": "São Brás",
-      "total": 407,
-      "total_2026": 82,
-      "confirmados": 168,
-      "descartados": 220
+      "total": 366,
+      "total_2026": 43,
+      "confirmados": 152,
+      "descartados": 196
     },
     {
       "bairro": "Campina de Icoaraci",
-      "total": 510,
-      "total_2026": 79,
-      "confirmados": 106,
-      "descartados": 376
-    },
-    {
-      "bairro": "Mangueirão",
-      "total": 377,
-      "total_2026": 78,
-      "confirmados": 115,
-      "descartados": 241
+      "total": 467,
+      "total_2026": 40,
+      "confirmados": 97,
+      "descartados": 345
     },
     {
       "bairro": "Bengui",
-      "total": 401,
-      "total_2026": 74,
-      "confirmados": 86,
-      "descartados": 281
+      "total": 354,
+      "total_2026": 39,
+      "confirmados": 70,
+      "descartados": 256
+    },
+    {
+      "bairro": "Mangueirão",
+      "total": 331,
+      "total_2026": 39,
+      "confirmados": 95,
+      "descartados": 216
     },
     {
       "bairro": "Cabanagem",
-      "total": 379,
-      "total_2026": 71,
-      "confirmados": 123,
-      "descartados": 211
-    },
-    {
-      "bairro": "Cidade Velha",
-      "total": 323,
-      "total_2026": 64,
-      "confirmados": 159,
-      "descartados": 152
-    },
-    {
-      "bairro": "Água Boa",
-      "total": 332,
-      "total_2026": 63,
-      "confirmados": 83,
-      "descartados": 242
-    },
-    {
-      "bairro": "Cruzeiro",
-      "total": 322,
-      "total_2026": 58,
-      "confirmados": 59,
-      "descartados": 253
+      "total": 340,
+      "total_2026": 37,
+      "confirmados": 107,
+      "descartados": 197
     },
     {
       "bairro": "Paracuri",
-      "total": 520,
-      "total_2026": 55,
-      "confirmados": 97,
-      "descartados": 401
+      "total": 483,
+      "total_2026": 34,
+      "confirmados": 85,
+      "descartados": 378
     },
     {
-      "bairro": "Nazaré",
-      "total": 268,
-      "total_2026": 49,
-      "confirmados": 121,
+      "bairro": "Água Boa",
+      "total": 300,
+      "total_2026": 32,
+      "confirmados": 69,
+      "descartados": 224
+    },
+    {
+      "bairro": "Cidade Velha",
+      "total": 281,
+      "total_2026": 31,
+      "confirmados": 140,
       "descartados": 132
     },
     {
-      "bairro": "Batista Campos",
-      "total": 264,
-      "total_2026": 47,
-      "confirmados": 124,
-      "descartados": 132
-    },
-    {
-      "bairro": "Agulha",
-      "total": 425,
-      "total_2026": 46,
-      "confirmados": 79,
-      "descartados": 328
+      "bairro": "Cruzeiro",
+      "total": 288,
+      "total_2026": 29,
+      "confirmados": 52,
+      "descartados": 228
     },
     {
       "bairro": "Maracacuera",
-      "total": 360,
-      "total_2026": 46,
-      "confirmados": 55,
-      "descartados": 279
+      "total": 328,
+      "total_2026": 27,
+      "confirmados": 52,
+      "descartados": 254
     },
     {
       "bairro": "Maracajá",
-      "total": 165,
-      "total_2026": 46,
-      "confirmados": 40,
-      "descartados": 120
+      "total": 146,
+      "total_2026": 27,
+      "confirmados": 33,
+      "descartados": 109
     },
     {
-      "bairro": "Souza",
-      "total": 257,
-      "total_2026": 45,
-      "confirmados": 103,
-      "descartados": 142
-    },
-    {
-      "bairro": "Fátima",
-      "total": 239,
-      "total_2026": 45,
-      "confirmados": 110,
-      "descartados": 119
+      "bairro": "Agulha",
+      "total": 395,
+      "total_2026": 26,
+      "confirmados": 70,
+      "descartados": 309
     },
     {
       "bairro": "Parque Guajará",
-      "total": 252,
-      "total_2026": 44,
-      "confirmados": 61,
-      "descartados": 183
+      "total": 229,
+      "total_2026": 25,
+      "confirmados": 56,
+      "descartados": 166
     },
     {
-      "bairro": "Arirambá",
-      "total": 99,
-      "total_2026": 40,
-      "confirmados": 15,
-      "descartados": 79
+      "bairro": "Nazaré",
+      "total": 239,
+      "total_2026": 24,
+      "confirmados": 107,
+      "descartados": 117
+    },
+    {
+      "bairro": "Souza",
+      "total": 233,
+      "total_2026": 24,
+      "confirmados": 92,
+      "descartados": 129
+    },
+    {
+      "bairro": "Batista Campos",
+      "total": 233,
+      "total_2026": 23,
+      "confirmados": 110,
+      "descartados": 117
     },
     {
       "bairro": "ANANINDEUA CENTRO",
-      "total": 136,
-      "total_2026": 39,
+      "total": 118,
+      "total_2026": 22,
       "confirmados": 19,
-      "descartados": 75
+      "descartados": 72
     },
     {
-      "bairro": "Castanheira",
-      "total": 281,
-      "total_2026": 37,
-      "confirmados": 69,
-      "descartados": 189
+      "bairro": "Fátima",
+      "total": 214,
+      "total_2026": 21,
+      "confirmados": 96,
+      "descartados": 108
+    },
+    {
+      "bairro": "Arirambá",
+      "total": 78,
+      "total_2026": 20,
+      "confirmados": 10,
+      "descartados": 63
     },
     {
       "bairro": "Val-de-Cães",
-      "total": 262,
-      "total_2026": 37,
-      "confirmados": 106,
-      "descartados": 144
+      "total": 239,
+      "total_2026": 19,
+      "confirmados": 95,
+      "descartados": 135
     },
     {
       "bairro": "Carananduba",
-      "total": 230,
-      "total_2026": 35,
-      "confirmados": 49,
-      "descartados": 174
+      "total": 206,
+      "total_2026": 19,
+      "confirmados": 48,
+      "descartados": 152
+    },
+    {
+      "bairro": "Castanheira",
+      "total": 251,
+      "total_2026": 18,
+      "confirmados": 59,
+      "descartados": 172
     },
     {
       "bairro": "Vila",
-      "total": 159,
-      "total_2026": 34,
-      "confirmados": 43,
-      "descartados": 107
-    },
-    {
-      "bairro": "Brasília",
-      "total": 178,
-      "total_2026": 28,
-      "confirmados": 35,
-      "descartados": 133
-    },
-    {
-      "bairro": "ICUI GUAJARA",
-      "total": 71,
-      "total_2026": 27,
-      "confirmados": 6,
-      "descartados": 49
+      "total": 143,
+      "total_2026": 18,
+      "confirmados": 42,
+      "descartados": 94
     },
     {
       "bairro": "Ponta Grossa",
-      "total": 267,
-      "total_2026": 26,
-      "confirmados": 52,
-      "descartados": 205
+      "total": 254,
+      "total_2026": 16,
+      "confirmados": 49,
+      "descartados": 196
+    },
+    {
+      "bairro": "Brasília",
+      "total": 161,
+      "total_2026": 14,
+      "confirmados": 28,
+      "descartados": 123
+    },
+    {
+      "bairro": "ICUI GUAJARA",
+      "total": 58,
+      "total_2026": 14,
+      "confirmados": 6,
+      "descartados": 40
     },
     {
       "bairro": "Murubira",
-      "total": 64,
-      "total_2026": 25,
-      "confirmados": 8,
-      "descartados": 54
-    },
-    {
-      "bairro": "Águas Negras",
-      "total": 187,
-      "total_2026": 23,
-      "confirmados": 23,
-      "descartados": 155
-    },
-    {
-      "bairro": "Guanabara",
-      "total": 96,
-      "total_2026": 23,
-      "confirmados": 23,
-      "descartados": 49
-    },
-    {
-      "bairro": "MAGUARI",
-      "total": 62,
-      "total_2026": 22,
-      "confirmados": 6,
-      "descartados": 35
-    },
-    {
-      "bairro": "São Francisco",
-      "total": 51,
-      "total_2026": 21,
-      "confirmados": 8,
-      "descartados": 39
-    },
-    {
-      "bairro": "QUARENTA HORAS",
-      "total": 43,
-      "total_2026": 20,
-      "confirmados": 6,
-      "descartados": 24
-    },
-    {
-      "bairro": "CIDADE NOVA I CID NOVA",
-      "total": 101,
-      "total_2026": 19,
-      "confirmados": 19,
-      "descartados": 65
-    },
-    {
-      "bairro": "Una",
-      "total": 61,
-      "total_2026": 18,
+      "total": 53,
+      "total_2026": 14,
       "confirmados": 7,
-      "descartados": 37
-    },
-    {
-      "bairro": "Reduto",
-      "total": 112,
-      "total_2026": 17,
-      "confirmados": 43,
-      "descartados": 61
-    },
-    {
-      "bairro": "Chapéu Virado",
-      "total": 59,
-      "total_2026": 17,
-      "confirmados": 12,
-      "descartados": 47
-    },
-    {
-      "bairro": "ATALAIA",
-      "total": 47,
-      "total_2026": 14,
-      "confirmados": 9,
-      "descartados": 29
-    },
-    {
-      "bairro": "CURUCAMBA",
-      "total": 37,
-      "total_2026": 14,
-      "confirmados": 5,
-      "descartados": 20
-    },
-    {
-      "bairro": "Sucurijuquara",
-      "total": 70,
-      "total_2026": 12,
-      "confirmados": 20,
       "descartados": 45
     },
     {
-      "bairro": "Aeroporto",
-      "total": 55,
+      "bairro": "Guanabara",
+      "total": 85,
       "total_2026": 12,
-      "confirmados": 15,
-      "descartados": 39
+      "confirmados": 23,
+      "descartados": 45
     },
     {
-      "bairro": "Praia Grande",
-      "total": 42,
-      "total_2026": 12,
-      "confirmados": 8,
+      "bairro": "CIDADE NOVA I CID NOVA",
+      "total": 91,
+      "total_2026": 11,
+      "confirmados": 18,
+      "descartados": 62
+    },
+    {
+      "bairro": "MAGUARI",
+      "total": 50,
+      "total_2026": 11,
+      "confirmados": 6,
+      "descartados": 30
+    },
+    {
+      "bairro": "São Francisco",
+      "total": 39,
+      "total_2026": 11,
+      "confirmados": 7,
+      "descartados": 29
+    },
+    {
+      "bairro": "QUARENTA HORAS",
+      "total": 34,
+      "total_2026": 11,
+      "confirmados": 6,
+      "descartados": 21
+    },
+    {
+      "bairro": "Una",
+      "total": 52,
+      "total_2026": 10,
+      "confirmados": 7,
       "descartados": 33
     },
     {
-      "bairro": "Baía do Sol",
-      "total": 84,
-      "total_2026": 10,
-      "confirmados": 27,
-      "descartados": 53
+      "bairro": "Águas Negras",
+      "total": 170,
+      "total_2026": 9,
+      "confirmados": 19,
+      "descartados": 144
     },
     {
-      "bairro": "AGUAS BRANCAS",
-      "total": 48,
-      "total_2026": 10,
-      "confirmados": 12,
-      "descartados": 25
+      "bairro": "Reduto",
+      "total": 102,
+      "total_2026": 9,
+      "confirmados": 38,
+      "descartados": 57
     },
     {
-      "bairro": "Caruara",
-      "total": 30,
-      "total_2026": 10,
-      "confirmados": 4,
+      "bairro": "Chapéu Virado",
+      "total": 49,
+      "total_2026": 9,
+      "confirmados": 10,
+      "descartados": 39
+    },
+    {
+      "bairro": "CURUCAMBA",
+      "total": 32,
+      "total_2026": 9,
+      "confirmados": 5,
+      "descartados": 16
+    },
+    {
+      "bairro": "ATALAIA",
+      "total": 39,
+      "total_2026": 8,
+      "confirmados": 8,
       "descartados": 24
     },
     {
-      "bairro": "MURININ",
-      "total": 20,
-      "total_2026": 10,
-      "confirmados": 4,
-      "descartados": 11
+      "bairro": "Sucurijuquara",
+      "total": 64,
+      "total_2026": 7,
+      "confirmados": 20,
+      "descartados": 41
+    },
+    {
+      "bairro": "Baía do Sol",
+      "total": 79,
+      "total_2026": 6,
+      "confirmados": 26,
+      "descartados": 49
+    },
+    {
+      "bairro": "Aeroporto",
+      "total": 47,
+      "total_2026": 6,
+      "confirmados": 15,
+      "descartados": 31
+    },
+    {
+      "bairro": "AGUAS BRANCAS",
+      "total": 44,
+      "total_2026": 6,
+      "confirmados": 10,
+      "descartados": 23
+    },
+    {
+      "bairro": "Praia Grande",
+      "total": 34,
+      "total_2026": 6,
+      "confirmados": 7,
+      "descartados": 26
     },
     {
       "bairro": "Itaiteua",
-      "total": 70,
-      "total_2026": 9,
-      "confirmados": 11,
-      "descartados": 56
+      "total": 66,
+      "total_2026": 5,
+      "confirmados": 10,
+      "descartados": 53
     },
     {
       "bairro": "Mangueiras",
-      "total": 54,
-      "total_2026": 9,
+      "total": 49,
+      "total_2026": 5,
       "confirmados": 12,
-      "descartados": 42
+      "descartados": 37
+    },
+    {
+      "bairro": "MURININ",
+      "total": 15,
+      "total_2026": 5,
+      "confirmados": 2,
+      "descartados": 8
     },
     {
       "bairro": "Farol",
-      "total": 39,
-      "total_2026": 7,
+      "total": 36,
+      "total_2026": 4,
       "confirmados": 3,
-      "descartados": 35
+      "descartados": 32
     },
     {
       "bairro": "Aurá",
-      "total": 27,
-      "total_2026": 7,
+      "total": 24,
+      "total_2026": 4,
       "confirmados": 3,
-      "descartados": 15
+      "descartados": 13
+    },
+    {
+      "bairro": "Caruara",
+      "total": 24,
+      "total_2026": 4,
+      "confirmados": 4,
+      "descartados": 20
     },
     {
       "bairro": "Porto Arthur",
-      "total": 17,
-      "total_2026": 7,
-      "confirmados": 4,
-      "descartados": 12
-    },
-    {
-      "bairro": "PAAR",
-      "total": 12,
-      "total_2026": 6,
-      "confirmados": 1,
-      "descartados": 6
-    },
-    {
-      "bairro": "SAUDADE I",
-      "total": 8,
-      "total_2026": 6,
-      "confirmados": 4,
-      "descartados": 4
-    },
-    {
-      "bairro": "Natal do Murubira",
-      "total": 27,
-      "total_2026": 5,
-      "confirmados": 4,
-      "descartados": 22
-    },
-    {
-      "bairro": "ZONA RURAL",
-      "total": 26,
-      "total_2026": 5,
-      "confirmados": 1,
-      "descartados": 11
-    },
-    {
-      "bairro": "SAO MIGUEL DO GUAMA CENTRO",
-      "total": 8,
-      "total_2026": 5,
-      "confirmados": 2,
-      "descartados": 2
-    },
-    {
-      "bairro": "NOVA CAMETA",
-      "total": 6,
-      "total_2026": 5,
-      "confirmados": 2,
-      "descartados": 2
-    },
-    {
-      "bairro": "DECOUVILLE",
-      "total": 19,
+      "total": 14,
       "total_2026": 4,
-      "confirmados": 1,
+      "confirmados": 3,
       "descartados": 10
-    },
-    {
-      "bairro": "CIDADE NOVA",
-      "total": 17,
-      "total_2026": 4,
-      "confirmados": 1,
-      "descartados": 9
     },
     {
       "bairro": "PIONEIRO",
@@ -5507,550 +5451,151 @@
       "descartados": 5
     },
     {
+      "bairro": "Natal do Murubira",
+      "total": 25,
+      "total_2026": 3,
+      "confirmados": 3,
+      "descartados": 21
+    },
+    {
+      "bairro": "ZONA RURAL",
+      "total": 24,
+      "total_2026": 3,
+      "confirmados": 1,
+      "descartados": 10
+    },
+    {
       "bairro": "JADERLANDIA",
-      "total": 10,
-      "total_2026": 4,
-      "confirmados": 5,
+      "total": 9,
+      "total_2026": 3,
+      "confirmados": 4,
       "descartados": 1
     },
     {
-      "bairro": "VILA DO CONDE",
-      "total": 8,
-      "total_2026": 4,
-      "confirmados": 0,
+      "bairro": "PAAR",
+      "total": 9,
+      "total_2026": 3,
+      "confirmados": 1,
+      "descartados": 5
+    },
+    {
+      "bairro": "SAO MIGUEL DO GUAMA CENTRO",
+      "total": 6,
+      "total_2026": 3,
+      "confirmados": 1,
+      "descartados": 1
+    },
+    {
+      "bairro": "NOVA CAMETA",
+      "total": 4,
+      "total_2026": 3,
+      "confirmados": 1,
+      "descartados": 2
+    },
+    {
+      "bairro": "DECOUVILLE",
+      "total": 17,
+      "total_2026": 2,
+      "confirmados": 1,
       "descartados": 8
     },
     {
-      "bairro": "MARITUBA",
-      "total": 7,
-      "total_2026": 4,
-      "confirmados": 0,
+      "bairro": "CIDADE NOVA",
+      "total": 13,
+      "total_2026": 2,
+      "confirmados": 1,
       "descartados": 6
     },
     {
-      "bairro": "NOVA OLINDA",
-      "total": 7,
-      "total_2026": 4,
-      "confirmados": 0,
-      "descartados": 7
-    },
-    {
-      "bairro": "AURORA DO PARA CENTRO",
-      "total": 6,
-      "total_2026": 4,
-      "confirmados": 2,
-      "descartados": 2
-    },
-    {
-      "bairro": "PIRAPORA",
-      "total": 6,
-      "total_2026": 4,
-      "confirmados": 2,
-      "descartados": 2
-    },
-    {
-      "bairro": "TERRA FRIME",
-      "total": 5,
-      "total_2026": 4,
-      "confirmados": 2,
-      "descartados": 3
-    },
-    {
-      "bairro": "DOM ELIZEU CENTRO",
-      "total": 4,
-      "total_2026": 4,
-      "confirmados": 0,
-      "descartados": 4
-    },
-    {
-      "bairro": "PADRE LUIS",
-      "total": 4,
-      "total_2026": 4,
-      "confirmados": 0,
-      "descartados": 0
-    },
-    {
-      "bairro": "SAO DOMINGOS DO CAPIM",
-      "total": 4,
-      "total_2026": 4,
-      "confirmados": 0,
-      "descartados": 0
-    },
-    {
       "bairro": "São Clemente",
-      "total": 11,
-      "total_2026": 3,
-      "confirmados": 3,
+      "total": 10,
+      "total_2026": 2,
+      "confirmados": 2,
       "descartados": 6
     },
     {
       "bairro": "CONJICUI GUAJARA",
-      "total": 8,
-      "total_2026": 3,
+      "total": 7,
+      "total_2026": 2,
       "confirmados": 0,
       "descartados": 5
     },
     {
       "bairro": "JIBOIA BRANCA",
-      "total": 8,
-      "total_2026": 3,
-      "confirmados": 1,
-      "descartados": 6
-    },
-    {
-      "bairro": "BETANIA",
-      "total": 7,
-      "total_2026": 3,
-      "confirmados": 0,
-      "descartados": 6
-    },
-    {
-      "bairro": "PRIMAVERA",
-      "total": 5,
-      "total_2026": 3,
-      "confirmados": 2,
-      "descartados": 0
-    },
-    {
-      "bairro": "NOVA MARITUBA",
-      "total": 13,
-      "total_2026": 2,
-      "confirmados": 2,
-      "descartados": 6
-    },
-    {
-      "bairro": "Bonfim",
-      "total": 12,
-      "total_2026": 2,
-      "confirmados": 1,
-      "descartados": 11
-    },
-    {
-      "bairro": "SANTA ROSA",
-      "total": 9,
-      "total_2026": 2,
-      "confirmados": 4,
-      "descartados": 3
-    },
-    {
-      "bairro": "AMERICANO",
-      "total": 7,
-      "total_2026": 2,
-      "confirmados": 3,
-      "descartados": 4
-    },
-    {
-      "bairro": "SANTA MARIA",
-      "total": 7,
-      "total_2026": 2,
-      "confirmados": 2,
-      "descartados": 2
-    },
-    {
-      "bairro": "SAO JOSE",
       "total": 7,
       "total_2026": 2,
       "confirmados": 1,
       "descartados": 5
     },
     {
-      "bairro": "SANTA LUCIA",
-      "total": 5,
+      "bairro": "BETANIA",
+      "total": 6,
       "total_2026": 2,
-      "confirmados": 3,
-      "descartados": 0
+      "confirmados": 0,
+      "descartados": 5
     },
     {
-      "bairro": "BAIRRO NOVO DO 5",
+      "bairro": "VILA DO CONDE",
+      "total": 6,
+      "total_2026": 2,
+      "confirmados": 0,
+      "descartados": 6
+    },
+    {
+      "bairro": "AURORA DO PARA CENTRO",
+      "total": 4,
+      "total_2026": 2,
+      "confirmados": 1,
+      "descartados": 2
+    },
+    {
+      "bairro": "PIRAPORA",
       "total": 4,
       "total_2026": 2,
       "confirmados": 0,
-      "descartados": 4
+      "descartados": 2
     },
     {
-      "bairro": "BELEM",
+      "bairro": "PRIMAVERA",
       "total": 4,
       "total_2026": 2,
       "confirmados": 1,
       "descartados": 0
     },
     {
-      "bairro": "FAZENDA",
+      "bairro": "SAUDADE I",
       "total": 4,
       "total_2026": 2,
       "confirmados": 2,
       "descartados": 2
     },
     {
-      "bairro": "FONTE BOA",
-      "total": 4,
-      "total_2026": 2,
-      "confirmados": 2,
-      "descartados": 0
-    },
-    {
-      "bairro": "ICOARACI",
-      "total": 4,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 4
-    },
-    {
-      "bairro": "INDEPENDENTE",
-      "total": 4,
-      "total_2026": 2,
-      "confirmados": 1,
-      "descartados": 1
-    },
-    {
-      "bairro": "JADERLANDIA II",
-      "total": 4,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 4
-    },
-    {
-      "bairro": "NOVA UNIAO",
-      "total": 4,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 2
-    },
-    {
-      "bairro": "PERPETUO SOCORRO",
-      "total": 4,
-      "total_2026": 2,
-      "confirmados": 2,
-      "descartados": 1
-    },
-    {
-      "bairro": "AREA RURAL",
+      "bairro": "TERRA FRIME",
       "total": 3,
       "total_2026": 2,
       "confirmados": 1,
       "descartados": 2
     },
     {
-      "bairro": "BAIRRO DAS FLORES",
-      "total": 3,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 1
-    },
-    {
-      "bairro": "BELA VISTA I",
-      "total": 3,
-      "total_2026": 2,
-      "confirmados": 1,
-      "descartados": 0
-    },
-    {
-      "bairro": "BENEVIDES",
-      "total": 3,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 2
-    },
-    {
-      "bairro": "CARATATEUARESEX MARCATTAPPA 0046000",
-      "total": 3,
-      "total_2026": 2,
-      "confirmados": 3,
-      "descartados": 0
-    },
-    {
-      "bairro": "CENTRO CIDADE",
-      "total": 3,
-      "total_2026": 2,
-      "confirmados": 2,
-      "descartados": 1
-    },
-    {
-      "bairro": "CENTRO NOVO",
-      "total": 3,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 0
-    },
-    {
-      "bairro": "GUAJARA",
-      "total": 3,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 0
-    },
-    {
-      "bairro": "MADRE TEREZA",
-      "total": 3,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 2
-    },
-    {
-      "bairro": "MORADA NOVA",
-      "total": 3,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 1
-    },
-    {
-      "bairro": "PADRE ALBERTO TROMBINI",
-      "total": 3,
-      "total_2026": 2,
-      "confirmados": 2,
-      "descartados": 1
-    },
-    {
-      "bairro": "SANTA RITA",
-      "total": 3,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 3
-    },
-    {
-      "bairro": "SAO PAULO",
-      "total": 3,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 3
-    },
-    {
-      "bairro": "TATAJUBA",
-      "total": 3,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 2
-    },
-    {
-      "bairro": "AGUAS VERDES",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 1
-    },
-    {
-      "bairro": "ALDEIA PARKTEJE   MAE MARIA",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 0
-    },
-    {
-      "bairro": "ALDEOTA",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 0
-    },
-    {
-      "bairro": "ALTO DO SUMARE",
+      "bairro": "DOM ELIZEU CENTRO",
       "total": 2,
       "total_2026": 2,
       "confirmados": 0,
       "descartados": 2
     },
     {
-      "bairro": "APARECIDA",
+      "bairro": "PADRE LUIS",
       "total": 2,
       "total_2026": 2,
       "confirmados": 0,
       "descartados": 0
     },
     {
-      "bairro": "AREIAO",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 2
-    },
-    {
-      "bairro": "AV GENTIL BITTENCOURT 886 NAZARE",
+      "bairro": "SAO DOMINGOS DO CAPIM",
       "total": 2,
       "total_2026": 2,
       "confirmados": 0,
       "descartados": 0
-    },
-    {
-      "bairro": "BOM JESUS KM 47",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 0
-    },
-    {
-      "bairro": "CASTANHAL",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 2,
-      "descartados": 0
-    },
-    {
-      "bairro": "CIDADE NOVA 8",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 1,
-      "descartados": 0
-    },
-    {
-      "bairro": "CONJ MAGUARI",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 2,
-      "descartados": 0
-    },
-    {
-      "bairro": "EXPANSAO DISTRITO INDUSTRIAL",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 0
-    },
-    {
-      "bairro": "FLEXAL",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 2
-    },
-    {
-      "bairro": "GUARIJU",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 2
-    },
-    {
-      "bairro": "ILHA REDONDA",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 0
-    },
-    {
-      "bairro": "IMBIRIBEIRA",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 1
-    },
-    {
-      "bairro": "IMPERATRIZ CENTRO",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 0
-    },
-    {
-      "bairro": "ITACURUCA",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 2
-    },
-    {
-      "bairro": "ITAQUERA",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 2,
-      "descartados": 0
-    },
-    {
-      "bairro": "JARDIM CASTANHAL",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 2
-    },
-    {
-      "bairro": "JARDIM PAULISTA",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 2
-    },
-    {
-      "bairro": "LOTEAMENTO PARQUE IMPERIAL",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 2,
-      "descartados": 0
-    },
-    {
-      "bairro": "MAGUEIRAO",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 2
-    },
-    {
-      "bairro": "MARIANO 1",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 2,
-      "descartados": 0
-    },
-    {
-      "bairro": "MATINHA BAIRRO",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 2,
-      "descartados": 0
-    },
-    {
-      "bairro": "MOOCA",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 2,
-      "descartados": 0
-    },
-    {
-      "bairro": "OTEIRO",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 2
-    },
-    {
-      "bairro": "PARQUE GAUJARA",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 2
-    },
-    {
-      "bairro": "PETROPOLIS",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 0
-    },
-    {
-      "bairro": "PONTO CERTO ANT BRASILIA",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 2
-    },
-    {
-      "bairro": "PRAIAO",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 0
-    },
-    {
-      "bairro": "SANTA BARBARA",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 2
-    },
-    {
-      "bairro": "SANTA CLARA",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 2
     },
     {
       "bairro": "SAO JUDAS",
@@ -6060,60 +5605,18 @@
       "descartados": 0
     },
     {
-      "bairro": "SATELITE",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 2,
-      "descartados": 0
+      "bairro": "NOVA MARITUBA",
+      "total": 12,
+      "total_2026": 1,
+      "confirmados": 1,
+      "descartados": 6
     },
     {
-      "bairro": "SITIO SANTANA",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 2
-    },
-    {
-      "bairro": "TROPICAL",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 1
-    },
-    {
-      "bairro": "UPA",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 0
-    },
-    {
-      "bairro": "URINDUBA",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 2,
-      "descartados": 0
-    },
-    {
-      "bairro": "VILA FRANCA",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 2
-    },
-    {
-      "bairro": "VILA RICA",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 2,
-      "descartados": 0
-    },
-    {
-      "bairro": "VL MARIA",
-      "total": 2,
-      "total_2026": 2,
-      "confirmados": 0,
-      "descartados": 2
+      "bairro": "Bonfim",
+      "total": 10,
+      "total_2026": 1,
+      "confirmados": 1,
+      "descartados": 9
     },
     {
       "bairro": "JUAZEIRO",
@@ -6123,11 +5626,25 @@
       "descartados": 4
     },
     {
+      "bairro": "SANTA ROSA",
+      "total": 8,
+      "total_2026": 1,
+      "confirmados": 3,
+      "descartados": 3
+    },
+    {
       "bairro": "VILA NOVA",
       "total": 7,
       "total_2026": 1,
       "confirmados": 0,
       "descartados": 4
+    },
+    {
+      "bairro": "AMERICANO",
+      "total": 6,
+      "total_2026": 1,
+      "confirmados": 3,
+      "descartados": 3
     },
     {
       "bairro": "ESTRELA",
@@ -6137,11 +5654,95 @@
       "descartados": 3
     },
     {
+      "bairro": "SANTA MARIA",
+      "total": 6,
+      "total_2026": 1,
+      "confirmados": 2,
+      "descartados": 2
+    },
+    {
+      "bairro": "SAO JOSE",
+      "total": 6,
+      "total_2026": 1,
+      "confirmados": 1,
+      "descartados": 4
+    },
+    {
+      "bairro": "MARITUBA",
+      "total": 4,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 3
+    },
+    {
+      "bairro": "NOVA OLINDA",
+      "total": 4,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 4
+    },
+    {
       "bairro": "NOVO",
       "total": 4,
       "total_2026": 1,
       "confirmados": 0,
       "descartados": 3
+    },
+    {
+      "bairro": "SANTA LUCIA",
+      "total": 4,
+      "total_2026": 1,
+      "confirmados": 2,
+      "descartados": 0
+    },
+    {
+      "bairro": "BAIRRO NOVO DO 5",
+      "total": 3,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 3
+    },
+    {
+      "bairro": "BELEM",
+      "total": 3,
+      "total_2026": 1,
+      "confirmados": 1,
+      "descartados": 0
+    },
+    {
+      "bairro": "ICOARACI",
+      "total": 3,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 3
+    },
+    {
+      "bairro": "INDEPENDENTE",
+      "total": 3,
+      "total_2026": 1,
+      "confirmados": 1,
+      "descartados": 1
+    },
+    {
+      "bairro": "JADERLANDIA II",
+      "total": 3,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 3
+    },
+    {
+      "bairro": "NOVA UNIAO",
+      "total": 3,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 1
+    },
+    {
+      "bairro": "PERPETUO SOCORRO",
+      "total": 3,
+      "total_2026": 1,
+      "confirmados": 1,
+      "descartados": 1
     },
     {
       "bairro": "PERPETUO SOCORRORESEX MCTPA 0046000",
@@ -6151,7 +5752,77 @@
       "descartados": 1
     },
     {
+      "bairro": "AREA RURAL",
+      "total": 2,
+      "total_2026": 1,
+      "confirmados": 1,
+      "descartados": 1
+    },
+    {
+      "bairro": "BAIRRO DAS FLORES",
+      "total": 2,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 1
+    },
+    {
+      "bairro": "BELA VISTA I",
+      "total": 2,
+      "total_2026": 1,
+      "confirmados": 1,
+      "descartados": 0
+    },
+    {
+      "bairro": "BENEVIDES",
+      "total": 2,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 1
+    },
+    {
+      "bairro": "CARATATEUARESEX MARCATTAPPA 0046000",
+      "total": 2,
+      "total_2026": 1,
+      "confirmados": 2,
+      "descartados": 0
+    },
+    {
+      "bairro": "CENTRO CIDADE",
+      "total": 2,
+      "total_2026": 1,
+      "confirmados": 1,
+      "descartados": 1
+    },
+    {
+      "bairro": "CENTRO NOVO",
+      "total": 2,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 0
+    },
+    {
       "bairro": "COM SAO FRANCISCO DO PIRIPINDEUA",
+      "total": 2,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 1
+    },
+    {
+      "bairro": "FAZENDA",
+      "total": 2,
+      "total_2026": 1,
+      "confirmados": 1,
+      "descartados": 1
+    },
+    {
+      "bairro": "GUAJARA",
+      "total": 2,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 0
+    },
+    {
+      "bairro": "MADRE TEREZA",
       "total": 2,
       "total_2026": 1,
       "confirmados": 0,
@@ -6172,7 +5843,28 @@
       "descartados": 1
     },
     {
-      "bairro": "SAO RAIMUNDO",
+      "bairro": "PADRE ALBERTO TROMBINI",
+      "total": 2,
+      "total_2026": 1,
+      "confirmados": 1,
+      "descartados": 1
+    },
+    {
+      "bairro": "SANTA RITA",
+      "total": 2,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 2
+    },
+    {
+      "bairro": "SAO PAULO",
+      "total": 2,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 2
+    },
+    {
+      "bairro": "TATAJUBA",
       "total": 2,
       "total_2026": 1,
       "confirmados": 0,
@@ -6186,10 +5878,66 @@
       "descartados": 0
     },
     {
+      "bairro": "AGUAS VERDES",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 0
+    },
+    {
+      "bairro": "ALDEIA PARKTEJE   MAE MARIA",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 0
+    },
+    {
+      "bairro": "ALDEOTA",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 0
+    },
+    {
       "bairro": "ALTO BONITO I",
       "total": 1,
       "total_2026": 1,
       "confirmados": 0,
+      "descartados": 0
+    },
+    {
+      "bairro": "APARECIDA",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 0
+    },
+    {
+      "bairro": "AREIAO",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 1
+    },
+    {
+      "bairro": "AV GENTIL BITTENCOURT 886 NAZARE",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 0
+    },
+    {
+      "bairro": "BOM JESUS KM 47",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 0
+    },
+    {
+      "bairro": "CASTANHAL",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 1,
       "descartados": 0
     },
     {
@@ -6207,10 +5955,129 @@
       "descartados": 0
     },
     {
+      "bairro": "CIDADE NOVA 8",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 0
+    },
+    {
+      "bairro": "CONJ MAGUARI",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 1,
+      "descartados": 0
+    },
+    {
       "bairro": "CONJ NOVA CIDADE 1 ETAPA",
       "total": 1,
       "total_2026": 1,
       "confirmados": 0,
+      "descartados": 0
+    },
+    {
+      "bairro": "EXPANSAO DISTRITO INDUSTRIAL",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 0
+    },
+    {
+      "bairro": "FLEXAL",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 1
+    },
+    {
+      "bairro": "GUARIJU",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 1
+    },
+    {
+      "bairro": "ILHA REDONDA",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 0
+    },
+    {
+      "bairro": "IMBIRIBEIRA",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 0
+    },
+    {
+      "bairro": "IMPERATRIZ CENTRO",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 0
+    },
+    {
+      "bairro": "ITACURUCA",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 1
+    },
+    {
+      "bairro": "ITAQUERA",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 1,
+      "descartados": 0
+    },
+    {
+      "bairro": "JARDIM CASTANHAL",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 1
+    },
+    {
+      "bairro": "JARDIM PAULISTA",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 1
+    },
+    {
+      "bairro": "LOTEAMENTO PARQUE IMPERIAL",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 1,
+      "descartados": 0
+    },
+    {
+      "bairro": "MAGUEIRAO",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 1
+    },
+    {
+      "bairro": "MARIANO 1",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 1,
+      "descartados": 0
+    },
+    {
+      "bairro": "MATINHA BAIRRO",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 1,
+      "descartados": 0
+    },
+    {
+      "bairro": "MOOCA",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 1,
       "descartados": 0
     },
     {
@@ -6235,6 +6102,55 @@
       "descartados": 1
     },
     {
+      "bairro": "OTEIRO",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 1
+    },
+    {
+      "bairro": "PARQUE GAUJARA",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 1
+    },
+    {
+      "bairro": "PETROPOLIS",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 0
+    },
+    {
+      "bairro": "PONTO CERTO ANT BRASILIA",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 1
+    },
+    {
+      "bairro": "PRAIAO",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 0
+    },
+    {
+      "bairro": "SANTA BARBARA",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 1
+    },
+    {
+      "bairro": "SANTA CLARA",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 1
+    },
+    {
       "bairro": "SAO MANUEL",
       "total": 1,
       "total_2026": 1,
@@ -6242,11 +6158,18 @@
       "descartados": 0
     },
     {
-      "bairro": "SE",
+      "bairro": "SATELITE",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 1,
+      "descartados": 0
+    },
+    {
+      "bairro": "SITIO SANTANA",
       "total": 1,
       "total_2026": 1,
       "confirmados": 0,
-      "descartados": 0
+      "descartados": 1
     },
     {
       "bairro": "TABUBA",
@@ -6263,11 +6186,53 @@
       "descartados": 0
     },
     {
+      "bairro": "TROPICAL",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 0
+    },
+    {
+      "bairro": "UPA",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 0
+    },
+    {
+      "bairro": "URINDUBA",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 1,
+      "descartados": 0
+    },
+    {
       "bairro": "VILA FORMOSA",
       "total": 1,
       "total_2026": 1,
       "confirmados": 0,
       "descartados": 0
+    },
+    {
+      "bairro": "VILA FRANCA",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 1
+    },
+    {
+      "bairro": "VILA RICA",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 1,
+      "descartados": 0
+    },
+    {
+      "bairro": "VL MARIA",
+      "total": 1,
+      "total_2026": 1,
+      "confirmados": 0,
+      "descartados": 1
     },
     {
       "bairro": "Paraíso",
@@ -6278,10 +6243,10 @@
     },
     {
       "bairro": "Marahú",
-      "total": 22,
+      "total": 20,
       "total_2026": 0,
-      "confirmados": 3,
-      "descartados": 19
+      "confirmados": 2,
+      "descartados": 18
     },
     {
       "bairro": "LIBERDADE",
@@ -6340,20 +6305,6 @@
       "descartados": 4
     },
     {
-      "bairro": "FE EM DEUS",
-      "total": 6,
-      "total_2026": 0,
-      "confirmados": 1,
-      "descartados": 5
-    },
-    {
-      "bairro": "INVASAO IGARACOCO",
-      "total": 6,
-      "total_2026": 0,
-      "confirmados": 0,
-      "descartados": 6
-    },
-    {
       "bairro": "IPIXUNA",
       "total": 6,
       "total_2026": 0,
@@ -6373,6 +6324,20 @@
       "total_2026": 0,
       "confirmados": 1,
       "descartados": 3
+    },
+    {
+      "bairro": "FE EM DEUS",
+      "total": 5,
+      "total_2026": 0,
+      "confirmados": 1,
+      "descartados": 4
+    },
+    {
+      "bairro": "INVASAO IGARACOCO",
+      "total": 5,
+      "total_2026": 0,
+      "confirmados": 0,
+      "descartados": 5
     },
     {
       "bairro": "PARK GUAJARA",
@@ -6456,13 +6421,6 @@
       "total": 4,
       "total_2026": 0,
       "confirmados": 1,
-      "descartados": 3
-    },
-    {
-      "bairro": "ABACATAL",
-      "total": 3,
-      "total_2026": 0,
-      "confirmados": 0,
       "descartados": 3
     },
     {
@@ -6592,13 +6550,6 @@
       "descartados": 3
     },
     {
-      "bairro": "MEDICE",
-      "total": 3,
-      "total_2026": 0,
-      "confirmados": 0,
-      "descartados": 0
-    },
-    {
       "bairro": "NOVA ESPERANCA DO PIRIA CENTRO",
       "total": 3,
       "total_2026": 0,
@@ -6681,6 +6632,13 @@
       "total_2026": 0,
       "confirmados": 0,
       "descartados": 1
+    },
+    {
+      "bairro": "ABACATAL",
+      "total": 2,
+      "total_2026": 0,
+      "confirmados": 0,
+      "descartados": 2
     },
     {
       "bairro": "ACAITEUA",
@@ -6865,6 +6823,13 @@
       "descartados": 0
     },
     {
+      "bairro": "FONTE BOA",
+      "total": 2,
+      "total_2026": 0,
+      "confirmados": 2,
+      "descartados": 0
+    },
+    {
       "bairro": "FRANCILANDIA",
       "total": 2,
       "total_2026": 0,
@@ -6907,6 +6872,13 @@
       "descartados": 0
     },
     {
+      "bairro": "MEDICE",
+      "total": 2,
+      "total_2026": 0,
+      "confirmados": 0,
+      "descartados": 0
+    },
+    {
       "bairro": "MURAJA",
       "total": 2,
       "total_2026": 0,
@@ -6936,13 +6908,6 @@
     },
     {
       "bairro": "NOSSA SENHORA DAS GRACAS",
-      "total": 2,
-      "total_2026": 0,
-      "confirmados": 2,
-      "descartados": 0
-    },
-    {
-      "bairro": "NOSSA SENHORA DO O",
       "total": 2,
       "total_2026": 0,
       "confirmados": 2,
@@ -8391,6 +8356,13 @@
       "descartados": 0
     },
     {
+      "bairro": "MORADA NOVA",
+      "total": 1,
+      "total_2026": 0,
+      "confirmados": 0,
+      "descartados": 1
+    },
+    {
       "bairro": "MORAESAO",
       "total": 1,
       "total_2026": 0,
@@ -8399,13 +8371,6 @@
     },
     {
       "bairro": "MORRO DA ESPERANCA",
-      "total": 1,
-      "total_2026": 0,
-      "confirmados": 0,
-      "descartados": 0
-    },
-    {
-      "bairro": "MOSQUEIRO",
       "total": 1,
       "total_2026": 0,
       "confirmados": 0,
@@ -8472,6 +8437,13 @@
       "total": 1,
       "total_2026": 0,
       "confirmados": 0,
+      "descartados": 0
+    },
+    {
+      "bairro": "NOSSA SENHORA DO O",
+      "total": 1,
+      "total_2026": 0,
+      "confirmados": 1,
       "descartados": 0
     },
     {
@@ -8563,13 +8535,6 @@
       "total": 1,
       "total_2026": 0,
       "confirmados": 1,
-      "descartados": 0
-    },
-    {
-      "bairro": "PADRE ANGELO",
-      "total": 1,
-      "total_2026": 0,
-      "confirmados": 0,
       "descartados": 0
     },
     {
@@ -9070,6 +9035,13 @@
       "descartados": 0
     },
     {
+      "bairro": "SAO RAIMUNDO",
+      "total": 1,
+      "total_2026": 0,
+      "confirmados": 0,
+      "descartados": 0
+    },
+    {
       "bairro": "SAO TOME",
       "total": 1,
       "total_2026": 0,
@@ -9238,13 +9210,6 @@
       "descartados": 0
     },
     {
-      "bairro": "VILA DO CARMO",
-      "total": 1,
-      "total_2026": 0,
-      "confirmados": 0,
-      "descartados": 1
-    },
-    {
       "bairro": "VILA DOS PESCADORES",
       "total": 1,
       "total_2026": 0,
@@ -9305,90 +9270,90 @@
     "2026": [
       {
         "faixa": "0-9",
-        "Feminino": 394,
-        "Masculino": 439
-      },
-      {
-        "faixa": "10-19",
-        "Feminino": 455,
-        "Masculino": 642
-      },
-      {
-        "faixa": "20-29",
-        "Feminino": 732,
-        "Masculino": 613
-      },
-      {
-        "faixa": "30-39",
-        "Feminino": 506,
-        "Masculino": 476
-      },
-      {
-        "faixa": "40-49",
-        "Feminino": 483,
-        "Masculino": 292
-      },
-      {
-        "faixa": "50-59",
-        "Feminino": 398,
+        "Feminino": 211,
         "Masculino": 232
       },
       {
+        "faixa": "10-19",
+        "Feminino": 240,
+        "Masculino": 322
+      },
+      {
+        "faixa": "20-29",
+        "Feminino": 369,
+        "Masculino": 300
+      },
+      {
+        "faixa": "30-39",
+        "Feminino": 261,
+        "Masculino": 241
+      },
+      {
+        "faixa": "40-49",
+        "Feminino": 247,
+        "Masculino": 148
+      },
+      {
+        "faixa": "50-59",
+        "Feminino": 199,
+        "Masculino": 119
+      },
+      {
         "faixa": "60-69",
-        "Feminino": 205,
-        "Masculino": 168
+        "Feminino": 103,
+        "Masculino": 85
       },
       {
         "faixa": "70-79",
-        "Feminino": 71,
-        "Masculino": 29
+        "Feminino": 34,
+        "Masculino": 15
       },
       {
         "faixa": "80+",
-        "Feminino": 43,
-        "Masculino": 30
+        "Feminino": 21,
+        "Masculino": 14
       }
     ],
     "2025": [
       {
         "faixa": "0-9",
-        "Feminino": 242,
-        "Masculino": 241
+        "Feminino": 235,
+        "Masculino": 231
       },
       {
         "faixa": "10-19",
-        "Feminino": 206,
-        "Masculino": 291
+        "Feminino": 196,
+        "Masculino": 284
       },
       {
         "faixa": "20-29",
-        "Feminino": 321,
-        "Masculino": 267
+        "Feminino": 307,
+        "Masculino": 256
       },
       {
         "faixa": "30-39",
-        "Feminino": 289,
-        "Masculino": 188
+        "Feminino": 285,
+        "Masculino": 178
       },
       {
         "faixa": "40-49",
-        "Feminino": 276,
-        "Masculino": 164
+        "Feminino": 272,
+        "Masculino": 160
       },
       {
         "faixa": "50-59",
-        "Feminino": 228,
-        "Masculino": 110
+        "Feminino": 219,
+        "Masculino": 106
       },
       {
         "faixa": "60-69",
-        "Feminino": 110,
-        "Masculino": 71
+        "Feminino": 104,
+        "Masculino": 69
       },
       {
         "faixa": "70-79",
-        "Feminino": 40,
-        "Masculino": 45
+        "Feminino": 37,
+        "Masculino": 42
       },
       {
         "faixa": "80+",
@@ -9399,89 +9364,89 @@
     "2024": [
       {
         "faixa": "0-9",
-        "Feminino": 323,
-        "Masculino": 354
+        "Feminino": 314,
+        "Masculino": 342
       },
       {
         "faixa": "10-19",
-        "Feminino": 589,
-        "Masculino": 615
+        "Feminino": 574,
+        "Masculino": 604
       },
       {
         "faixa": "20-29",
-        "Feminino": 814,
-        "Masculino": 598
+        "Feminino": 788,
+        "Masculino": 585
       },
       {
         "faixa": "30-39",
-        "Feminino": 667,
-        "Masculino": 381
+        "Feminino": 654,
+        "Masculino": 371
       },
       {
         "faixa": "40-49",
-        "Feminino": 605,
-        "Masculino": 344
+        "Feminino": 587,
+        "Masculino": 338
       },
       {
         "faixa": "50-59",
-        "Feminino": 439,
-        "Masculino": 219
+        "Feminino": 431,
+        "Masculino": 211
       },
       {
         "faixa": "60-69",
-        "Feminino": 269,
-        "Masculino": 154
+        "Feminino": 264,
+        "Masculino": 148
       },
       {
         "faixa": "70-79",
-        "Feminino": 118,
+        "Feminino": 111,
         "Masculino": 56
       },
       {
         "faixa": "80+",
         "Feminino": 44,
-        "Masculino": 16
+        "Masculino": 15
       }
     ],
     "2023": [
       {
         "faixa": "0-9",
-        "Feminino": 51,
-        "Masculino": 55
+        "Feminino": 50,
+        "Masculino": 53
       },
       {
         "faixa": "10-19",
-        "Feminino": 85,
-        "Masculino": 111
+        "Feminino": 83,
+        "Masculino": 109
       },
       {
         "faixa": "20-29",
-        "Feminino": 140,
-        "Masculino": 102
+        "Feminino": 135,
+        "Masculino": 101
       },
       {
         "faixa": "30-39",
-        "Feminino": 113,
+        "Feminino": 105,
         "Masculino": 63
       },
       {
         "faixa": "40-49",
-        "Feminino": 130,
-        "Masculino": 72
+        "Feminino": 127,
+        "Masculino": 67
       },
       {
         "faixa": "50-59",
-        "Feminino": 89,
-        "Masculino": 44
+        "Feminino": 84,
+        "Masculino": 42
       },
       {
         "faixa": "60-69",
         "Feminino": 55,
-        "Masculino": 21
+        "Masculino": 20
       },
       {
         "faixa": "70-79",
-        "Feminino": 13,
+        "Feminino": 11,
         "Masculino": 7
       },
       {
@@ -9493,7 +9458,7 @@
     "2022": [
       {
         "faixa": "0-9",
-        "Feminino": 44,
+        "Feminino": 43,
         "Masculino": 35
       },
       {
@@ -9503,22 +9468,22 @@
       },
       {
         "faixa": "20-29",
-        "Feminino": 67,
+        "Feminino": 65,
         "Masculino": 73
       },
       {
         "faixa": "30-39",
-        "Feminino": 87,
-        "Masculino": 72
+        "Feminino": 84,
+        "Masculino": 70
       },
       {
         "faixa": "40-49",
-        "Feminino": 84,
+        "Feminino": 83,
         "Masculino": 59
       },
       {
         "faixa": "50-59",
-        "Feminino": 67,
+        "Feminino": 66,
         "Masculino": 37
       },
       {
@@ -9541,26 +9506,26 @@
       {
         "faixa": "0-9",
         "Feminino": 99,
-        "Masculino": 94
+        "Masculino": 92
       },
       {
         "faixa": "10-19",
         "Feminino": 124,
-        "Masculino": 149
+        "Masculino": 148
       },
       {
         "faixa": "20-29",
-        "Feminino": 116,
+        "Feminino": 114,
         "Masculino": 104
       },
       {
         "faixa": "30-39",
         "Feminino": 120,
-        "Masculino": 72
+        "Masculino": 71
       },
       {
         "faixa": "40-49",
-        "Feminino": 98,
+        "Feminino": 96,
         "Masculino": 54
       },
       {
@@ -9570,13 +9535,13 @@
       },
       {
         "faixa": "60-69",
-        "Feminino": 51,
-        "Masculino": 35
+        "Feminino": 49,
+        "Masculino": 34
       },
       {
         "faixa": "70-79",
         "Feminino": 19,
-        "Masculino": 15
+        "Masculino": 14
       },
       {
         "faixa": "80+",
@@ -9592,7 +9557,7 @@
       },
       {
         "faixa": "10-19",
-        "Feminino": 58,
+        "Feminino": 57,
         "Masculino": 41
       },
       {
@@ -9603,11 +9568,11 @@
       {
         "faixa": "30-39",
         "Feminino": 69,
-        "Masculino": 57
+        "Masculino": 56
       },
       {
         "faixa": "40-49",
-        "Feminino": 61,
+        "Feminino": 59,
         "Masculino": 27
       },
       {
@@ -9635,17 +9600,17 @@
       {
         "faixa": "0-9",
         "Feminino": 24,
-        "Masculino": 34
+        "Masculino": 33
       },
       {
         "faixa": "10-19",
-        "Feminino": 67,
+        "Feminino": 66,
         "Masculino": 51
       },
       {
         "faixa": "20-29",
         "Feminino": 98,
-        "Masculino": 69
+        "Masculino": 67
       },
       {
         "faixa": "30-39",
@@ -9654,12 +9619,12 @@
       },
       {
         "faixa": "40-49",
-        "Feminino": 60,
+        "Feminino": 59,
         "Masculino": 46
       },
       {
         "faixa": "50-59",
-        "Feminino": 65,
+        "Feminino": 64,
         "Masculino": 26
       },
       {
@@ -9681,137 +9646,137 @@
     "2018": [
       {
         "faixa": "0-9",
-        "Feminino": 55,
-        "Masculino": 73
+        "Feminino": 54,
+        "Masculino": 72
       },
       {
         "faixa": "10-19",
-        "Feminino": 122,
-        "Masculino": 125
+        "Feminino": 117,
+        "Masculino": 123
       },
       {
         "faixa": "20-29",
-        "Feminino": 228,
-        "Masculino": 128
+        "Feminino": 224,
+        "Masculino": 121
       },
       {
         "faixa": "30-39",
-        "Feminino": 301,
-        "Masculino": 146
+        "Feminino": 298,
+        "Masculino": 141
       },
       {
         "faixa": "40-49",
-        "Feminino": 257,
-        "Masculino": 125
+        "Feminino": 252,
+        "Masculino": 119
       },
       {
         "faixa": "50-59",
-        "Feminino": 204,
-        "Masculino": 102
+        "Feminino": 202,
+        "Masculino": 101
       },
       {
         "faixa": "60-69",
-        "Feminino": 134,
-        "Masculino": 70
+        "Feminino": 128,
+        "Masculino": 68
       },
       {
         "faixa": "70-79",
-        "Feminino": 55,
+        "Feminino": 53,
         "Masculino": 34
       },
       {
         "faixa": "80+",
-        "Feminino": 16,
+        "Feminino": 15,
         "Masculino": 6
       }
     ],
     "2017": [
       {
         "faixa": "0-9",
-        "Feminino": 60,
+        "Feminino": 59,
         "Masculino": 68
       },
       {
         "faixa": "10-19",
-        "Feminino": 120,
-        "Masculino": 106
+        "Feminino": 119,
+        "Masculino": 103
       },
       {
         "faixa": "20-29",
-        "Feminino": 159,
+        "Feminino": 155,
         "Masculino": 91
       },
       {
         "faixa": "30-39",
-        "Feminino": 160,
+        "Feminino": 159,
         "Masculino": 104
       },
       {
         "faixa": "40-49",
-        "Feminino": 172,
-        "Masculino": 88
+        "Feminino": 170,
+        "Masculino": 87
       },
       {
         "faixa": "50-59",
-        "Feminino": 145,
+        "Feminino": 143,
         "Masculino": 76
       },
       {
         "faixa": "60-69",
-        "Feminino": 82,
+        "Feminino": 81,
         "Masculino": 49
       },
       {
         "faixa": "70-79",
         "Feminino": 40,
-        "Masculino": 28
+        "Masculino": 27
       },
       {
         "faixa": "80+",
-        "Feminino": 13,
+        "Feminino": 12,
         "Masculino": 7
       }
     ],
     "2016": [
       {
         "faixa": "0-9",
-        "Feminino": 78,
-        "Masculino": 75
+        "Feminino": 76,
+        "Masculino": 73
       },
       {
         "faixa": "10-19",
-        "Feminino": 164,
-        "Masculino": 141
+        "Feminino": 159,
+        "Masculino": 138
       },
       {
         "faixa": "20-29",
-        "Feminino": 330,
-        "Masculino": 176
+        "Feminino": 324,
+        "Masculino": 175
       },
       {
         "faixa": "30-39",
-        "Feminino": 326,
-        "Masculino": 177
+        "Feminino": 318,
+        "Masculino": 173
       },
       {
         "faixa": "40-49",
-        "Feminino": 320,
-        "Masculino": 131
+        "Feminino": 313,
+        "Masculino": 130
       },
       {
         "faixa": "50-59",
-        "Feminino": 235,
-        "Masculino": 99
+        "Feminino": 229,
+        "Masculino": 96
       },
       {
         "faixa": "60-69",
-        "Feminino": 140,
+        "Feminino": 135,
         "Masculino": 57
       },
       {
         "faixa": "70-79",
         "Feminino": 41,
-        "Masculino": 28
+        "Masculino": 26
       },
       {
         "faixa": "80+",
@@ -9822,42 +9787,42 @@
     "2015": [
       {
         "faixa": "0-9",
-        "Feminino": 109,
-        "Masculino": 131
+        "Feminino": 107,
+        "Masculino": 129
       },
       {
         "faixa": "10-19",
-        "Feminino": 229,
-        "Masculino": 279
+        "Feminino": 227,
+        "Masculino": 273
       },
       {
         "faixa": "20-29",
-        "Feminino": 390,
-        "Masculino": 277
+        "Feminino": 382,
+        "Masculino": 274
       },
       {
         "faixa": "30-39",
-        "Feminino": 469,
-        "Masculino": 262
+        "Feminino": 456,
+        "Masculino": 256
       },
       {
         "faixa": "40-49",
-        "Feminino": 428,
-        "Masculino": 237
+        "Feminino": 424,
+        "Masculino": 228
       },
       {
         "faixa": "50-59",
-        "Feminino": 366,
-        "Masculino": 160
+        "Feminino": 358,
+        "Masculino": 155
       },
       {
         "faixa": "60-69",
-        "Feminino": 162,
-        "Masculino": 83
+        "Feminino": 161,
+        "Masculino": 80
       },
       {
         "faixa": "70-79",
-        "Feminino": 65,
+        "Feminino": 64,
         "Masculino": 28
       },
       {
@@ -9916,48 +9881,48 @@
     "TODOS": [
       {
         "faixa": "0-9",
-        "Feminino": 1505,
-        "Masculino": 1625
+        "Feminino": 1298,
+        "Masculino": 1386
       },
       {
         "faixa": "10-19",
-        "Feminino": 2264,
-        "Masculino": 2643
+        "Feminino": 2007,
+        "Masculino": 2288
       },
       {
         "faixa": "20-29",
-        "Feminino": 3471,
-        "Masculino": 2564
+        "Feminino": 3037,
+        "Masculino": 2213
       },
       {
         "faixa": "30-39",
-        "Feminino": 3186,
-        "Masculino": 2048
+        "Feminino": 2888,
+        "Masculino": 1774
       },
       {
         "faixa": "40-49",
-        "Feminino": 2974,
-        "Masculino": 1639
+        "Feminino": 2689,
+        "Masculino": 1463
       },
       {
         "faixa": "50-59",
-        "Feminino": 2387,
-        "Masculino": 1168
+        "Feminino": 2146,
+        "Masculino": 1032
       },
       {
         "faixa": "60-69",
-        "Feminino": 1285,
-        "Masculino": 755
+        "Feminino": 1157,
+        "Masculino": 657
       },
       {
         "faixa": "70-79",
-        "Feminino": 491,
-        "Masculino": 295
+        "Feminino": 439,
+        "Masculino": 274
       },
       {
         "faixa": "80+",
-        "Feminino": 192,
-        "Masculino": 99
+        "Feminino": 168,
+        "Masculino": 82
       }
     ]
   },
@@ -9965,45 +9930,45 @@
     "2026": [
       {
         "raca": "Parda",
-        "total": 4263
+        "total": 2194
       },
       {
         "raca": "Ignorado/Sem Info",
-        "total": 908
+        "total": 456
       },
       {
         "raca": "Branca",
-        "total": 805
+        "total": 401
       },
       {
         "raca": "Preta",
-        "total": 340
+        "total": 169
       },
       {
         "raca": "Amarela",
-        "total": 44
+        "total": 24
       },
       {
         "raca": "Indígena",
-        "total": 24
+        "total": 12
       }
     ],
     "2025": [
       {
         "raca": "Parda",
-        "total": 1956
+        "total": 1891
       },
       {
         "raca": "Ignorado/Sem Info",
-        "total": 649
+        "total": 624
       },
       {
         "raca": "Branca",
-        "total": 457
+        "total": 444
       },
       {
         "raca": "Preta",
-        "total": 168
+        "total": 162
       },
       {
         "raca": "Amarela",
@@ -10011,29 +9976,29 @@
       },
       {
         "raca": "Indígena",
-        "total": 16
+        "total": 15
       }
     ],
     "2024": [
       {
         "raca": "Parda",
-        "total": 3303
+        "total": 3218
       },
       {
         "raca": "Ignorado/Sem Info",
-        "total": 2114
+        "total": 2057
       },
       {
         "raca": "Branca",
-        "total": 985
+        "total": 960
       },
       {
         "raca": "Preta",
-        "total": 338
+        "total": 331
       },
       {
         "raca": "Amarela",
-        "total": 29
+        "total": 28
       },
       {
         "raca": "Indígena",
@@ -10043,19 +10008,19 @@
     "2023": [
       {
         "raca": "Parda",
-        "total": 713
+        "total": 687
       },
       {
         "raca": "Branca",
-        "total": 234
+        "total": 225
       },
       {
         "raca": "Ignorado/Sem Info",
-        "total": 170
+        "total": 165
       },
       {
         "raca": "Preta",
-        "total": 65
+        "total": 64
       },
       {
         "raca": "Amarela",
@@ -10069,7 +10034,7 @@
     "2022": [
       {
         "raca": "Parda",
-        "total": 557
+        "total": 552
       },
       {
         "raca": "Branca",
@@ -10077,11 +10042,11 @@
       },
       {
         "raca": "Ignorado/Sem Info",
-        "total": 117
+        "total": 115
       },
       {
         "raca": "Preta",
-        "total": 42
+        "total": 39
       },
       {
         "raca": "Amarela",
@@ -10095,15 +10060,15 @@
     "2021": [
       {
         "raca": "Parda",
-        "total": 742
+        "total": 733
       },
       {
         "raca": "Branca",
-        "total": 307
+        "total": 306
       },
       {
         "raca": "Ignorado/Sem Info",
-        "total": 210
+        "total": 208
       },
       {
         "raca": "Preta",
@@ -10121,11 +10086,11 @@
     "2020": [
       {
         "raca": "Parda",
-        "total": 432
+        "total": 429
       },
       {
         "raca": "Branca",
-        "total": 124
+        "total": 123
       },
       {
         "raca": "Ignorado/Sem Info",
@@ -10147,19 +10112,19 @@
     "2019": [
       {
         "raca": "Parda",
-        "total": 524
+        "total": 521
       },
       {
         "raca": "Branca",
-        "total": 141
+        "total": 140
       },
       {
         "raca": "Preta",
-        "total": 39
+        "total": 38
       },
       {
         "raca": "Ignorado/Sem Info",
-        "total": 38
+        "total": 37
       },
       {
         "raca": "Amarela",
@@ -10169,19 +10134,19 @@
     "2018": [
       {
         "raca": "Parda",
-        "total": 1475
+        "total": 1443
       },
       {
         "raca": "Branca",
-        "total": 409
+        "total": 397
       },
       {
         "raca": "Ignorado/Sem Info",
-        "total": 150
+        "total": 148
       },
       {
         "raca": "Preta",
-        "total": 146
+        "total": 139
       },
       {
         "raca": "Indígena",
@@ -10195,19 +10160,19 @@
     "2017": [
       {
         "raca": "Parda",
-        "total": 1035
+        "total": 1021
       },
       {
         "raca": "Branca",
-        "total": 262
+        "total": 261
       },
       {
         "raca": "Ignorado/Sem Info",
-        "total": 179
+        "total": 178
       },
       {
         "raca": "Preta",
-        "total": 98
+        "total": 96
       },
       {
         "raca": "Indígena",
@@ -10221,19 +10186,19 @@
     "2016": [
       {
         "raca": "Parda",
-        "total": 1721
+        "total": 1679
       },
       {
         "raca": "Branca",
-        "total": 440
+        "total": 433
       },
       {
         "raca": "Ignorado/Sem Info",
-        "total": 269
+        "total": 264
       },
       {
         "raca": "Preta",
-        "total": 138
+        "total": 136
       },
       {
         "raca": "Amarela",
@@ -10247,19 +10212,19 @@
     "2015": [
       {
         "raca": "Parda",
-        "total": 2009
+        "total": 1965
       },
       {
         "raca": "Branca",
-        "total": 787
+        "total": 777
       },
       {
         "raca": "Ignorado/Sem Info",
-        "total": 755
+        "total": 737
       },
       {
         "raca": "Preta",
-        "total": 178
+        "total": 175
       },
       {
         "raca": "Amarela",
@@ -10267,7 +10232,7 @@
       },
       {
         "raca": "Indígena",
-        "total": 11
+        "total": 10
       }
     ],
     "2014": [
@@ -10283,27 +10248,27 @@
     "TODOS": [
       {
         "raca": "Parda",
-        "total": 18732
+        "total": 16335
       },
       {
         "raca": "Ignorado/Sem Info",
-        "total": 5598
+        "total": 5028
       },
       {
         "raca": "Branca",
-        "total": 5084
+        "total": 4600
       },
       {
         "raca": "Preta",
-        "total": 1635
+        "total": 1432
       },
       {
         "raca": "Amarela",
-        "total": 190
+        "total": 169
       },
       {
         "raca": "Indígena",
-        "total": 110
+        "total": 96
       }
     ]
   },
@@ -10311,53 +10276,53 @@
     "2026": [
       {
         "criterio": "Clínico-Epidemiológico",
-        "total": 3509
+        "total": 1737
       },
       {
         "criterio": "Laboratorial",
-        "total": 2142
+        "total": 1083
       },
       {
         "criterio": "Em Investigação",
-        "total": 733
+        "total": 436
       }
     ],
     "2025": [
       {
         "criterio": "Laboratorial",
-        "total": 1759
+        "total": 1715
       },
       {
         "criterio": "Clínico-Epidemiológico",
-        "total": 1356
+        "total": 1306
       },
       {
         "criterio": "Em Investigação",
-        "total": 154
+        "total": 138
       }
     ],
     "2024": [
       {
         "criterio": "Laboratorial",
-        "total": 4149
+        "total": 4044
       },
       {
         "criterio": "Clínico-Epidemiológico",
-        "total": 2323
+        "total": 2272
       },
       {
         "criterio": "Em Investigação",
-        "total": 322
+        "total": 303
       }
     ],
     "2023": [
       {
         "criterio": "Laboratorial",
-        "total": 1017
+        "total": 985
       },
       {
         "criterio": "Em Investigação",
-        "total": 120
+        "total": 111
       },
       {
         "criterio": "Clínico-Epidemiológico",
@@ -10367,7 +10332,7 @@
     "2022": [
       {
         "criterio": "Laboratorial",
-        "total": 780
+        "total": 771
       },
       {
         "criterio": "Em Investigação",
@@ -10375,13 +10340,13 @@
       },
       {
         "criterio": "Clínico-Epidemiológico",
-        "total": 29
+        "total": 28
       }
     ],
     "2021": [
       {
         "criterio": "Laboratorial",
-        "total": 1264
+        "total": 1252
       },
       {
         "criterio": "Clínico-Epidemiológico",
@@ -10395,11 +10360,11 @@
     "2020": [
       {
         "criterio": "Laboratorial",
-        "total": 573
+        "total": 570
       },
       {
         "criterio": "Em Investigação",
-        "total": 37
+        "total": 36
       },
       {
         "criterio": "Clínico-Epidemiológico",
@@ -10409,11 +10374,11 @@
     "2019": [
       {
         "criterio": "Laboratorial",
-        "total": 583
+        "total": 579
       },
       {
         "criterio": "Em Investigação",
-        "total": 92
+        "total": 90
       },
       {
         "criterio": "Clínico-Epidemiológico",
@@ -10423,21 +10388,21 @@
     "2018": [
       {
         "criterio": "Laboratorial",
-        "total": 1521
+        "total": 1490
       },
       {
         "criterio": "Clínico-Epidemiológico",
-        "total": 538
+        "total": 522
       },
       {
         "criterio": "Em Investigação",
-        "total": 148
+        "total": 142
       }
     ],
     "2017": [
       {
         "criterio": "Laboratorial",
-        "total": 1336
+        "total": 1320
       },
       {
         "criterio": "Clínico-Epidemiológico",
@@ -10445,35 +10410,35 @@
       },
       {
         "criterio": "Em Investigação",
-        "total": 95
+        "total": 93
       }
     ],
     "2016": [
       {
         "criterio": "Laboratorial",
-        "total": 2139
+        "total": 2092
       },
       {
         "criterio": "Clínico-Epidemiológico",
-        "total": 253
+        "total": 250
       },
       {
         "criterio": "Em Investigação",
-        "total": 190
+        "total": 184
       }
     ],
     "2015": [
       {
         "criterio": "Laboratorial",
-        "total": 3351
+        "total": 3290
       },
       {
         "criterio": "Clínico-Epidemiológico",
-        "total": 214
+        "total": 209
       },
       {
         "criterio": "Em Investigação",
-        "total": 201
+        "total": 191
       }
     ],
     "2014": [
@@ -10485,143 +10450,143 @@
     "TODOS": [
       {
         "criterio": "Laboratorial",
-        "total": 20619
+        "total": 19196
       },
       {
         "criterio": "Clínico-Epidemiológico",
-        "total": 8569
+        "total": 6671
       },
       {
         "criterio": "Em Investigação",
-        "total": 2161
+        "total": 1793
       }
     ]
   },
   "ranking_unidades": [
     {
-      "unidade": "HOSPITAL RIO MAR",
-      "total": 2032,
-      "total_2026": 858
+      "unidade": "DEVS DEPARTAMENTO DE VIGILANCIA EM SAUDE SESMA",
+      "total": 9775,
+      "total_2026": 429
     },
     {
-      "unidade": "DEVS DEPARTAMENTO DE VIGILANCIA EM SAUDE SESMA",
-      "total": 10417,
-      "total_2026": 848
+      "unidade": "HOSPITAL RIO MAR",
+      "total": 1563,
+      "total_2026": 429
     },
     {
       "unidade": "HOSPITAL PORTO DIAS",
-      "total": 2230,
-      "total_2026": 708
+      "total": 1863,
+      "total_2026": 370
     },
     {
       "unidade": "HOSPITAL REGIONAL DR ABELARDO SANTOS",
-      "total": 1259,
-      "total_2026": 644
+      "total": 954,
+      "total_2026": 353
     },
     {
       "unidade": "HOSPITAL PRONTO SOCORRO MUNICIPAL MARIO PINOTTI",
-      "total": 1211,
-      "total_2026": 507
+      "total": 928,
+      "total_2026": 249
     },
     {
       "unidade": "HPSM DR HUMBERTO MARADEI PEREIRA",
-      "total": 648,
-      "total_2026": 333
+      "total": 484,
+      "total_2026": 174
     },
     {
       "unidade": "HOSPITAL MUNICIPAL DE MOSQUEIRO",
-      "total": 601,
-      "total_2026": 271
+      "total": 472,
+      "total_2026": 147
     },
     {
       "unidade": "UPA DAGUA I",
-      "total": 496,
-      "total_2026": 271
+      "total": 349,
+      "total_2026": 132
     },
     {
       "unidade": "0000156",
-      "total": 372,
-      "total_2026": 154
+      "total": 292,
+      "total_2026": 79
     },
     {
       "unidade": "UPA DAICO",
-      "total": 956,
-      "total_2026": 146
+      "total": 868,
+      "total_2026": 73
     },
     {
       "unidade": "UPA JURUNAS",
-      "total": 211,
-      "total_2026": 130
+      "total": 143,
+      "total_2026": 64
     },
     {
       "unidade": "HOSPITAL UNIMED PRIME",
-      "total": 291,
-      "total_2026": 129
-    },
-    {
-      "unidade": "HOSPITAL LAYR MAIA",
-      "total": 129,
-      "total_2026": 115
+      "total": 217,
+      "total_2026": 62
     },
     {
       "unidade": "UPA MARAMBAIA",
-      "total": 189,
-      "total_2026": 114
-    },
-    {
-      "unidade": "0000198",
-      "total": 128,
-      "total_2026": 109
+      "total": 126,
+      "total_2026": 57
     },
     {
       "unidade": "HOSPITAL AMAZONIA",
-      "total": 205,
-      "total_2026": 101
+      "total": 158,
+      "total_2026": 56
     },
     {
-      "unidade": "UNIDADE MUNICIPAL DE SAUDE OUTEIRO",
-      "total": 81,
-      "total_2026": 78
+      "unidade": "HOSPITAL LAYR MAIA",
+      "total": 68,
+      "total_2026": 55
+    },
+    {
+      "unidade": "0000198",
+      "total": 72,
+      "total_2026": 53
     },
     {
       "unidade": "UPA 24 HORAS TIPO III DOM HELDER CAMARA",
-      "total": 136,
-      "total_2026": 77
-    },
-    {
-      "unidade": "HPSM DO BENGUI DR ROBERTO MACEDO",
-      "total": 79,
-      "total_2026": 70
-    },
-    {
-      "unidade": "HOSPITAL UNIVERSITARIO JOAO DE BARROS BARRETO",
-      "total": 444,
-      "total_2026": 49
-    },
-    {
-      "unidade": "HOSPITAL ADVENTISTA DE BELEM",
-      "total": 256,
-      "total_2026": 43
-    },
-    {
-      "unidade": "UPA DASAC",
-      "total": 571,
+      "total": 100,
       "total_2026": 42
     },
     {
-      "unidade": "9387137",
+      "unidade": "UNIDADE MUNICIPAL DE SAUDE OUTEIRO",
+      "total": 43,
+      "total_2026": 40
+    },
+    {
+      "unidade": "HPSM DO BENGUI DR ROBERTO MACEDO",
       "total": 46,
-      "total_2026": 38
+      "total_2026": 37
+    },
+    {
+      "unidade": "HOSPITAL UNIVERSITARIO JOAO DE BARROS BARRETO",
+      "total": 417,
+      "total_2026": 25
+    },
+    {
+      "unidade": "HOSPITAL ADVENTISTA DE BELEM",
+      "total": 235,
+      "total_2026": 24
+    },
+    {
+      "unidade": "9387137",
+      "total": 29,
+      "total_2026": 22
+    },
+    {
+      "unidade": "UPA DASAC",
+      "total": 529,
+      "total_2026": 16
     },
     {
       "unidade": "INSTITUTO EVANDRO CHAGAS IEC",
-      "total": 711,
-      "total_2026": 30
+      "total": 689,
+      "total_2026": 14
     },
     {
-      "unidade": "HOSPITAL HSM (SAUDE DA MULHER)",
-      "total": 117,
-      "total_2026": 27
+      "unidade": "HOSPITAL ABELARDO SANTOS",
+      "total": 1225,
+      "total_2026": 13
     }
   ]
 }

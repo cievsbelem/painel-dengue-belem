@@ -1,5 +1,5 @@
 # Relatório de Auditoria de Atualização de Dados (SINAN / Belém)
-**Data da Auditoria:** 21/11/2026 14:46:21
+**Data da Auditoria:** 21/11/2026 16:19:27
 **Usuário/Terminal:** CISC / DESKTOP-LS6UKHL
 
 ### Arquivo: `DENGON2628033_00-2024.dbf`
@@ -120,7 +120,7 @@
 - **Casos em Investigação:** 83
 
 ## Resumo da Base Oficial Consolidada
-- **Total de Notificações Ativas:** 31.349
+- **Total de Notificações Ativas:** 27.660
 - **Série Histórica Contemplada:** 2014 a 2026
 - **Semana Vigente Monitorada (2026):** SE 44
 - **Status da Auditoria:** APROVADO
